@@ -1,0 +1,12 @@
+ServerEvents.tags("block",r=>{
+    r.add('create:casing',[
+        'create_nouveau:magic_casing',
+        'create_nouveau:source_casing',
+        'create_nouveau:smart_casing'
+    ])
+    r.add('create:wrench_pickup',[
+        'create_nouveau:magic_casing',
+        'create_nouveau:source_casing',
+        'create_nouveau:smart_casing'
+    ])
+})

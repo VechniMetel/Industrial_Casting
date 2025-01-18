@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+      "end": "create:block/brass_block",
+      "side": "create_nouveau:block/smart_casing"
+    }
+  }
