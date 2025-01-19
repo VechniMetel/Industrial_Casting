@@ -33,9 +33,19 @@ ServerEvents.recipes(r => {
         "ars_nouveau:source_jar"
     )
     handcraft(
+        'create:andesite_casing',
+        'create_nouveau:storage_unit',
+        'create:item_vault'
+    )
+    handcraft(
         'create:copper_casing',
-        '#forge:glass_panes',
+        'create_nouveau:storage_unit',
         'create:fluid_tank'
+    )
+    handcraft(
+        'create:railway_casing',
+        'create_nouveau:storage_unit',
+        'railways:fuel_tank'
     )
     handcraft(
         'create:shaft',
@@ -166,5 +176,110 @@ ServerEvents.recipes(r => {
         'create:andesite_casing',
         'create_nouveau:chain_drive',
         'create:encased_chain_drive'
+    )
+    handcraft(
+        'create_nouveau:smart_casing',
+        'extendedgears:shaftless_cogwheel',
+        'create:sequenced_gearshift'
+    )
+    handcraft(
+        'minecraft:netherrack',
+        'create_nouveau:cage',
+        'create:empty_blaze_burner'
+    )
+    handcraft(
+        'create:brass_casing',
+        'create_nouveau:cage',
+        'create_connected:empty_fan_catalyst'
+    )
+    handcraft(
+        'create:andesite_casing',
+        'minecraft:iron_block',
+        'create:mechanical_press'
+    )
+    handcraft(
+        'create_basic_additions:basic_gearshift',
+        'create:whisk',
+        'create:mechanical_mixer'
+    )
+    handcraft(
+        'create:andesite_casing',
+        'create_nouveau:saw',
+        'create:mechanical_saw'
+    )
+    handcraft(
+        'create:andesite_casing',
+        'create:propeller',
+        'create:encased_fan'
+    )
+    handcraft(
+        'create:andesite_casing',
+        'create_nouveau:storage_connector',
+        'create:portable_storage_interface'
+    )
+    handcraft(
+        'create:copper_casing',
+        'create_nouveau:storage_connector',
+        'create:portable_fluid_interface'
+    )
+    handcraft(
+        'create:railway_casing',
+        'create_nouveau:storage_connector',
+        'railways:portable_fuel_interface'
+    )
+    handcraft(
+        'create_nouveau:smart_casing',
+        'create_nouveau:storage_connector',
+        'create_connected:inventory_access_port'
+    )
+    handcraft(
+        '#minecraft:wooden_slabs',
+        'create:shaft',
+        'create:turntable'
+    )
+    handcraft(
+        '#forge:stone',
+        'create:turntable',
+        'create:windmill_bearing'
+    )
+    handcraft(
+        'create:andesite_casing',
+        'create:turntable',
+        'create:mechanical_bearing'
+    )
+    handcraft(
+        'create_nouveau:smart_casing',
+        'create:turntable',
+        'create:clockwork_bearing'
+    )
+    handcraft(
+        'create:shaft',
+        'minecraft:stick',
+        'create:piston_extension_pole'
+    )
+    handcraft(
+        'create_nouveau:source_casing',
+        'minecraft:diamond',
+        'ars_nouveau:enchanting_apparatus'
+    )
+    handcraft(
+        'create_nouveau:source_casing',
+        'ars_nouveau:sourcestone',
+        'ars_nouveau:arcane_pedestal'
+    )
+    handcraft(
+        'ars_nouveau:sourcestone',
+        'create_nouveau:enchantment_mechanism',
+        'ars_nouveau:arcane_core'
+    )
+    handcraft(
+        'create_nouveau:source_casing',
+        'ars_nouveau:source_gem_block',
+        'ars_nouveau:ritual_brazier'
+    )
+    handcraft(
+        'create:andesite_casing',
+        'create:piston_extension_pole',
+        'create:mechanical_piston'
     )
 })

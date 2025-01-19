@@ -18,5 +18,11 @@ ServerEvents.tags("item", r => {
         'create_nouveau:source_casing',
         'create_nouveau:smartcasing'
     ])
-
+    r.add(
+        'kubejs:rope_materials',
+        [
+            'supplementaries:flax',
+            'farmersdelight:straw'
+        ]
+    )
 })

@@ -46,9 +46,29 @@ ServerEvents.recipes(r => {
         'create:crafting/kinetics/track_observer_from_other_plates',
         'create:crafting/kinetics/track_observer',
         'create:crafting/kinetics/controls',
-        'create:crafting/kinetics/encased_chain_drive'
+        'create:crafting/kinetics/encased_chain_drive',
+        'create:crafting/kinetics/sequenced_gearshift',
+        'create:crafting/kinetics/empty_blaze_burner',
+        'create_connected:crafting/kinetics/empty_fan_catalyst',
+        'create:crafting/kinetics/mechanical_press',
+        'create:crafting/kinetics/mechanical_mixer',
+        'create:crafting/kinetics/mechanical_saw',
+        'create:crafting/kinetics/encased_fan',
+        'create_connected:crafting/kinetics/inventory_access_port',
+        'create:crafting/kinetics/sticky_mechanical_piston',
+        'create:crafting/kinetics/turntable',
+        'create:crafting/kinetics/windmill_bearing',
+        'create:crafting/kinetics/mechanical_bearing',
+        'create:crafting/kinetics/clockwork_bearing',
+        'create:crafting/kinetics/piston_extension_pole',
+        'extendedgears:crafting/piston_extension_pole',
+        'ars_nouveau:enchanting_apparatus',
+        'ars_nouveau:arcane_pedestal',
+        'ars_nouveau:arcane_core',
+        'ars_nouveau:ritual_brazier',
+        'create:crafting/kinetics/mechanical_piston'
     ]
-    remove.forEach(e => {
-        r.remove({ id: e })
+    remove.forEach(deleterecipes => {
+        r.remove({ id: deleterecipes })
     })
 })
