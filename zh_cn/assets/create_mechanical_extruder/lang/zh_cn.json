@@ -1,0 +1,21 @@
+{
+    "block.create_mechanical_extruder.mechanical_extruder": "动力造石机",
+    "create_mechanical_extruder.goggles.bonks": "%1$s次压制",
+    "create_mechanical_extruder.goggles.recipe_requirement.biome": "错误的群系",
+    "create_mechanical_extruder.goggles.recipe_requirement.ingredients": "材料缺失",
+    "create_mechanical_extruder.goggles.recipe_requirement.max_height": "Y轴太高了",
+    "create_mechanical_extruder.goggles.recipe_requirement.min_height": "Y轴太低了",
+    "create_mechanical_extruder.goggles.recipe_requirement.min_speed": "未达到要求的转速",
+    "create_mechanical_extruder.goggles.recipe_requirement.output": "输出已满或不相容",
+    "create_mechanical_extruder.ponder.extruder.header": "方块生成",
+    "create_mechanical_extruder.ponder.extruder.text_1": "动力造石机使用旋转力生成方块",
+    "create_mechanical_extruder.ponder.extruder.text_2": "产物生成由侧面与底部的方块决定",
+    "create_mechanical_extruder.ponder.extruder.text_3": "当产物生成后，可以右键造石机将其取出",
+    "create_mechanical_extruder.ponder.extruder.text_4": "产物也可以被自动化取出",
+    "create_mechanical_extruder.ponder.extruder.text_5": "当同一输入有多种产出，可以设置过滤器来过滤配方",
+    "create_mechanical_extruder.recipe.extruding": "造石机配方",
+    "create_mechanical_extruder.ui.recipe_requirement.max_height": "最高Y值: %s",
+    "create_mechanical_extruder.ui.recipe_requirement.min_height": "最小Y值: %s",
+    "create_mechanical_extruder.ui.recipe_requirement.min_speed": "最低速度: %s",
+    "itemGroup.create_mechanical_extruder:main": "机械动力：动力造石机"
+}

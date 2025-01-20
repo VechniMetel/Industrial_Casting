@@ -66,7 +66,28 @@ ServerEvents.recipes(r => {
         'ars_nouveau:arcane_pedestal',
         'ars_nouveau:arcane_core',
         'ars_nouveau:ritual_brazier',
-        'create:crafting/kinetics/mechanical_piston'
+        'create:crafting/kinetics/mechanical_piston',
+        'create:crafting/materials/electron_tube',
+        'create:crafting/kinetics/basin',
+        'minecraft:cauldron',
+        'create_ironworks:misc/crafting_cauldron_tin',
+        'create:crafting/kinetics/linear_chassis',
+        'create:crafting/kinetics/depot',
+        'create:crafting/kinetics/millstone',
+        'create:crafting/kinetics/rotation_speed_controller',
+        'create:crafting/kinetics/mechanical_arm',
+        'create:crafting/kinetics/spout',
+        'create_enchantment_industry:crafting/printer',
+        'create:crafting/kinetics/portable_storage_interface',
+        'create:crafting/kinetics/portable_fluid_interface',
+        'railways:crafting/portable_fuel_interface',
+        'create:crafting/kinetics/deployer',
+        'create:crafting/kinetics/adjustable_chain_gearshift',
+        'starbunclemania:fluid_jar',
+        'starbunclemania:source_condenser',
+        'create:crafting/kinetics/mechanical_roller',
+        'create:crafting/kinetics/item_drain',
+        'create_enchantment_industry:crafting/disenchanter'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })

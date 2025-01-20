@@ -19,4 +19,24 @@ ServerEvents.recipes(r => {
          'a':'minecraft:iron_bars'
         }
      )
+     r.shaped(
+      'minecraft:cauldron',
+      [
+       '   ',
+       'a a',
+       ' a '
+      ],{
+       'a':'create:iron_sheet'
+      }
+   )
+   r.shaped(
+      'minecraft:cauldron',
+      [
+       '   ',
+       'a a',
+       ' a '
+      ],{
+       'a':'create_nouveau:tin_sheet'
+      }
+   )
 })

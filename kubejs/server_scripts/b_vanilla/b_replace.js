@@ -17,4 +17,11 @@ ServerEvents.recipes(r => {
         },
         'supplementaries:flax','#kubejs:rope_materials'
     )
+    r.replaceInput(
+        {
+            id:'create_netherless:coal_rod_recipe'
+        },
+        'minecraft:coal_block',
+        '#minecraft:coals'
+    )
 })

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "create:block/andesite_block",
+    "side": "create_nouveau:block/andesite_casing"
+  }
+}

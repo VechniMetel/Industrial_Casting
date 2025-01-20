@@ -96,7 +96,9 @@
   "item.create_confectionery.white_chocolate_candy": "白巧克力糖",
   "item.create_confectionery.white_chocolate_glazed_berries": "白巧克力包层浆果",
   "item.create_confectionery.white_chocolate_glazed_marshmallow": "白巧克力包层棉花糖",
-  "itemGroup.tabcreate_confectionery_tab": "机械动力：甜食",
-  "item_group.create_confectionery.create_confectionery_tab": "机械动力：甜食",
-  "subtitles.the_bright_side": "The bright side"
+  "itemGroup.tabcreate_confectionery_tab": "机械动力：豪赤的",
+  "item_group.create_confectionery.create_confectionery_tab": "机械动力：豪赤的",
+  "subtitles.the_bright_side": "The bright side",
+  "itemGroup.create_cafe_items": "机械动力：豪赫德",
+  "itemGroup.create_cafe_fluids": "机械动力：桶装豪赫德"
 }

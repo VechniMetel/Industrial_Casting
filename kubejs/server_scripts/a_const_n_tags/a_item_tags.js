@@ -25,4 +25,5 @@ ServerEvents.tags("item", r => {
             'farmersdelight:straw'
         ]
     )
+
 })

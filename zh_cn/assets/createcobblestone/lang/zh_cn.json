@@ -1,0 +1,8 @@
+{
+  "itemGroup.create_cobblestone": "机械动力：机械刷石机",
+
+  "block.createcobblestone.mechanical_generator": "机械刷石机",
+
+  "block.createcobblestone.generators.hovertext.itemprefix": "刷石机类型：",
+  "block.createcobblestone.generators.hovertext.no_item": "手持石头右键刷石机以设定刷石机类型"
+}
