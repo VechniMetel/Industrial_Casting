@@ -11,4 +11,10 @@ ServerEvents.tags("block",r=>{
         'create_nouveau:smart_casing',
         'create_nouveau:smart_andesite_casing'
     ])
+    r.add(
+        'create:safe_nbt',
+        [
+            'create_connected:brass_gearbox'
+        ]
+    )
 })

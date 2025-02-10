@@ -1,0 +1,13 @@
+{
+    "loader": "fusion:model",
+    "type": "connecting",
+    "parent": "block/cube_all",
+    "textures": {
+       "all": "create_nouveau:block/steel_block"
+    },
+    "connections": [
+       {
+          "type": "is_same_block"
+       }
+    ]
+ }

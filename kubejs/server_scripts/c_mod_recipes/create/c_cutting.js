@@ -13,6 +13,10 @@ ServerEvents.recipes(r => {
         'create:andesite_casing'
     )
     create.cutting(
+        'create:radial_chassis',
+        'create:andesite_casing'
+    )
+    create.cutting(
         [
             Item.of('create:electron_tube').withChance(0.10),
             Item.of('create:rose_quartz').withChance(0.90)

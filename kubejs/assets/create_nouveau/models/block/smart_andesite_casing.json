@@ -1,7 +1,13 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "block/cube_all",
   "textures": {
-    "end": "create:block/andesite_block",
-    "side": "create_nouveau:block/andesite_casing"
-  }
+     "all": "create_nouveau:block/smart_andesite_casing"
+  },
+  "connections": [
+     {
+        "type": "is_same_block"
+     }
+  ]
 }

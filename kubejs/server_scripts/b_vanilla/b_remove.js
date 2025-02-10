@@ -87,9 +87,49 @@ ServerEvents.recipes(r => {
         'starbunclemania:source_condenser',
         'create:crafting/kinetics/mechanical_roller',
         'create:crafting/kinetics/item_drain',
-        'create_enchantment_industry:crafting/disenchanter'
+        'create_enchantment_industry:crafting/disenchanter',
+        'create:crafting/kinetics/radial_chassis',
+        'createaddition:crafting/modular_accumulator_gold',
+        'createaddition:crafting/modular_accumulator_electrum',
+        'createaddition:crafting/portable_energy_interface',
+        'create:crafting/kinetics/speedometer',
+        'create:crafting/kinetics/cuckoo_clock',
+        'create:crafting/kinetics/weighted_ejector',
+        'createaddition:crafting/capacitor_2',
+        'createaddition:crafting/capacitor_1',
+        'create:crafting/kinetics/mechanical_drill',
+        'create_basic_additions:workbench/basic_copper_gearshift',
+        'create_basic_additions:workbench/copper_clutch',
+        'create_basic_additions:workbench/copper_t-gearbox',
+        'create_basic_additions:workbench/copper_gearbox',
+        'create_basic_additions:workbench/copper_gearshift',
+        'create_basic_additions:workbench/copper_gearshift_powered',
+        'create_basic_additions:workbench/basic_brass_gearshift',
+        'create_basic_additions:workbench/brass_clutch',
+        'create_basic_additions:workbench/brass_t-gearbox',
+        'create_basic_additions:workbench/brass_gearbox',
+        'create_basic_additions:workbench/brass_gearshift',
+        'create_basic_additions:workbench/brass_gearshift_powered',
+        'create_connected:crafting/kinetics/brass_gearbox',
+        'create_basic_additions:workbench/basic_railway_gearshift',
+        'create_basic_additions:workbench/railway_clutch',
+        'create_basic_additions:workbench/railway_t-gearbox',
+        'create_basic_additions:workbench/railway_gearbox',
+        'create_basic_additions:workbench/railway_gearshift',
+        'create_basic_additions:workbench/railway_gearshift_powered',
+        'create:crafting/kinetics/item_vault',
+        'railways:crafting/fuel_tank',
+        'create_connected:crafting/kinetics/freewheel_clutch',
+        'create_connected:crafting/kinetics/centrifugal_clutch',
+        'create_connected:crafting/kinetics/overstress_clutch',
+        'create_connected:crafting/kinetics/brake',
+        'ars_technica:crushing/amethyst_shard'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })
+    })
+    r.remove({
+        output: '#forge:plates',
+        type: 'minecraft:crafting_shaped'
     })
 })

@@ -1,8 +1,18 @@
 {
-    "music.crazy_f_robot_body": {
-        "sounds": {
-            "name": "create_nouveau:crazy_f_robot_body",
-            "stream": false
-        }
+    "music.cfrb": {
+        "sounds": [
+            {
+                "name": "create_nouveau:cfrb",
+                "stream": true
+            }
+        ]
+    },
+    "music.life": {
+        "sounds": [
+            {
+                "name": "create_nouveau:life",
+                "stream": true
+            }
+        ]
     }
 }

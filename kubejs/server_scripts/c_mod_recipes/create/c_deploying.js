@@ -35,4 +35,18 @@ ServerEvents.recipes(r => {
             'create:precision_mechanism'
         ]
     )
+    create.deploying(
+        'create_nouveau:ejector_mechanism',
+        [
+            'extendedgears:shaftless_cogwheel',
+            '#forge:plates/gold'
+        ]
+    )
+    create.deploying(
+        'create:weighted_ejector',
+        [
+            'create:depot',
+            'create_nouveau:ejector_mechanism'
+        ]
+    )
 })

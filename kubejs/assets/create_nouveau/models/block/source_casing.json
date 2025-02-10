@@ -1,7 +1,13 @@
 {
-    "parent": "minecraft:block/cube_column",
-    "textures": {
-      "end": "minecraft:block/gold_block",
-      "side": "create_nouveau:block/source_casing"
-    }
-  }
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "block/cube_all",
+  "textures": {
+     "all": "create_nouveau:block/source_casing"
+  },
+  "connections": [
+     {
+        "type": "is_same_block"
+     }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "loader": "fusion:model",
+    "type": "connecting",
+    "parent": "block/cube_all",
+    "textures": {
+       "all": "create_nouveau:block/electric_casing"
+    },
+    "connections": [
+       {
+          "type": "is_same_block"
+       }
+    ]
+ }

@@ -3,23 +3,23 @@ ServerEvents.recipes(r => {
     create.sequenced_assembly(
         [
             Item.of("create_nouveau:enchantment_mechanism").withChance(0.7),
-            Item.of("create:golden_sheet").withChance(0.1),
+            Item.of('createaddition:electrum_sheet').withChance(0.1),
             Item.of("create:cogwheel").withChance(0.1),
             Item.of("create:crushed_raw_gold").withChance(0.1)
         ],
-        "create:golden_sheet",
+        '#forge:plates/electrum',
         [
-            create.deploying(iem, [iem, 'ars_technica:amethyst_dust']),
+            create.deploying(iem, [iem, 'hexcasting:amethyst_dust']),
             create.deploying(iem, [iem, 'minecraft:gold_nugget']),
             create.deploying(iem, [iem, 'ars_nouveau:source_gem'])
         ]
     ).transitionalItem(iem).loops(1)
     create.sequenced_assembly(
         "create_nouveau:enchantment_mechanism",
-        "create:golden_sheet",
+        '#forge:plates/electrum',
         [
             create.deploying(iem, [iem, 'createaddition:electrum_nugget']),
-            create.deploying(iem, [iem, 'ars_technica:amethyst_dust']),
+            create.deploying(iem, [iem, 'hexcasting:amethyst_dust']),
             create.deploying(iem, [iem, 'ars_nouveau:source_gem'])
         ]
     ).transitionalItem(iem).loops(1)
@@ -30,7 +30,7 @@ ServerEvents.recipes(r => {
             Item.of("create:cogwheel").withChance(0.1),
             Item.of("create:crushed_raw_iron").withChance(0.1)
         ],
-        "create:iron_sheet",
+        "#forge:plates/iron",
         [
             create.deploying(iet, [iet, 'createaddition:copper_wire']),
             create.deploying(iet, [iet, 'minecraft:iron_nugget']),
@@ -39,11 +39,31 @@ ServerEvents.recipes(r => {
     ).transitionalItem(iet).loops(1)
     create.sequenced_assembly(
         'create:electron_tube',
-        "create:iron_sheet",
+        "#forge:plates/iron",
         [
             create.deploying(iet, [iet, 'create_ironworks:steel_nugget']),
             create.deploying(iet, [iet, 'createaddition:copper_wire']),
             create.deploying(iet, [iet, 'create:polished_rose_quartz'])
         ]
     ).transitionalItem(iet).loops(1)
+    create.sequenced_assembly(
+        'create_nouveau:magic_capacitor',
+        '#forge:plates/electrum',
+        [
+            create.deploying(imc, [imc, '#forge:plates/gold']),
+            create.deploying(imc, [imc, 'ars_nouveau:sourcestone']),
+            create.deploying(imc, [imc, '#forge:plates/silver']),
+            create.pressing(imc, imc)
+        ]
+    ).transitionalItem(imc).loops(1)
+    create.sequenced_assembly(
+        'createaddition:capacitor',
+        '#forge:plates/iron',
+        [
+            create.deploying(iec, [iec, '#forge:plates/copper']),
+            create.deploying(iec, [iec, 'minecraft:quartz']),
+            create.deploying(iec, [iec, '#forge:plates/zinc']),
+            create.pressing(iec, iec)
+        ]
+    ).transitionalItem(iec).loops(1)
 })

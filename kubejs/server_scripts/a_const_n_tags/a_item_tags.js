@@ -25,5 +25,16 @@ ServerEvents.tags("item", r => {
             'farmersdelight:straw'
         ]
     )
-
+    r.add(
+        'hexcasting:dusts/amethyst',
+        [
+            'ars_technica:amethyst_dust'
+        ]
+    )
+    r.add(
+        'hexcasting:grants_root_advancement',
+        [
+            'ars_technica:amethyst_dust'
+        ]
+    )
 })
