@@ -53,5 +53,7 @@
     "item.create_nouveau.music_disc_life.desc": "Neuro Sama - Life",
     "block.create_nouveau.steel_block": "钢块",
     "item.create_nouveau.steel_ingot": "钢锭",
-    "item.create_nouveau.steel_nugget": "钢粒"
+    "item.create_nouveau.steel_nugget": "钢粒",
+    "hexcasting.spell.kubejs:tester": "测试法术",
+    "hexcasting.spell.kubejs:tester_great": "测试卓越法术"
 }
