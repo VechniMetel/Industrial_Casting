@@ -1,0 +1,76 @@
+{
+  "event.apocalypse.sleep_penalty": "怪物开始变得躁动起来了!",
+  "event.apocalypse.full_moon": "死亡的气息糜烂在空气中,象征杀戮的月亮升起了",
+  "event.apocalypse.thunderstorm": "空气暗了下来,象征着风暴快要来了",
+  "event.apocalypse.acid_rain": "雨水好像出现了些许变化",
+
+  "title.bed.apocalypse.full_moon": "躁动的月亮吵扰着你的睡眠",
+
+  "death.attack.apocalypse.rain": "%1$s 被雨水腐蚀了脑袋",
+  "death.attack.apocalypse.rain.player": "%1$s 在试图逃离 %2$s 时因雨水而死",
+
+  "block.apocalypse.lunar_phase_sensor": "月相观察器",
+  "block.apocalypse.midnight_steel_block": "午夜钢块",
+
+  "item.apocalypse.fragmented_soul": "破碎掉的灵魂",
+  "item.apocalypse.midnight_steel_ingot": "午夜钢锭",
+  "item.apocalypse.fatherly_toast": "父亲吐司",
+  "item.apocalypse.bucket_helm": "铁桶头盔",
+  "item.apocalypse.lunar_clock": "月相钟",
+  "item.apocalypse.apocalypse_compendium": "末日概要 [WIP]",
+  "item.apocalypse.ghost_spawn_egg": "幽灵刷怪蛋",
+  "item.apocalypse.destroyer_spawn_egg": "毁灭者刷怪蛋",
+  "item.apocalypse.seeker_spawn_egg": "探索者刷怪蛋",
+  "item.apocalypse.grump_spawn_egg": "小暴躁刷怪蛋",
+  "item.apocalypse.breecher_spawn_egg": "布雷彻刷怪蛋",
+  "item.apocalypse.fearwolf_spawn_egg": "恐惧狼刷怪蛋 (WIP)",
+
+  "entity.apocalypse.breecher": "布雷彻",
+  "entity.apocalypse.grump": "小暴躁",
+  "entity.apocalypse.seeker": "探索者",
+  "entity.apocalypse.ghost": "幽灵",
+  "entity.apocalypse.destroyer": "毁灭者",
+  "entity.apocalypse.seeker_fireball": "探索者火焰弹",
+  "entity.apocalypse.destroyer_fireball": "毁灭者火焰弹",
+  "entity.apocalypse.monster_fish_hook": "鱼钩",
+  "entity.apocalypse.fearwolf": "恐惧狼",
+
+  "effect.apocalypse.heavy": "强重力",
+
+  "sound_event.apocalypse.subtitle.ghost_freeze": "幽灵冻结",
+  "sound_event.apocalypse.subtitle.grump_rage": "暴躁脾气",
+
+  "apocalypse.item_desc.fatherly_toast": "呃,太热了!",
+  "apocalypse.item.desc.fatherly_toast.level": "吐司等级: %s",
+  "apocalypse.item_desc.bucket_helm": "为你抵挡致命的雨水",
+
+  "apocalypse.command.argument.difficulty.invalid_value": "数值不能小于0,也不能超过最大难度",
+  "apocalypse.command.difficulty.set_message.single": "将 %s 的普通难度设置为 %s",
+  "apocalypse.command.difficulty.set_message.multiple": "设置普通难度为 %s 给 %s 等玩家",
+  "apocalypse.command.argument.max_difficulty.invalid_value": "数值不能小于 -1 或者超过 100,000. -1 是无限增长",
+  "apocalypse.command.difficulty.max_message.single": "将最大难度 %s 设置为 %s",
+  "apocalypse.command.difficulty.max_message.multiple": "设置最大难度为 %s 给 %s 等玩家",
+
+  "apocalypse.screen.tooltip.create_world_config": "Apocalypse启示录",
+  "apocalypse.screen.title.create_world_config": "启示录世界难度设置",
+  "apocalypse.screen.text_field.create_world_config.max_difficulty": "默认最大难度",
+  "apocalypse.screen.text_field.create_world_config.grace_period": "默认宽限期",
+  "apocalypse.screen.text_field.desc.create_world_config.max_difficulty": "此世界/服务器默认最大难度等级.到达此数字后,您的难度将停止增加",
+  "apocalypse.screen.text_field.desc.create_world_config.grace_period": "此世界/服务器的默认宽限期,这是增加难度前必须经过的时间量,1.0为游戏内一整个一天",
+
+  "key.apocalypse.toggleDifficulty": "切换难度",
+  "key.apocalypse.launchGrumpHook": "启用小暴躁钩爪",
+  "key.apocalypse.grumpDescent": "小暴躁会下降",
+
+  "apocalypse.advancements.root.title": "世界末日(启示录)",
+  "apocalypse.advancements.root.description": "宽限期已结束,难度开始上涨",
+  "apocalypse.advancements.toasty.title": "秘密小零食",
+  "apocalypse.advancements.toasty.description": "一些父亲吐司,让人冷静的吐司,小暴躁们喜欢曲奇,那这个...",
+  "apocalypse.advancements.less_grumpy.title": "你冷静了一些",
+  "apocalypse.advancements.less_grumpy.description": "用一片美味的父亲吐司驯服脾气暴躁的人!",
+  "apocalypse.advancements.lunarium.title": "月球合金",
+  "apocalypse.advancements.lunarium.description": "用一块铁和一块灵魂碎片制作这个,太棒了",
+
+  "apocalypse.hud.difficulty": "当前整个世界难度: %1$s",
+  "apocalypse.hud.rate": "速率: %1$s"
+}
