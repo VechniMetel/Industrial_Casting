@@ -1,0 +1,12 @@
+{
+  "entity.undeadnights.horde_zombie": "尸潮僵尸",
+  "entity.undeadnights.demolition_zombie": "拆除者僵尸",
+  "entity.undeadnights.elite_zombie": "精英僵尸",
+  "message.undeadnights.nights_remaining": "距离下次不死者之夜还有%s天！",
+  "message.undeadnights.last_nights": "明晚将是不死者之夜！",
+  "message.undeadnights.horde_night": "太阳逐渐西沉，但是你感觉接下来这个夜晚可能不会安宁……",
+  "message.undeadnights.horde_spawned": "尸潮来袭！",
+  "message.undeadnights.horde_night_over": "不死者之夜结束了，你终于松了口气……",
+  "sounds.undeadnights.horde_scream": "尸潮：尖叫",
+  "text.autoconfig.undeadnights.title": "不死者之夜"
+}
