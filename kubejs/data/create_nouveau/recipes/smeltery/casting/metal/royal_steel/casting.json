@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "amount": 90,
+    "fluid": "create_nouveau:molten_royal_steel"
+  },
+  "temperature":800,
+  "output": "create_nouveau:royal_steel"
+}

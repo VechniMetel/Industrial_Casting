@@ -1,0 +1,8 @@
+{
+    "type":"tconstruct:enchantment",
+    "level_display":"tconstruct:default",
+    "enchantment":{
+        "name":"ars_elemental:mirror_shield",
+        "level":1
+    }
+}

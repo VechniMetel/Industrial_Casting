@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "anvilcraft:royal_steel_nugget"
+    },
+    "result": {
+      "amount": 10,
+      "fluid": "create_nouveau:molten_royal_steel"
+    },
+    "temperature": 1500,
+    "time": 4
+  }

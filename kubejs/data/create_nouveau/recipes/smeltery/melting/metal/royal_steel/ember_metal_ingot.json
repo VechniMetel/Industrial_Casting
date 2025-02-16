@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "anvilcraft:royal_steel_ingot"
+    },
+    "result": {
+      "amount": 90,
+      "fluid": "create_nouveau:molten_royal_steel"
+    },
+    "temperature": 1500,
+    "time": 30
+  }

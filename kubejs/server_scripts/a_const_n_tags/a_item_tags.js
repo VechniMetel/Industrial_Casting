@@ -19,7 +19,7 @@ ServerEvents.tags("item", r => {
         'create_nouveau:smartcasing'
     ])
     r.add(
-        'kubejs:rope_materials',
+        'create_nouveau:rope_materials',
         [
             'supplementaries:flax',
             'farmersdelight:straw'
@@ -35,6 +35,16 @@ ServerEvents.tags("item", r => {
         'hexcasting:grants_root_advancement',
         [
             'ars_technica:amethyst_dust'
+        ]
+    )
+    r.add(
+        'tconstruct:anvil_metal',
+        [
+            "anvilcraft:royal_steel_block",
+            "anvilcraft:ember_metal_block",
+            "anvilcraft:polished_heavy_iron_block",
+            "anvilcraft:cursed_gold_block",
+            "anvilcraft:earth_core_shard_block"
         ]
     )
 })

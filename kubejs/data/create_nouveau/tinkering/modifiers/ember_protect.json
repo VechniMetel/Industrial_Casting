@@ -1,0 +1,27 @@
+{
+    "level_display": "tconstruct:no_levels",
+    "modules": [
+      {
+       "type": "tconstruct:durability_color",
+      "color": "FFFFFF"
+     },
+     {
+       "type": "tconstruct:reduce_tool_damage",
+       "flat": 1.0
+     },
+     {
+       "type": "tconstruct:modifier_slot",
+       "count": 1,
+       "name": "defense"
+    },
+    {
+      "type": "tconstruct:volatile_flag",
+      "flag": "tconstruct:indestructible"
+    },
+    {
+      "type": "tconstruct:rarity",
+      "rarity": "uncommon"
+    }
+    ],
+    "tooltip_display": "always"
+  }

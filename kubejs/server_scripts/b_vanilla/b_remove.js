@@ -123,7 +123,10 @@ ServerEvents.recipes(r => {
         'create_connected:crafting/kinetics/centrifugal_clutch',
         'create_connected:crafting/kinetics/overstress_clutch',
         'create_connected:crafting/kinetics/brake',
-        'ars_technica:crushing/amethyst_shard'
+        'ars_technica:crushing/amethyst_shard',
+        'create:crafting/kinetics/chute',
+        'create:crafting/kinetics/fluid_pipe_vertical',
+        'create:crafting/kinetics/fluid_pipe'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })
@@ -131,5 +134,9 @@ ServerEvents.recipes(r => {
     r.remove({
         output: '#forge:plates',
         type: 'minecraft:crafting_shaped'
+    })
+    r.remove({
+        output:'#hexcasting:staves',
+        type:"minecraft:crafting_shaped"
     })
 })

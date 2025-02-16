@@ -1,0 +1,16 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "create_nouveau:royal_smithing"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "create_nouveau:royal_smithing"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "anvilcraft:ember_metal_nugget"
+    },
+    "result": {
+      "amount": 10,
+      "fluid": "create_nouveau:molten_ember_metal"
+    },
+    "temperature": 1500,
+    "time": 4
+  }

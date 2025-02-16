@@ -9,13 +9,13 @@ ServerEvents.recipes(r => {
         {
             input: 'farmersdelight:straw'
         },
-        'farmersdelight:straw', '#kubejs:rope_materials'
+        'farmersdelight:straw', '#create_nouveau:rope_materials'
     )
     r.replaceInput(
         {
             input: 'supplementaries:flax'
         },
-        'supplementaries:flax', '#kubejs:rope_materials'
+        'supplementaries:flax', '#create_nouveau:rope_materials'
     )
     r.replaceInput(
         {

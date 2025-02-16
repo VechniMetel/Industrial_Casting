@@ -254,7 +254,7 @@ ServerEvents.recipes(r => {
     )
     handcraft(
         'create:shaft',
-        'minecraft:stick',
+        'tconstruct:pattern',
         'create:piston_extension_pole'
     )
     handcraft(
@@ -487,9 +487,43 @@ ServerEvents.recipes(r => {
         'create:electron_tube',
         'create_connected:overstress_clutch'
     )
+    const logs = [
+        "oak",
+        "spruce",
+        "birch",
+        "jungle",
+        "acacia",
+        "dark_oak",
+        "mangrove",
+        "cherry"
+    ]
+    logs.forEach(wood=>{
+        let log = `minecraft:${wood}_log`
+        let staff = `hexcasting:staff/${wood}`
+        handcraft(
+            log,
+            'hexcasting:charged_amethyst',
+            staff
+        )
+    })
     handcraft(
-        'create:clutch',
-        'minecraft:obsidian',
-        'create_connected:brake'
+        'minecraft:crimson_stem',
+        'hexcasting:charged_amethyst',
+        'hexcasting:staff/crimson'
+    )
+    handcraft(
+        'minecraft:warped_stem',
+        'hexcasting:charged_amethyst',
+        'hexcasting:staff/warped'
+    )
+    handcraft(
+        'minecraft:bamboo_block',
+        'hexcasting:charged_amethyst',
+        'hexcasting:staff/bamboo'
+    )
+    handcraft(
+        'hexcasting:edified_log',
+        'hexcasting:charged_amethyst',
+        'hexcasting:staff/edified'
     )
 })
