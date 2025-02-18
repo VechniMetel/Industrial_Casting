@@ -1,12 +1,12 @@
 {
     "type": "tconstruct:melting",
     "ingredient": {
-      "item": "create:andesite_bars"
+      "item": "create:copper_bars"
     },
     "result": {
       "amount": 30,
-      "fluid": "create_nouveau:molten_andesite_alloy"
+      "fluid": "tconstruct:molten_copper"
     },
-    "temperature": 800,
+    "temperature": 500,
     "time": 7.5
   }

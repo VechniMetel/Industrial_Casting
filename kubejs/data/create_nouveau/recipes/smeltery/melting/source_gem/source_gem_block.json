@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "ars_nouveau:source_gem_block"
+    },
+    "result": {
+      "amount": 400,
+      "fluid": "starbunclemania:source_fluid"
+    },
+    "temperature": 950,
+    "time": 90
+  }

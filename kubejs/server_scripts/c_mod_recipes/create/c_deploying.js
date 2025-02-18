@@ -49,4 +49,11 @@ ServerEvents.recipes(r => {
             'create_nouveau:ejector_mechanism'
         ]
     )
+    create.deploying(
+        'create:blaze_burner',
+        [
+            'tconstruct:blaze_head',
+            'create:empty_blaze_burner'
+        ]
+    )
 })

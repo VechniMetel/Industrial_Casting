@@ -61,4 +61,14 @@ ServerEvents.recipes(r => {
         Item.of('minecraft:enchanted_book'),
         "touhou_little_maid:summon_yukari"
     )
+    altar(
+        'youkaishomecoming:komeiji_koishi',
+        Item.of('minecraft:diamond'),
+        Item.of('minecraft:lapis_lazuli'),
+        Item.of('youkaishomecoming:koishi_mousse'),
+        Item.of('minecraft:ender_eye'),
+        Item.of('minecraft:redstone'),
+        Item.of('minecraft:gold_ingot'),
+        "touhou_little_maid:summon_koishi"
+    )
 })

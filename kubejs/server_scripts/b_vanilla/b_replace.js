@@ -37,6 +37,11 @@ ServerEvents.recipes(r => {
         },
         'createaddition:iron_rod', 'anvilcraft:magnet_ingot'
     )
+    r.replaceOutput(
+        {
+            id:'ars_nouveau:imbuement_amethyst'
+        },'ars_nouveau:source_gem','hexcasting:charged_amethyst'
+    )
     r.replaceInput(
         {
             id: "createaddition:mechanical_crafting/alternator"

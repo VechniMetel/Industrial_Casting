@@ -497,7 +497,7 @@ ServerEvents.recipes(r => {
         "mangrove",
         "cherry"
     ]
-    logs.forEach(wood=>{
+    logs.forEach(wood => {
         let log = `minecraft:${wood}_log`
         let staff = `hexcasting:staff/${wood}`
         handcraft(
@@ -525,5 +525,10 @@ ServerEvents.recipes(r => {
         'hexcasting:edified_log',
         'hexcasting:charged_amethyst',
         'hexcasting:staff/edified'
+    )
+    handcraft(
+        'ars_additions:source_spawner',
+        'tconstruct:blaze_head',
+        Item.of('minecraft:spawner')
     )
 })

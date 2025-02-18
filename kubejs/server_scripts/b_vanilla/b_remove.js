@@ -126,7 +126,10 @@ ServerEvents.recipes(r => {
         'ars_technica:crushing/amethyst_shard',
         'create:crafting/kinetics/chute',
         'create:crafting/kinetics/fluid_pipe_vertical',
-        'create:crafting/kinetics/fluid_pipe'
+        'create:crafting/kinetics/fluid_pipe',
+        'tconstruct:smeltery/melting/metal/netherite/lodestone',
+        'createaddition:compat/tconstruct/blaze_blood',
+        'create_netherless:blaze_burner_recipe_from_craft'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })

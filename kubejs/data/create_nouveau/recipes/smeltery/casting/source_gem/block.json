@@ -1,0 +1,9 @@
+{
+    "type": "tconstruct:casting_basin",
+    "cooling_time": 145,
+    "fluid": {
+      "amount": 400,
+      "tag": "starbunclemania:source_fluid"
+    },
+    "result": "ars_nouveau:source_gem_block"
+  }

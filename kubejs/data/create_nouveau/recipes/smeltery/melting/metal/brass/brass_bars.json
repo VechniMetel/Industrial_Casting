@@ -1,12 +1,12 @@
 {
     "type": "tconstruct:melting",
     "ingredient": {
-      "item": "create:andesite_bars"
+      "item": "create:brass_bars"
     },
     "result": {
       "amount": 30,
-      "fluid": "create_nouveau:molten_andesite_alloy"
+      "fluid": "tconstruct:molten_brass"
     },
-    "temperature": 800,
+    "temperature": 605,
     "time": 7.5
   }
