@@ -41,7 +41,7 @@ ServerEvents.recipes(r => {
         'create:electron_tube',
         "#forge:plates/iron",
         [
-            create.deploying(iet, [iet, 'create_ironworks:steel_nugget']),
+            create.deploying(iet, [iet, 'create_nouveau:steel_nugget']),
             create.deploying(iet, [iet, 'createaddition:copper_wire']),
             create.deploying(iet, [iet, 'create:polished_rose_quartz'])
         ]
@@ -50,19 +50,17 @@ ServerEvents.recipes(r => {
         'create_nouveau:magic_capacitor',
         '#forge:plates/electrum',
         [
-            create.deploying(imc, [imc, '#forge:plates/gold']),
-            create.deploying(imc, [imc, 'ars_nouveau:sourcestone']),
+            create.filling(imc, [imc, Fluid.of('tconstruct:molten_amethyst',100)]),
             create.deploying(imc, [imc, '#forge:plates/silver']),
             create.pressing(imc, imc)
         ]
     ).transitionalItem(imc).loops(1)
     create.sequenced_assembly(
         'createaddition:capacitor',
-        '#forge:plates/iron',
+        '#forge:plates/zinc',
         [
+            create.filling(iec, [iec, Fluid.of('tconstruct:molten_quartz',100)]),
             create.deploying(iec, [iec, '#forge:plates/copper']),
-            create.deploying(iec, [iec, 'minecraft:quartz']),
-            create.deploying(iec, [iec, '#forge:plates/zinc']),
             create.pressing(iec, iec)
         ]
     ).transitionalItem(iec).loops(1)

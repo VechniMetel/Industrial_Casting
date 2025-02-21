@@ -129,7 +129,8 @@ ServerEvents.recipes(r => {
         'create:crafting/kinetics/fluid_pipe',
         'tconstruct:smeltery/melting/metal/netherite/lodestone',
         'createaddition:compat/tconstruct/blaze_blood',
-        'create_netherless:blaze_burner_recipe_from_craft'
+        'create_netherless:blaze_burner_recipe_from_craft',
+        'create_connected:crafting/kinetics/item_silo'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })

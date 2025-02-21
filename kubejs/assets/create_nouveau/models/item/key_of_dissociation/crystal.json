@@ -1,0 +1,39 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "create_nouveau:item/key_of_dissociation",
+		"1": "create_nouveau:item/cube",
+		"particle": "create_nouveau:item/key_of_dissociation"
+	},
+	"elements": [
+		{
+			"from": [7, 13.5, 7],
+			"to": [9, 15.5, 9],
+			"light_emission": 3,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#1"},
+				"east": {"uv": [0, 0, 4, 4], "texture": "#1"},
+				"south": {"uv": [0, 0, 4, 4], "texture": "#1"},
+				"west": {"uv": [0, 0, 4, 4], "texture": "#1"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#1"},
+				"down": {"uv": [0, 0, 4, 4], "texture": "#1"}
+			}
+		},
+		{
+			"name": "crystal2",
+			"from": [7.5, 14, 7.5],
+			"to": [8.5, 15, 8.5],
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [0, 0, 2, 2], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 2], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [0, 0, 2, 2], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#0"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#0"}
+			}
+		}
+	]
+}

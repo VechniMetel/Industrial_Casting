@@ -47,4 +47,22 @@ ServerEvents.tags("item", r => {
             "anvilcraft:earth_core_shard_block"
         ]
     )
+    r.add(
+        'forge:storage_blocks/steel',
+        [
+            'create_nouveau:steel_block'
+        ]
+    )
+    r.add(
+        "forge:plates/brass",
+        [
+            "anvilcraft:brass_pressure_plate"
+        ]
+    )
+    r.remove(
+        "forge:brass_plates",
+        [
+            "anvilcraft:brass_pressure_plate"
+        ]
+    )
 })

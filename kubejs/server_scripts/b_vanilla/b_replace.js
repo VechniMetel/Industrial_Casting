@@ -39,8 +39,8 @@ ServerEvents.recipes(r => {
     )
     r.replaceOutput(
         {
-            id:'ars_nouveau:imbuement_amethyst'
-        },'ars_nouveau:source_gem','hexcasting:charged_amethyst'
+            id: 'ars_nouveau:imbuement_amethyst'
+        }, 'ars_nouveau:source_gem', 'hexcasting:charged_amethyst'
     )
     r.replaceInput(
         {
@@ -65,10 +65,21 @@ ServerEvents.recipes(r => {
             )
         })
     }
-    armorReplace("minecraft", "create_ironworks", "create", "copper", "armor_", "")
-    armorReplace("create_ironworks", "create_ironworks", "create_nouveau", "bronze", "armor_", "")
-    armorReplace("create", "create_ironworks", "create", "brass", "armor_", "")
-    armorReplace("create_ironworks", "create_ironworks", "create_nouveau", "steel", "armor_", "")
     armorReplace("minecraft", "minecraft", "create", "iron", "", "")
     armorReplace("minecraft", "minecraft", "create", "gold", "", "en")
+    function plateReplace(metal, name) {
+        const plateTag = `#forge:plates/${metal}`
+        r.replaceInput(
+           {input:plateTag},
+           plateTag,name
+        )
+        r.replaceOutput(
+            {output:plateTag},
+            plateTag,name
+         )
+    }
+    plateReplace("copper",'anvilcraft:copper_pressure_plate')
+    plateReplace("brass",'anvilcraft:brass_pressure_plate')
+    plateReplace("iron","minecraft:heavy_weighted_pressure_plate")
+    plateReplace("gold","minecraft:light_weighted_pressure_plate")
 })

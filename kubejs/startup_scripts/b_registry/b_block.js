@@ -44,4 +44,9 @@ StartupEvents.registry("block", r => {
         .tagBlock("minecraft:mineable/pickaxe")
         .tagBlock('forge:need_stone_tool')
         .requiresTool(true)
+    r.create('create_nouveau:steel_pressure_plate', 'pressure_plate')
+        .item(item => {
+            item
+                .tag("forge:plates/steel")
+        })
 })

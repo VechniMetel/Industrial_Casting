@@ -46,4 +46,24 @@ ServerEvents.recipes(r => {
       '2': "minecraft:iron_ingot"
    }
    )
+   r.shaped(
+      'create_nouveau:steel_ingot',
+      [
+         '111',
+         '111',
+         '111'
+      ], {
+      '1': 'create_nouveau:steel_nugget'
+   }
+   )
+   r.shaped(
+      'create_nouveau:steel_block',
+      [
+         '111',
+         '111',
+         '111'
+      ], {
+      '1': 'create_nouveau:steel_ingot'
+   }
+   )
 })

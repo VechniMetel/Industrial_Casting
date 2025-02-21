@@ -1,0 +1,10 @@
+{
+    "variants": {
+      "powered=false": {
+        "model": "create_nouveau:block/steel_pressure_plate"
+      },
+      "powered=true": {
+        "model": "create_nouveau:block/steel_pressure_plate_down"
+      }
+    }
+  }

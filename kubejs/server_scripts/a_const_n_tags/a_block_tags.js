@@ -39,4 +39,16 @@ ServerEvents.tags("block", r => {
             "ducky-periphs:focal_link_block"
         ]
     )
+    r.add('create_nouveau:key_pickup',
+        [
+            'hexcasting:impetus/empty',
+            'hexcasting:directrix/boolean',
+            'hexcasting:directrix/redstone',
+            'hexcasting:impetus/rightclick',
+            'hexcasting:directrix/empty',
+            'hexcasting:impetus/look',
+            'hexcasting:impetus/redstone',
+            'hexcasting:slate'
+        ]
+    )
 })

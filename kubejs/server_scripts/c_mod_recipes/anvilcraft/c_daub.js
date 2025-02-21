@@ -50,9 +50,5 @@ ServerEvents.recipes(r => {
             ]
         })
     }
-    daub(
-        "create:industrial_iron_block",
-        "minecraft:stone_brick_wall",
-        "create:chute"
-    )
+    
 })
