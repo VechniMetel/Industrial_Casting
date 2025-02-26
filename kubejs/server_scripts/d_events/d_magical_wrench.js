@@ -9,7 +9,10 @@ BlockEvents.rightClicked(r => {
                 r.player.swing()
                 r.level.destroyBlock(r.block.pos, false)
                 let item = r.getBlock().getItem()
-                r.getPlayer().getInventory().add(item)
+                if (player.isCreative) return
+                else {
+                    r.getPlayer().getInventory().add(item)
+                }
             }
         }
     }
