@@ -130,7 +130,25 @@ ServerEvents.recipes(r => {
         'tconstruct:smeltery/melting/metal/netherite/lodestone',
         'createaddition:compat/tconstruct/blaze_blood',
         'create_netherless:blaze_burner_recipe_from_craft',
-        'create_connected:crafting/kinetics/item_silo'
+        'create_connected:crafting/kinetics/item_silo',
+        'createaddition:mixing/electrum',
+        'create:mixing/brass_ingot',
+        'anvilcraft:heating/bronze_ingot',
+        'anvilcraft:heating/brass_ingot',
+        'anvilcraft:heating/brass_ingot_forge',
+        'anvilcraft:magnetoelectric_core_forge',
+        'anvilcraft:magnetoelectric_core',
+        'anvilcraft:heating/iron_ingot_diamond_amethyst_shard_anvilcraft_gems_to_royal_steel_ingot',
+        'anvilcraft:heating/royal_steel_block',
+        'createaddition:compat/tconstruct/pig_iron_2',
+        'createaddition:compat/tconstruct/pig_iron',
+        'createaddition:compat/tconstruct/slimesteel',
+        'createaddition:compat/tconstruct/amethyst_bronze',
+        'createaddition:compat/tconstruct/tinkers_bronze',
+        'createaddition:compat/tconstruct/rose_gold',
+        'createaddition:compat/tconstruct/hepatizon',
+        'createaddition:compat/tconstruct/queens_slime',
+        'createaddition:compat/tconstruct/manyullyn'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })
@@ -140,7 +158,7 @@ ServerEvents.recipes(r => {
         type: 'minecraft:crafting_shaped'
     })
     r.remove({
-        output:'#hexcasting:staves',
-        type:"minecraft:crafting_shaped"
+        output: '#hexcasting:staves',
+        type: "minecraft:crafting_shaped"
     })
 })

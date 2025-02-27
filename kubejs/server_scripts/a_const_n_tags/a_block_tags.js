@@ -39,6 +39,18 @@ ServerEvents.tags("block", r => {
             "ducky-periphs:focal_link_block"
         ]
     )
+    r.add('create_nouveau:special_pickup',
+        [
+            'ars_additions:ender_source_jar',
+            'ars_nouveau:source_jar',
+            'ars_nouveau:potion_jar',
+            'ars_nouveau:mob_jar',
+            'ars_nouveau:wixie_cauldron',
+            'ars_nouveau:drygmy_stone',
+            'ars_nouveau:scribes_table',
+            'ars_nouveau:alteration_table'
+        ]
+    )
     r.add('create_nouveau:key_pickup',
         [
             'hexcasting:impetus/empty',
@@ -48,7 +60,60 @@ ServerEvents.tags("block", r => {
             'hexcasting:directrix/empty',
             'hexcasting:impetus/look',
             'hexcasting:impetus/redstone',
-            'hexcasting:slate'
+            'hexcasting:slate',
+            'ars_nouveau:basic_spell_turret',
+            'ars_nouveau:timer_spell_turret',
+            'ars_nouveau:rotating_spell_turret',
+            'ars_nouveau:spell_prism',
+            'ars_nouveau:scryers_crystal',
+            'ars_nouveau:arcane_platform',
+            'ars_nouveau:spell_turret',
+            'ars_nouveau:relay',
+            'ars_nouveau:enchanting_apparatus',
+            'ars_nouveau:agronomic_sourcelink',
+            'ars_nouveau:imbuement_chamber',
+            'ars_nouveau:relay_splitter',
+            'ars_nouveau:arcane_core',
+            'ars_nouveau:volcanic_sourcelink',
+            'ars_nouveau:creative_source_jar',
+            'ars_nouveau:potion_melder',
+            'ars_nouveau:vitalic_sourcelink',
+            'ars_nouveau:mycelial_sourcelink',
+            'ars_nouveau:relay_deposit',
+            'ars_nouveau:relay_warp',
+            'ars_nouveau:relay_collector',
+            'ars_nouveau:scryers_oculus',
+            'ars_nouveau:potion_diffuser',
+            'ars_nouveau:void_prism',
+            'ars_nouveau:brazier_relay',
+            'ars_nouveau:storage_lectern',
+            'ars_nouveau:arcane_pedestal',
+            'ars_nouveau:ritual_brazier',
+            'ars_nouveau:item_detector',
+            'ars_nouveau:spell_sensor',
+            'ars_nouveau:redstone_relay',
+            'ars_additions:source_spawner', 
+            'hexcasting:akashic_record',
+            'hexcasting:akashic_bookshelf',
+            'hexcasting:akashic_connector'
+        ]
+    )
+    r.add("create_nouveau:key_rotate",
+        [
+            'hexcasting:impetus/empty',
+            'hexcasting:directrix/boolean',
+            'hexcasting:directrix/redstone',
+            'hexcasting:impetus/rightclick',
+            'hexcasting:directrix/empty',
+            'hexcasting:impetus/look',
+            'hexcasting:impetus/redstone',
+            'ars_nouveau:spell_turret',
+            'ars_nouveau:basic_spell_turret',
+            'ars_nouveau:timer_spell_turret',
+            'ars_nouveau:rotating_spell_turret',
+            'ars_nouveau:spell_prism',
+            'ars_nouveau:scryers_crystal',
+            'ars_nouveau:arcane_platform'
         ]
     )
 })

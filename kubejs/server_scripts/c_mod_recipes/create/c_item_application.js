@@ -531,4 +531,9 @@ ServerEvents.recipes(r => {
         'tconstruct:blaze_head',
         Item.of('minecraft:spawner')
     )
+    handcraft(
+        'create_nouveau:copper_wire',
+        'anvilcraft:hollow_magnet_block',
+        'anvilcraft:magnetoelectric_core'
+    )
 })

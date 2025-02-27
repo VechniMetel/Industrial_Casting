@@ -49,4 +49,13 @@ StartupEvents.registry("block", r => {
             item
                 .tag("forge:plates/steel")
         })
+        r.create("create_nouveau:copper_wire", "basic")
+        .soundType(SoundType.METAL)
+        .hardness(3)
+        .requiresTool(true)
+        .tagBlock("minecraft:mineable/pickaxe")
+        .tagBlock('forge:need_iron_tool')
+        .tagBlock('forge:storage_blocks/steel')
+        .tagBlock('minecraft:beacon_base_blocks')
+        .tagBlock('tconstruct:mineable/pickadze')
 })

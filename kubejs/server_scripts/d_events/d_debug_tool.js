@@ -1,62 +1,50 @@
-BlockEvents.rightClicked(event => {
-    // 检查手持物品是否为debug_tool
-    const item = event.getItem()
-    if (item.id !== 'create_nouveau:debug_tool') {
-        return
-    }
-
-    // 获取目标方块和玩家
-    const block = event.getBlock()
-    const player = event.getPlayer()
-
-    // 定义方向顺序
-    const directionOrder = ['north', 'east', 'south', 'west', 'up', 'down']
-
-    // 获取方块状态
-    const blockState = block.blockState
-    if (!blockState) {
-        player.tell('无法获取方块状态')
-        return
-    }
-
-    // 调试：输出所有属性
-    console.log('Block ID:', block.id)
-    console.log('All properties:', Object.keys(blockState.properties))
-
-    // 检查方块是否具有方向属性
-    const facingProperty = Object.keys(blockState.properties).find(prop => 
-        prop.toLowerCase().includes('facing')
-    )
-
-    if (facingProperty) {
-        // 获取当前方向
-        const currentFacing = blockState.properties[facingProperty]
-        const currentIndex = directionOrder.indexOf(currentFacing)
-        
-        if (currentIndex === -1) {
-            player.tell('发现未知方向属性：' + currentFacing)
-            return
+BlockEvents.rightClicked("minecraft:oak_log", r => {
+    if (r.hand == "OFF_HAND") return
+    let player = r.getPlayer()
+    if (player == null) return
+    if (r.getItem().is('create_nouveau:steel_ingot')) {
+        const { x, y, z } = r.block.pos
+        let numx = x
+        let numz = z
+        let outx
+        let outz
+        let pos
+        let rand
+        const num = [-2, -1, 0, 1, 2]
+        for (let m = 0; m <= 4; m++) {
+            outx = numx + num[m]
+            for (let n = 0; n <= 4; n++) {
+                outz = numz + num[n]
+                pos = new BlockPos(outx, y, outz)
+                let block = r.level.getBlock(pos).getId()
+                if (block === 'minecraft:stone') {
+                    rand = Math.random()
+                    if (rand <= 0.07) {
+                        r.level.getBlock(pos).set('minecraft:iron_ore')
+                    } else if (rand <= 0.21) {
+                        r.level.getBlock(pos).set('minecraft:redstone_ore')
+                    } else if (rand <= 0.32) {
+                        r.level.getBlock(pos).set('create:zinc_ore')
+                    }
+                }
+                else if (block === 'minecraft:deepslate') {
+                    rand = Math.random();
+                    if (rand <= 0.1) {
+                        r.level.getBlock(pos).set('minecraft:deepslate_iron_ore')
+                    } else if (rand <= 0.34) {
+                        r.level.getBlock(pos).set('minecraft:deepslate_redstone_ore')
+                    } else if (rand <= 0.42) {
+                        r.level.getBlock(pos).set('create:deepslate_zinc_ore')
+                    }
+                }
+            }
         }
+        r.getPlayer().swing()
+        if (r.player.isCreative()) {
 
-        // 计算新方向
-        const nextIndex = (currentIndex + 1) % directionOrder.length
-        const newFacing = directionOrder[nextIndex]
-
-        // 创建新方块状态
-        const newState = blockState.with(facingProperty, newFacing)
-
-        // 更新方块
-        block.set(newState)
-
-        // 播放音效
-        player.playSound('minecraft:block.lever.click', 1.0, 1.0)
-        
-        // 调试信息
-        console.log(`Rotated block from ${currentFacing} to ${newFacing}`)
-        player.tell(`方向已从 ${currentFacing} 改为 ${newFacing}`)
-    } else {
-        // 反馈无方向属性
-        player.tell('这个方块没有方向属性！')
-        console.log('Block properties:', blockState.properties)
+        }
+        else {
+            r.getItem().shrink(1)
+        }
     }
 })
