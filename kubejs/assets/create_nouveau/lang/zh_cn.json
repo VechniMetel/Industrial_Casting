@@ -85,5 +85,7 @@
     "jei.touhou_little_maid.altar_craft.summon_koishi.result": "召唤古明地恋",
     "item.create_nouveau.embers_charm":"余烬符咒",
     "curios.identifier.embers_charm":"符咒",
-    "curios.modifiers.embers_charm":"佩戴符咒时:"
+    "curios.modifiers.embers_charm":"佩戴符咒时:",
+    "key.ring.use":"使用符咒",
+    "key.keybinding.ring.use":"符咒"
 }

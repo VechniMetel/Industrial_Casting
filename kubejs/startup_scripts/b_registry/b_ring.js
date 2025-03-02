@@ -10,9 +10,9 @@ const $GLFWkey = Java.loadClass("org.lwjgl.glfw.GLFW");
 
 ClientEvents.init(() => {
     global.regKeyR = new $KeyMapping(
-        "key.ring.use", //按键的组名
+        "key.ring.use", //按键名
         $GLFWkey.GLFW_KEY_RIGHT_SHIFT,
-        "key.keybinding.ring.use" //按键的名字
+        "key.keybinding.ring.use" //按键组名字
     );
   $KeyMappingRegistry.register(global.regKeyR);
 });
