@@ -64,4 +64,15 @@ ServerEvents.recipes(r => {
             create.pressing(iec, iec)
         ]
     ).transitionalItem(iec).loops(1)
+    create.sequenced_assembly(
+        'anvilcraft:circuit_board',
+        'anvilcraft:hardend_resin',
+        [
+            create.deploying(icb,[icb,'refinedstorage:silicon']),
+            create.deploying(icb,[icb,'createaddition:copper_wire']),
+            create.deploying(icb, [icb, 'anvilcraft:resin']),
+            create.deploying(icb,[icb,'createaddition:capacitor']),
+            create.pressing(icb,icb)
+        ]
+    ).transitionalItem(icb).loops(3)
 })

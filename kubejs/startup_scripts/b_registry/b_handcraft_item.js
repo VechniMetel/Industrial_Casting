@@ -17,5 +17,6 @@ StartupEvents.registry("item", r => {
     r.create('create_nouveau:incomplete_enchantment_mechanism', "create:sequenced_assembly")
     r.create('create_nouveau:incomplete_electron_tube', "create:sequenced_assembly")
     r.create('create_nouveau:incomplete_capacitor', 'create:sequenced_assembly')
-    r.create('create_nouveau:incomplete_magic_capacitor', 'create:sequenced_assembly') 
+    r.create('create_nouveau:incomplete_magic_capacitor', 'create:sequenced_assembly')
+    r.create('create_nouveau:incomplete_circuit_board',"create:sequenced_assembly")
 })

@@ -82,4 +82,5 @@ ServerEvents.recipes(r => {
     plateReplace("brass",'anvilcraft:brass_pressure_plate')
     plateReplace("iron","minecraft:heavy_weighted_pressure_plate")
     plateReplace("gold","minecraft:light_weighted_pressure_plate")
+    plateReplace("zinc",'anvilcraft:zinc_pressure_plate')
 })
