@@ -1,6 +1,7 @@
 PlayerEvents.tick(event => {
     const player = event.player;
-    const isHoldingSword =
+    const AttackIntervalAndBurningTime = 20//伤害间隔和燃烧时间统一设置，不然画面会不同步
+    const MainHand =
         player.getMainHandItem() == 'anvilcraft:ember_anvil_hammer' ||
         player.getMainHandItem() == 'anvilcraft:ember_metal_pickaxe' ||
         player.getMainHandItem() == 'anvilcraft:ember_metal_shovel' ||
@@ -18,11 +19,20 @@ PlayerEvents.tick(event => {
         player.getMainHandItem() == 'anvilcraft:ember_metal_upgrade_smithing_template' ||
         player.getMainHandItem() == 'anvilcraft:ember_metal_nugget' ||
         player.getMainHandItem() == 'anvilcraft:ember_metal_block';
-    const effects = player.hasEffect('minecraft:fire_resistance');
+    const isHoldingSword = 
+        player.getLegsArmorItem().nbt?.tic_materials  ? player.getLegsArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false||
+        player.getHeadArmorItem().nbt?.tic_materials  ? player.getHeadArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false||
+        player.getFeetArmorItem().nbt?.tic_materials  ? player.getFeetArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false||
+        player.getChestArmorItem().nbt?.tic_materials  ? player.getChestArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false;
+    const effects = player.hasEffect('minecraft:fire_resistance'); 
     if (!effects) {
-        if (isHoldingSword && player.age % 20 === 0) {
+        if (isHoldingSword && player.age % AttackIntervalAndBurningTime === 0) {
             player.attack(4);
-            player.setSecondsOnFire(2);
+            player.setRemainingFireTicks(AttackIntervalAndBurningTime); 
         };
+        if (MainHand && player.age % AttackIntervalAndBurningTime === 0) {
+            player.attack(4);
+            player.setRemainingFireTicks(AttackIntervalAndBurningTime);
+        }
     };
 });
