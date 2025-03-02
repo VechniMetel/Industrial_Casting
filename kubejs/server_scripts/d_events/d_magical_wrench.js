@@ -42,7 +42,7 @@ BlockEvents.rightClicked((e) => {
     if (hand !== 'main_hand' || player.crouching) return
     if (item.id !== 'create_nouveau:key_of_dissociation') return
     const insidelist = r.getBlock().hasTag("create_nouveau:key_rotate")
-    if (!insideList) return
+    if ( !insidelist ) return
     if (block.properties === undefined) return
     const blockFacing = block.properties.facing
     if (blockFacing === undefined) return

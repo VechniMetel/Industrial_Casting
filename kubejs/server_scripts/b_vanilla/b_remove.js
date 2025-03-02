@@ -148,7 +148,9 @@ ServerEvents.recipes(r => {
         'createaddition:compat/tconstruct/rose_gold',
         'createaddition:compat/tconstruct/hepatizon',
         'createaddition:compat/tconstruct/queens_slime',
-        'createaddition:compat/tconstruct/manyullyn'
+        'createaddition:compat/tconstruct/manyullyn',
+        'anvilcraft:circuit_board',
+        'refinedstorage:silicon'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })
