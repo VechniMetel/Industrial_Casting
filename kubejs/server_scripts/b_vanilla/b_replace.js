@@ -70,17 +70,43 @@ ServerEvents.recipes(r => {
     function plateReplace(metal, name) {
         const plateTag = `#forge:plates/${metal}`
         r.replaceInput(
-           {input:plateTag},
-           plateTag,name
+            { input: plateTag },
+            plateTag, name
         )
         r.replaceOutput(
-            {output:plateTag},
-            plateTag,name
-         )
+            { output: plateTag },
+            plateTag, name
+        )
     }
-    plateReplace("copper",'anvilcraft:copper_pressure_plate')
-    plateReplace("brass",'anvilcraft:brass_pressure_plate')
-    plateReplace("iron","minecraft:heavy_weighted_pressure_plate")
-    plateReplace("gold","minecraft:light_weighted_pressure_plate")
-    plateReplace("zinc",'anvilcraft:zinc_pressure_plate')
+    plateReplace("copper", 'anvilcraft:copper_pressure_plate')
+    plateReplace("brass", 'anvilcraft:brass_pressure_plate')
+    plateReplace("iron", "minecraft:heavy_weighted_pressure_plate")
+    plateReplace("gold", "minecraft:light_weighted_pressure_plate")
+    plateReplace("zinc", 'anvilcraft:zinc_pressure_plate')
+
+    function fullyReplace(item1, item2) {
+        r.replaceInput(
+            { input: item1 },
+            item1, item2
+        )
+        r.replaceOutput(
+            { output: item1 },
+            item1, item2
+        )
+    }
+    fullyReplace(
+        'createnuclear:steel_block',
+        'create_nouveau:steel_block'
+    )
+    fullyReplace(
+        'createnuclear:lead_block',
+        'anvilcraft:lead_block'
+    )
+    r.replaceInput(
+        {
+            input:'createnuclear:uranium_bucket'
+        },
+        'createnuclear:uranium_bucket',
+        'tconstruct:molten_uranium_bucket'
+    )
 })

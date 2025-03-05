@@ -14,5 +14,13 @@
                 "stream": true
             }
         ]
+    },
+    "music.evilris": {
+        "sounds": [
+            {
+                "name": "create_nouveau:evilris",
+                "stream": true
+            }
+        ]
     }
 }

@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "createnuclear:uranium_powder"
+    },
+    "result": {
+      "amount": 10,
+      "fluid": "tconstruct:molten_uranium"
+    },
+    "temperature": 830,
+    "time": 4
+  }

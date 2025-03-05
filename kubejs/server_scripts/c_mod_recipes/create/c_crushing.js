@@ -50,4 +50,12 @@ ServerEvents.recipes(r => {
         ],
         'create_nouveau:deepslate_magnet_ore'
     )
+    create.crushing(
+        '9x createnuclear:uranium_powder',
+        '#forge:ingots/uranium'
+    )
+    create.crushing(
+        '4x ars_technica:quartz_dust',
+        'minecraft:quartz'
+    ).id('ars_technica:crushing/quartz')
 })

@@ -42,16 +42,4 @@ ServerEvents.recipes(r => {
             'create:shaft'
         ]
     )
-    r.shapeless(
-        '9x create_nouveau:steel_nugget',
-        [
-            'create_nouveau:steel_ingot'
-        ]
-    )
-    r.shapeless(
-        '9x create_nouveau:steel_ingot',
-        [
-            'create_nouveau:steel_block'
-        ]
-    )
 })

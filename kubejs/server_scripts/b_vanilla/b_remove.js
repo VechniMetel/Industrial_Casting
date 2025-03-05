@@ -150,7 +150,18 @@ ServerEvents.recipes(r => {
         'createaddition:compat/tconstruct/queens_slime',
         'createaddition:compat/tconstruct/manyullyn',
         'anvilcraft:circuit_board',
-        'refinedstorage:silicon'
+        'refinedstorage:silicon',
+        'createnuclear:mixing/steel',
+        'createnuclear:mixing/uranium_fluid',
+        'createnuclear:compacting/uranium_fluid_to_yellowcake',
+        'ars_technica:crushing/quartz',
+        'create_connected:sequenced_assembly/control_chip',
+        'refinedstorage:raw_basic_processor',
+        'refinedstorage:raw_improved_processor',
+        'refinedstorage:raw_advanced_processor',
+        'refinedstorage:basic_processor',
+        'refinedstorage:improved_processor',
+        'refinedstorage:advanced_processor'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })

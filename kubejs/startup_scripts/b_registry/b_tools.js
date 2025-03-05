@@ -5,4 +5,5 @@ StartupEvents.registry("item", r => {
         .unstackable()
     r.create("create_nouveau:debug_tool")
         .tag("create_nouveau:debug_tool")
+    r.create("create_nouveau:soldering_gun")
 })

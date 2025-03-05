@@ -1,9 +1,0 @@
-{
-    "type": "tconstruct:casting_table",
-    "cooling_time": 35,
-    "fluid": {
-      "amount": 25,
-      "tag": "tconstruct:molten_amethyst"
-    },
-    "result": "hexcasting:amethyst_dust"
-  }
