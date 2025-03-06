@@ -1,3 +1,4 @@
+//余烬符咒
 NetworkEvents.dataReceived("openBackpack",event => {
     const player = event.player;
     if (player.nbt.ForgeCaps['curios:inventory'].Curios.toString().match('create_nouveau:embers_charm')) {
@@ -64,5 +65,28 @@ BlockEvents.rightClicked(r => {
 ItemEvents.foodEaten(r=>{
     if (r.player.data.awa < 40) {
         r.cancel()
+    }
+})
+
+//皇家钢符咒
+const curiosHelper = Java.loadClass("top.theillusivec4.curios.api.CuriosApi").getCuriosHelper()
+
+//entity是否装备了饰品id为curioId的饰品
+//return boolean
+function isEquippedCurio(entity, curioId) {
+    return curiosHelper.findFirstCurio(entity, curioId).isPresent()
+}
+EntityEvents.hurt(event => {
+    let { entity, source, amount } = event
+    //不为玩家时return
+    if (!entity.class.toString().contains("ServerPlayer")) {
+        return
+    }
+
+    //佩戴皇家钢符咒时伤害来源为铁砧时取消伤害判定
+    if (isEquippedCurio(entity, "create_nouveau:royal_steel_charm")) {
+        if (source.toString().contains("anvil")) {
+            event.cancel()
+        }
     }
 })
