@@ -161,7 +161,11 @@ ServerEvents.recipes(r => {
         'refinedstorage:raw_advanced_processor',
         'refinedstorage:basic_processor',
         'refinedstorage:improved_processor',
-        'refinedstorage:advanced_processor'
+        'refinedstorage:advanced_processor',
+        'create:crafting/kinetics/fluid_valve',
+        'create:crafting/kinetics/smart_fluid_pipe',
+        'moreburners:copper_coil',
+        'moreburners:electric_burner'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })

@@ -1,14 +1,15 @@
-const iem = 'create_nouveau:incomplete_enchantment_mechanism'
-const iet = 'create_nouveau:incomplete_electron_tube'
-const imc = 'create_nouveau:incomplete_magic_capacitor'
-const iec = 'create_nouveau:incomplete_capacitor'
-const icb = "create_nouveau:incomplete_circuit_board"
-const icc = 'create_connected:incomplete_control_chip'
-const iacb = 'create_nouveau:incomplete_advanced_circuit_board'
-const rbp = 'refinedstorage:raw_basic_processor'
-const rip = 'refinedstorage:raw_improved_processor'
-const rap = 'refinedstorage:raw_advanced_processor'
 ServerEvents.recipes(r => {
+    const ipm = 'create:incomplete_precision_mechanism'
+    const iem = 'create_nouveau:incomplete_enchantment_mechanism'
+    const iet = 'create_nouveau:incomplete_electron_tube'
+    const imc = 'create_nouveau:incomplete_magic_capacitor'
+    const iec = 'create_nouveau:incomplete_capacitor'
+    const icb = "create_nouveau:incomplete_circuit_board"
+    const icc = 'create_connected:incomplete_control_chip'
+    const iacb = 'create_nouveau:incomplete_advanced_circuit_board'
+    const rbp = 'refinedstorage:raw_basic_processor'
+    const rip = 'refinedstorage:raw_improved_processor'
+    const rap = 'refinedstorage:raw_advanced_processor'
     const create = r.recipes.create
     create.sequenced_assembly(
         [
@@ -51,7 +52,7 @@ ServerEvents.recipes(r => {
         'create:electron_tube',
         "#forge:plates/iron",
         [
-            create.deploying(iet, [iet, 'create_nouveau:steel_nugget']),
+            create.deploying(iet, [iet, 'createnuclear:steel_nugget']),
             create.deploying(iet, [iet, 'createaddition:copper_wire']),
             create.deploying(iet, [iet, 'create:polished_rose_quartz'])
         ]
@@ -93,7 +94,7 @@ ServerEvents.recipes(r => {
             create.deploying(icc, [icc, 'createaddition:capacitor']),
             create.deploying(icc, [icc, 'create:electron_tube']),
             create.pressing(icc, icc),
-            create.deploying(icc, [icc, 'create_nouveau:solder_wire']),
+            create.deploying(icc, [icc, 'create_nouveau:solder_coil']),
             create.deploying(icc, [icc, 'create_nouveau:soldering_gun']).keepHeldItem()
         ]
     ).transitionalItem(icc).loops(1)
@@ -105,7 +106,7 @@ ServerEvents.recipes(r => {
             create.deploying(iacb, [iacb, 'refinedstorage:silicon']),
             create.deploying(iacb, [iacb, 'create_connected:control_chip']),
             create.deploying(iacb, [iacb, 'refinedstorage:advanced_processor']),
-            create.deploying(iacb, [iacb, 'create_nouveau:solder_wire']),
+            create.deploying(iacb, [iacb, 'create_nouveau:solder_coil']),
             create.deploying(iacb, [iacb, 'create_nouveau:soldering_gun']).keepHeldItem()
         ]
     ).transitionalItem(iacb).loops(1)
@@ -139,4 +140,13 @@ ServerEvents.recipes(r => {
             create.deploying(rap, [rap, 'create_connected:control_chip'])
         ]
     ).transitionalItem(rap).loops(1)
+    create.sequenced_assembly(
+        'create:precision_mechanism',
+        '#forge:plates/gold',
+        [
+            create.deploying(ipm, [ipm, 'create:large_cogwheel']),
+            create.deploying(ipm, [ipm, 'create:cogwheel']),
+            create.deploying(ipm, [ipm, 'createnuclear:steel_nugget'])
+        ]
+    ).transitionalItem(ipm).loops(5)
 })

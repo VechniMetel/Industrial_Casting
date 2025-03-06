@@ -1,5 +1,6 @@
 {
-    "values": [
-      "create_nouveau:embers_charm"
-    ]
-  }
+  "values": [
+    "create_nouveau:embers_charm",
+    "create_nouveau:royal_steel_charm"
+  ]
+}

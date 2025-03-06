@@ -1,5 +1,5 @@
 ServerEvents.recipes(r => {
-    const handcraft = r.recipes.create.item_application
+const handcraft = r.recipes.create.item_application
     handcraft(
         "create_nouveau:magic_casing",
         [
@@ -13,7 +13,7 @@ ServerEvents.recipes(r => {
             "create_nouveau:magic_casing",
             '#forge:glass_panes'
         ]
-    ).id("ars_nouveau:source_jar")
+    )
     handcraft(
         'create:item_vault',
         [
@@ -36,7 +36,6 @@ ServerEvents.recipes(r => {
         ]
     )
     handcraft(
-
         'create:cogwheel',
         ['create:shaft',
             'extendedgears:shaftless_cogwheel']
@@ -329,9 +328,9 @@ ServerEvents.recipes(r => {
             'create_nouveau:storage_unit']
     )
     handcraft(
+        'ars_nouveau:mob_jar',
         ['create_nouveau:magic_casing',
-            '#forge:glass'],
-        'ars_nouveau:mob_jar'
+            '#forge:glass']
     )
     handcraft(
         'starbunclemania:source_condenser',
@@ -339,9 +338,9 @@ ServerEvents.recipes(r => {
             'starbunclemania:fluid_jar']
     )
     handcraft(
+        'create:mechanical_roller',
         ['create_nouveau:smart_andesite_casing',
-            'create:crushing_wheel'],
-        'create:mechanical_roller'
+            'create:crushing_wheel']
     )
     handcraft(
         'create:item_drain',
@@ -364,9 +363,9 @@ ServerEvents.recipes(r => {
             'create_nouveau:storage_connector']
     )
     handcraft(
+        'createaddition:modular_accumulator',
         ['create_nouveau:electric_casing',
-            'create_nouveau:storage_unit'],
-        'createaddition:modular_accumulator'
+            'create_nouveau:storage_unit']
     )
     handcraft(
         'create:speedometer',
@@ -526,5 +525,19 @@ ServerEvents.recipes(r => {
         'anvilcraft:magnetoelectric_core',
         ['create_nouveau:copper_wire',
             'anvilcraft:hollow_magnet_block']
+    )
+    handcraft(
+        'create:fluid_valve',
+        [
+            'create:fluid_pipe',
+            'minecraft:heavy_weighted_pressure_plate'
+        ]
+    )
+    handcraft(
+        'create:smart_fluid_pipe',
+        [
+            'create:fluid_pipe',
+            'create_connected:control_chip'
+        ]
     )
 })

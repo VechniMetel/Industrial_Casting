@@ -2,6 +2,9 @@ StartupEvents.registry('item', r => {
     r.create('create_nouveau:embers_charm')
         .unstackable()
         .tag('create_nouveau:embers_charm')
+    r.create('create_nouveau:royal_steel_charm')
+        .unstackable()
+        .tag('create_nouveau:embers_charm')
 });
 
 const $KeyMappingRegistry = Java.loadClass("dev.architectury.registry.client.keymappings.KeyMappingRegistry");
@@ -14,5 +17,5 @@ ClientEvents.init(() => {
         $GLFWkey.GLFW_KEY_RIGHT_SHIFT,
         "key.keybinding.ring.use" //按键的名字
     );
-  $KeyMappingRegistry.register(global.regKeyR);
+    $KeyMappingRegistry.register(global.regKeyR);
 });

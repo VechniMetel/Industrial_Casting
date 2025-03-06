@@ -52,20 +52,31 @@ ServerEvents.recipes(r => {
          'aaa',
          'aba',
          'aaa'
-      ],{
-         'a':'createaddition:copper_spool',
-         'b':'minecraft:iron_ingot'
-      }
-   ).replaceIngredient('createaddition:copper_spool','createaddition:spool')
+      ], {
+      'a': 'createaddition:copper_spool',
+      'b': 'minecraft:iron_ingot'
+   }
+   ).replaceIngredient('createaddition:copper_spool', 'createaddition:spool')
    r.shaped(
       '8x createaddition:copper_spool',
       [
          'aaa',
          'aba',
          'aaa'
-      ],{
-         'a':'createaddition:spool',
-         'b':'create_nouveau:copper_wire'
+      ], {
+      'a': 'createaddition:spool',
+      'b': 'create_nouveau:copper_wire'
+   }
+   ).replaceIngredient('create_nouveau:copper_wire', 'minecraft:iron_ingot')
+   r.shaped(
+      'moreburners:copper_coil',
+      [
+         ' a ',
+         'a a',
+         ' a '
+      ],
+      {
+         'a': 'createaddition:copper_spool'
       }
-   ).replaceIngredient('create_nouveau:copper_wire','minecraft:iron_ingot')
+   ).replaceIngredient('createaddition:copper_spool', 'createaddition:spool')
 })
