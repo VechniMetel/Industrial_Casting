@@ -18,18 +18,18 @@ PlayerEvents.tick(event => {
         player.getMainHandItem() == 'anvilcraft:cut_ember_metal_block' ||
         player.getMainHandItem() == 'anvilcraft:ember_metal_upgrade_smithing_template' ||
         player.getMainHandItem() == 'anvilcraft:ember_metal_nugget' ||
-        player.getHeadArmorItem() == 'anvilcraft:ember_anvil_hammer' ||
+        player.getHeadArmorItem() == 'anvilcraft:ember_anvil_hammer'||
         player.getMainHandItem() == 'anvilcraft:ember_metal_block';
-    const isHoldingSword =
-        player.getLegsArmorItem().nbt?.tic_materials ? player.getLegsArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false ||
-            player.getHeadArmorItem().nbt?.tic_materials ? player.getHeadArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false ||
-                player.getFeetArmorItem().nbt?.tic_materials ? player.getFeetArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false ||
-                    player.getChestArmorItem().nbt?.tic_materials ? player.getChestArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false;
-    const effects = player.hasEffect('minecraft:fire_resistance');
+    const isHoldingSword = 
+        player.getLegsArmorItem().nbt?.tic_materials  ? player.getLegsArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false||
+        player.getHeadArmorItem().nbt?.tic_materials  ? player.getHeadArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false||
+        player.getFeetArmorItem().nbt?.tic_materials  ? player.getFeetArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false||
+        player.getChestArmorItem().nbt?.tic_materials  ? player.getChestArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false;
+    const effects = player.hasEffect('minecraft:fire_resistance'); 
     if (!effects) {
         if (isHoldingSword && player.age % AttackIntervalAndBurningTime === 0) {
             player.attack(4);
-            player.setRemainingFireTicks(AttackIntervalAndBurningTime);
+            player.setRemainingFireTicks(AttackIntervalAndBurningTime); 
         };
         if (MainHand && player.age % AttackIntervalAndBurningTime === 0) {
             player.attack(4);
