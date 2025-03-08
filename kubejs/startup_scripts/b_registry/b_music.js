@@ -2,6 +2,7 @@ StartupEvents.registry("sound_event", r => {
     r.create("create_nouveau:music.cfrb")
     r.create("create_nouveau:music.life")
     r.create("create_nouveau:music.evilris")
+    r.create("create_nouveau:music.muisiki_rekuiemu")
 })
 StartupEvents.registry("item", r => {
     r.create("create_nouveau:music_disc_life", "music_disc")
@@ -12,5 +13,8 @@ StartupEvents.registry("item", r => {
         .tag("music_discs")
     r.create("create_nouveau:music_disc_evilris", "music_disc")
         .song("create_nouveau:music.evilris", 142)
+        .tag("music_discs")
+    r.create("create_nouveau:music_disc_muisiki_rekuiemu", "music_disc")
+        .song("create_nouveau:music.muisiki_rekuiemu", 276)
         .tag("music_discs")
 })

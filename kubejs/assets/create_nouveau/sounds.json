@@ -22,5 +22,13 @@
                 "stream": true
             }
         ]
+    },
+    "music.muisiki_rekuiemu": {
+        "sounds": [
+            {
+                "name": "create_nouveau:muisiki_rekuiemu",
+                "stream": true
+            }
+        ]
     }
 }

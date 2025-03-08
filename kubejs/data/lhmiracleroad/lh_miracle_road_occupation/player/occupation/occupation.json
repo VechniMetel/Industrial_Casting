@@ -1,0 +1,257 @@
+[
+    {
+        "id": "assassin",
+        "init_difficulty_level": 10,
+        "init_attribute": [
+            {
+                "id": "hp",
+                "level": 13
+            },
+            {
+                "id": "focus",
+                "level": 8
+            },
+            {
+                "id": "power",
+                "level": 15
+            },
+            {
+                "id": "sturdy",
+                "level": 10
+            },
+            {
+                "id": "endurance",
+                "level": 8
+            },
+            {
+                "id": "brain",
+                "level": 12
+            },
+            {
+                "id": "agile",
+                "level": 16
+            },
+            {
+                "id": "trick",
+                "level": 11
+            },
+            {
+                "id": "luck",
+                "level": 10
+            }
+        ]
+    },
+    {
+        "id": "knight",
+        "init_difficulty_level": 15,
+        "init_attribute": [
+            {
+                "id": "hp",
+                "level": 16
+            },
+            {
+                "id": "focus",
+                "level": 9
+            },
+            {
+                "id": "power",
+                "level": 15
+            },
+            {
+                "id": "sturdy",
+                "level": 15
+            },
+            {
+                "id": "endurance",
+                "level": 12
+            },
+            {
+                "id": "brain",
+                "level": 8
+            },
+            {
+                "id": "agile",
+                "level": 12
+            },
+            {
+                "id": "trick",
+                "level": 10
+            },
+            {
+                "id": "luck",
+                "level": 9
+            }
+        ]
+    },
+    {
+        "id": "mage",
+        "init_difficulty_level": 10,
+        "conditions": [
+            "ars_nouveau"
+        ],
+        "init_attribute": [
+            {
+                "id": "hp",
+                "level": 8
+            },
+            {
+                "id": "focus",
+                "level": 16
+            },
+            {
+                "id": "power",
+                "level": 10
+            },
+            {
+                "id": "sturdy",
+                "level": 8
+            },
+            {
+                "id": "endurance",
+                "level": 8
+            },
+            {
+                "id": "brain",
+                "level": 17
+            },
+            {
+                "id": "agile",
+                "level": 10
+            },
+            {
+                "id": "trick",
+                "level": 16
+            },
+            {
+                "id": "luck",
+                "level": 11
+            }
+        ]
+    },
+    {
+        "id": "samurai",
+        "init_difficulty_level": 15,
+        "init_attribute": [
+            {
+                "id": "hp",
+                "level": 14
+            },
+            {
+                "id": "focus",
+                "level": 8
+            },
+            {
+                "id": "power",
+                "level": 14
+            },
+            {
+                "id": "sturdy",
+                "level": 14
+            },
+            {
+                "id": "endurance",
+                "level": 12
+            },
+            {
+                "id": "brain",
+                "level": 9
+            },
+            {
+                "id": "agile",
+                "level": 14
+            },
+            {
+                "id": "trick",
+                "level": 9
+            },
+            {
+                "id": "luck",
+                "level": 9
+            }
+        ]
+    },
+    {
+        "id": "ranger",
+        "init_difficulty_level": 15,
+        "init_attribute": [
+            {
+                "id": "hp",
+                "level": 12
+            },
+            {
+                "id": "focus",
+                "level": 9
+            },
+            {
+                "id": "power",
+                "level": 17
+            },
+            {
+                "id": "sturdy",
+                "level": 14
+            },
+            {
+                "id": "endurance",
+                "level": 7
+            },
+            {
+                "id": "brain",
+                "level": 10
+            },
+            {
+                "id": "agile",
+                "level": 12
+            },
+            {
+                "id": "trick",
+                "level": 8
+            },
+            {
+                "id": "luck",
+                "level": 12
+            }
+        ]
+    },
+    {
+        "id": "artificial_intelligence",
+        "init_difficulty_level": 10,
+        "init_attribute": [
+            {
+                "id": "hp",
+                "level": 20
+            },
+            {
+                "id": "focus",
+                "level": 0
+            },
+            {
+                "id": "power",
+                "level": 20
+            },
+            {
+                "id": "sturdy",
+                "level": 14
+            },
+            {
+                "id": "endurance",
+                "level": 10
+            },
+            {
+                "id": "brain",
+                "level": 20
+            },
+            {
+                "id": "agile",
+                "level": 12
+            },
+            {
+                "id": "trick",
+                "level": 10
+            },
+            {
+                "id": "luck",
+                "level": 10
+            }
+        ]
+    }
+]
