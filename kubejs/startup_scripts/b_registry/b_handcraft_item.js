@@ -1,7 +1,7 @@
 StartupEvents.registry("item", r => {
     r.create('create_nouveau:chain_drive')
     r.create("create_nouveau:cage")
-    r.create("create_nouveau:enchanted_rose_quartz")
+    r.create("create_nouveau:crude_electron_tube")
     r.create("create_nouveau:storage_unit")
     r.create("create_nouveau:storage_connector")
     r.create("create_nouveau:saw")
