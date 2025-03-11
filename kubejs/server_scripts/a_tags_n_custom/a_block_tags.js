@@ -92,7 +92,7 @@ ServerEvents.tags("block", r => {
             'ars_nouveau:item_detector',
             'ars_nouveau:spell_sensor',
             'ars_nouveau:redstone_relay',
-            'ars_additions:source_spawner', 
+            'ars_additions:source_spawner',
             'hexcasting:akashic_record',
             'hexcasting:akashic_bookshelf',
             'hexcasting:akashic_connector'

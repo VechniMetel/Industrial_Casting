@@ -15,6 +15,4 @@ StartupEvents.registry("item", r => {
     r.create('create_nouveau:incomplete_circuit_board', "create:sequenced_assembly")
     r.create('create_nouveau:incomplete_advanced_circuit_board', 'create:sequenced_assembly')
     r.create('create_nouveau:incomplete_electric_burner', 'create:sequenced_assembly')
-    r.create('create_nouveau:pineapple_peel_gloves')
-        .maxDamage(100)
 })

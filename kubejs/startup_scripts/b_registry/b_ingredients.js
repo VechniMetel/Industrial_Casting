@@ -1,6 +1,10 @@
 StartupEvents.registry("item", r => {
     r.create('create_nouveau:enchanted_gold_ingot')
+        .glow(true)
+        .tag('forge:ingots/enchanted_gold')
     r.create('create_nouveau:enchanted_gold_nugget')
+        .glow(true)
+        .tag("forge:nuggets.enchanted_gold")
     r.create('create_nouveau:magic_capacitor')
     r.create('create_nouveau:enchantment_mechanism')
     r.create('create_nouveau:solder_wire')

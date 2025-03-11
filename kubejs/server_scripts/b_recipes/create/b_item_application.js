@@ -1,11 +1,21 @@
 ServerEvents.recipes(r => {
-const handcraft = r.recipes.create.item_application
+    const handcraft = r.recipes.create.item_application
     handcraft(
         "create_nouveau:magic_casing",
         [
             "#create_nouveau:stripped_archwood",
-            "#forge:ingots/gold"
+            "#forge:ingots/enchanted_gold"
         ]
+    )
+    handcraft(
+        'create_nouveau:smart_andesite_casing',
+        ['create:andesite_casing',
+            'create:electron_tube']
+    )
+    handcraft(
+        'create_nouveau:smart_andesite_casing',
+        ['create:andesite_casing',
+            'create_nouveau:crude_electron_tube']
     )
     handcraft(
         'ars_nouveau:source_jar',
@@ -306,11 +316,6 @@ const handcraft = r.recipes.create.item_application
         'create_enchantment_industry:printer',
         ['create:spout',
             '#forge:plates/iron']
-    )
-    handcraft(
-        'create_nouveau:smart_andesite_casing',
-        ['create:andesite_casing',
-            'create:electron_tube']
     )
     handcraft(
         'create:adjustable_chain_gearshift',

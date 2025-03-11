@@ -166,7 +166,9 @@ ServerEvents.recipes(r => {
         'create:crafting/kinetics/smart_fluid_pipe',
         'moreburners:copper_coil',
         'moreburners:electric_burner',
-        'moreburners:resistance_coil'
+        'moreburners:resistance_coil',
+        'create:pressing/sugar_cane',
+        'create:milling/sugar_cane'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })

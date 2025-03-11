@@ -29,4 +29,8 @@ StartupEvents.registry("fluid", r => {
         .thickTexture(0x515647)
         .bucketColor(0x515647)
         .noBlock()
+    r.create('create_nouveau:sugarcane_juice')
+        .thinTexture(0xDECA51)
+        .bucketColor(0xDECA51)
+        .noBlock()
 })

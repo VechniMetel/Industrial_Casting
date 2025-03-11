@@ -3,7 +3,7 @@ r.custom({
     "type": "anvilcraft:anvil_processing",
     "anvil_recipe_type": "stamping",
     "icon": {
-      "item": 'create_nouveau:enchanted_rose_quartz'
+      "item": 'create_nouveau:crude_electron_tube'
     },
     "outcomes": [
       {
@@ -15,7 +15,7 @@ r.custom({
           0.0
         ],
         "result": {
-          "item": 'create_nouveau:enchanted_rose_quartz'
+          "item": 'create_nouveau:crude_electron_tube'
         }
       }
     ],

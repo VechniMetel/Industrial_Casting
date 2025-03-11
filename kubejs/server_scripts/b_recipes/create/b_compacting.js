@@ -21,4 +21,11 @@ ServerEvents.recipes(r => {
             Fluid.of("tconstruct:molten_uranium", 90)
         ]
     )
+    create.compacting(
+        [
+            'anvilcraft:wood_fiber',
+            Fluid.of('create_nouveau:sugarcane_juice', 100)
+        ],
+        'minecraft:sugar_cane'
+    )
 })

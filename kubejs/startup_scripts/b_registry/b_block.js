@@ -52,6 +52,10 @@ StartupEvents.registry("block", r => {
         .tagBlock('forge:storage_blocks/enchanted_gold')
         .tagBlock('minecraft:beacon_base_blocks')
         .tagBlock('tconstruct:mineable/pickadze')
+        .item(egb => {
+            egb
+                .glow(true)
+        })
     r.create('create_nouveau:silver_ore')
         .soundType(SoundType.STONE)
         .hardness(3)

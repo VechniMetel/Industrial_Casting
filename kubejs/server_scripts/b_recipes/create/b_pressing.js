@@ -13,7 +13,7 @@ ServerEvents.recipes(r => {
         "uranium",
         "bronze"
     ]
-    metals.forEach(material=>{
+    metals.forEach(material => {
         let plate = `anvilcraft:${material}_pressure_plate`
         let ingot = `#forge:ingots/${material}`
         create.pressing(
@@ -21,4 +21,8 @@ ServerEvents.recipes(r => {
             ingot
         )
     })
+    create.pressing(
+        'minecraft:paper',
+        'anvilcraft:wood_fiber'
+    )
 })
