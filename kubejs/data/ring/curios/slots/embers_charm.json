@@ -1,6 +1,6 @@
 {
     "add_cosmetic": false,
-    "icon": "create_nouveau:slot/spell",
+    "icon": "the_magical_industry:slot/spell",
     "operation": "SET",
     "order": 1,
     "render_toggle": true,

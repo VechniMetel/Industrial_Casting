@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "anvilcraft:royal_steel_ingot"
+  },
+  "material": "the_magical_industry:royal_steel",
+  "needed": 1,
+  "value": 1
+}

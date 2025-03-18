@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "amount": 90,
+    "fluid": "the_magical_industry:molten_ember_metal"
+  },
+  "temperature":800,
+  "output": "the_magical_industry:ember_metal"
+}

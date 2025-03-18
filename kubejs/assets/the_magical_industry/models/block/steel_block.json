@@ -1,0 +1,13 @@
+{
+    "loader": "fusion:model",
+    "type": "connecting",
+    "parent": "block/cube_all",
+    "textures": {
+       "all": "the_magical_industry:block/steel_block"
+    },
+    "connections": [
+       {
+          "type": "is_same_block"
+       }
+    ]
+ }

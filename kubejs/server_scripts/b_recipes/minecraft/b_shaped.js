@@ -1,6 +1,6 @@
 ServerEvents.recipes(r => {
    r.shaped(
-      'create_nouveau:saw',
+      'the_magical_industry:saw',
       [
          ' a ',
          'a a',
@@ -9,7 +9,7 @@ ServerEvents.recipes(r => {
       'a': '#forge:plates/iron'
    })
    r.shaped(
-      'create_nouveau:cage',
+      'the_magical_industry:cage',
       [
          ' a ',
          'a a',
@@ -36,7 +36,7 @@ ServerEvents.recipes(r => {
       'a': '#forge:plates/tin'
    })
    r.shaped(
-      'create_nouveau:drill',
+      'the_magical_industry:drill',
       [
          ' 1 ',
          ' 21',
@@ -47,7 +47,7 @@ ServerEvents.recipes(r => {
    }
    )
    r.shaped(
-      'create_nouveau:copper_wire',
+      'the_magical_industry:copper_wire',
       [
          'aaa',
          'aba',
@@ -68,10 +68,10 @@ ServerEvents.recipes(r => {
          'aaa'
       ], {
       'a': 'createaddition:spool',
-      'b': 'create_nouveau:copper_wire'
+      'b': 'the_magical_industry:copper_wire'
    }
    ).replaceIngredient(
-      'create_nouveau:copper_wire',
+      'the_magical_industry:copper_wire',
       'minecraft:iron_ingot'
    )
    r.shaped(
@@ -119,18 +119,18 @@ ServerEvents.recipes(r => {
       'createaddition:spool'
    )
    r.shaped(
-      'create_nouveau:solder_coil',
+      'the_magical_industry:solder_coil',
       [
          ' a ',
          'aba',
          ' a '
       ], {
-      'a': 'create_nouveau:solder_wire',
+      'a': 'the_magical_industry:solder_wire',
       'b': 'createaddition:spool'
    }
    )
    r.shaped(
-      'create_nouveau:iron_coil',
+      'the_magical_industry:iron_coil',
       [
          ' a ',
          'aba',
@@ -141,23 +141,59 @@ ServerEvents.recipes(r => {
    }
    )
    r.shaped(
-      "create_nouveau:enchanted_gold_ingot",
+      "the_magical_industry:enchanted_gold_ingot",
       [
          'aaa',
          'aaa',
          'aaa'
       ], {
-      'a': "create_nouveau:enchanted_gold_nugget"
+      'a': "the_magical_industry:enchanted_gold_nugget"
    }
    )
    r.shaped(
-      "create_nouveau:enchanted_gold_block",
+      "the_magical_industry:enchanted_gold_block",
       [
          'aaa',
          'aaa',
          'aaa'
       ], {
-      'a': "create_nouveau:enchanted_gold_ingot"
+      'a': "the_magical_industry:enchanted_gold_ingot"
    }
+   )
+   r.shaped(
+      'alexscaves:heavyweight',
+      [
+         ' a ',
+         ' b ',
+         ' c '
+      ],{
+         'a':'minecraft:chain',
+         'b':'minecraft:iron_ingot',
+         'c':'minecraft:heavy_weighted_pressure_plate'
+      }
+   )
+   r.shaped(
+      'alexscaves:quarry',
+      [
+         ' b ',
+         'bcb',
+         ' d '
+      ],{
+         'b':'#forge:nuggets/iron',
+         'c':'#forge:ingots/iron',
+         'd':'anvilcraft:chute'
+      }
+   )
+   r.shaped(
+      '4x alexscaves:magnetic_light',
+      [
+         ' a ',
+         ' b ',
+         ' c '
+      ],{
+         'a':'#forge:glass',
+         'b':'anvilcraft:magnet_ingot',
+         'c':'minecraft:iron_ingot'
+      }
    )
 })

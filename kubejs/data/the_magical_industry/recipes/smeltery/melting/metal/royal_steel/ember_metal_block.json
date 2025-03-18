@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "anvilcraft:royal_steel_block"
+    },
+    "result": {
+      "amount": 810,
+      "fluid": "the_magical_industry:molten_royal_steel"
+    },
+    "temperature": 1500,
+    "time": 270
+  }

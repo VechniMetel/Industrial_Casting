@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "anvilcraft:ember_metal_ingot"
-  },
-  "material": "create_nouveau:ember_metal",
-  "needed": 1,
-  "value": 1
-}

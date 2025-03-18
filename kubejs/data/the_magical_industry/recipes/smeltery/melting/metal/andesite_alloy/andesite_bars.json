@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "create:andesite_bars"
+    },
+    "result": {
+      "amount": 30,
+      "fluid": "the_magical_industry:molten_andesite_alloy"
+    },
+    "temperature": 800,
+    "time": 7.5
+  }

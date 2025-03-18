@@ -3,7 +3,7 @@ ServerEvents.recipes(r => {
     create.deploying(
         '3x create:mechanical_crafter',
         [
-            'create_nouveau:smart_casing',
+            'the_magical_industry:smart_casing',
             'minecraft:crafting_table'
         ]
     )
@@ -36,7 +36,7 @@ ServerEvents.recipes(r => {
         ]
     )
     create.deploying(
-        'create_nouveau:ejector_mechanism',
+        'the_magical_industry:ejector_mechanism',
         [
             'extendedgears:shaftless_cogwheel',
             '#forge:plates/gold'
@@ -46,7 +46,7 @@ ServerEvents.recipes(r => {
         'create:weighted_ejector',
         [
             'create:depot',
-            'create_nouveau:ejector_mechanism'
+            'the_magical_industry:ejector_mechanism'
         ]
     )
     create.deploying(

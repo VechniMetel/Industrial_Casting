@@ -3,12 +3,12 @@ ServerEvents.recipes(r => {
     create.compacting(
         'createnuclear:steel_ingot',
         [
-            'minecraft:iron_ingot',
+            'createbigcannons:cast_iron_ingot',
             '4x createnuclear:coal_dust'
         ]
     ).superheated()
     create.compacting(
-        Fluid.of('create_nouveau:molten_raw_silicon', 100),
+        Fluid.of('the_magical_industry:molten_raw_silicon', 100),
         [
             Fluid.of("tconstruct:molten_quartz", 100),
             '4x createnuclear:coal_dust'
@@ -24,7 +24,7 @@ ServerEvents.recipes(r => {
     create.compacting(
         [
             'anvilcraft:wood_fiber',
-            Fluid.of('create_nouveau:sugarcane_juice', 100)
+            Fluid.of('untitled:sugar_cane_juice', 100)
         ],
         'minecraft:sugar_cane'
     )

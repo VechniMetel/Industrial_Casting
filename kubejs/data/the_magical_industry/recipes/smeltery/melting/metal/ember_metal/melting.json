@@ -1,0 +1,10 @@
+{
+    "type": "tconstruct:material_melting",
+    "input": "the_magical_industry:ember_metal",
+    "result": {
+      "amount": 90,
+      "fluid": "the_magical_industry:molten_ember_metal"
+    },
+    "temperature": 1500,
+    "time": 60
+  }

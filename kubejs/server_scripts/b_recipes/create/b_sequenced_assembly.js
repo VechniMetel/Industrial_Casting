@@ -1,20 +1,22 @@
 ServerEvents.recipes(r => {
     const ipm = 'create:incomplete_precision_mechanism'
-    const iem = 'create_nouveau:incomplete_enchantment_mechanism'
-    const iet = 'create_nouveau:incomplete_electron_tube'
-    const imc = 'create_nouveau:incomplete_magic_capacitor'
-    const iec = 'create_nouveau:incomplete_capacitor'
-    const icb = "create_nouveau:incomplete_circuit_board"
+    const iem = 'the_magical_industry:incomplete_enchantment_mechanism'
+    const iet = 'the_magical_industry:incomplete_electron_tube'
+    const imc = 'the_magical_industry:incomplete_magic_capacitor'
+    const iec = 'the_magical_industry:incomplete_capacitor'
+    const icb = "the_magical_industry:incomplete_circuit_board"
     const icc = 'create_connected:incomplete_control_chip'
-    const iacb = 'create_nouveau:incomplete_advanced_circuit_board'
+    const iacb = 'the_magical_industry:incomplete_advanced_circuit_board'
     const rbp = 'refinedstorage:raw_basic_processor'
     const rip = 'refinedstorage:raw_improved_processor'
     const rap = 'refinedstorage:raw_advanced_processor'
-    const ieb = 'create_nouveau:incomplete_electric_burner'
+    const ieb = 'the_magical_industry:incomplete_electric_burner'
+    const ing = "the_magical_industry:incomplete_notor_gizmo"
+    const ifc = "the_magical_industry:incomplete_fissile_core"
     const create = r.recipes.create
     create.sequenced_assembly(
         [
-            Item.of("create_nouveau:enchantment_mechanism").withChance(0.7),
+            Item.of("the_magical_industry:enchantment_mechanism").withChance(0.7),
             Item.of('createaddition:electrum_sheet').withChance(0.1),
             Item.of("create:cogwheel").withChance(0.1),
             Item.of("create:crushed_raw_gold").withChance(0.1)
@@ -27,7 +29,7 @@ ServerEvents.recipes(r => {
         ]
     ).transitionalItem(iem).loops(1)
     create.sequenced_assembly(
-        "create_nouveau:enchantment_mechanism",
+        "the_magical_industry:enchantment_mechanism",
         '#forge:plates/electrum',
         [
             create.deploying(iem, [iem, 'createaddition:electrum_nugget']),
@@ -59,7 +61,7 @@ ServerEvents.recipes(r => {
         ]
     ).transitionalItem(iet).loops(1)
     create.sequenced_assembly(
-        'create_nouveau:magic_capacitor',
+        'the_magical_industry:magic_capacitor',
         '#forge:plates/electrum',
         [
             create.filling(imc, [imc, Fluid.of('tconstruct:molten_amethyst', 100)]),
@@ -95,20 +97,20 @@ ServerEvents.recipes(r => {
             create.deploying(icc, [icc, 'createaddition:capacitor']),
             create.deploying(icc, [icc, 'create:electron_tube']),
             create.pressing(icc, icc),
-            create.deploying(icc, [icc, 'create_nouveau:solder_coil']),
-            create.deploying(icc, [icc, 'create_nouveau:soldering_gun']).keepHeldItem()
+            create.deploying(icc, [icc, 'the_magical_industry:solder_coil']),
+            create.deploying(icc, [icc, 'the_magical_industry:soldering_gun']).keepHeldItem()
         ]
     ).transitionalItem(icc).loops(1)
     create.sequenced_assembly(
-        'create_nouveau:advanced_circuit_board',
+        'the_magical_industry:advanced_circuit_board',
         'anvilcraft:circuit_board',
         [
             create.deploying(iacb, [iacb, 'refinedstorage:quartz_enriched_iron']),
             create.deploying(iacb, [iacb, 'refinedstorage:silicon']),
             create.deploying(iacb, [iacb, 'create_connected:control_chip']),
             create.deploying(iacb, [iacb, 'refinedstorage:advanced_processor']),
-            create.deploying(iacb, [iacb, 'create_nouveau:solder_coil']),
-            create.deploying(iacb, [iacb, 'create_nouveau:soldering_gun']).keepHeldItem()
+            create.deploying(iacb, [iacb, 'the_magical_industry:solder_coil']),
+            create.deploying(iacb, [iacb, 'the_magical_industry:soldering_gun']).keepHeldItem()
         ]
     ).transitionalItem(iacb).loops(1)
     create.sequenced_assembly(
@@ -118,7 +120,7 @@ ServerEvents.recipes(r => {
             create.deploying(rbp, [rbp, 'refinedstorage:silicon']),
             create.deploying(rbp, [rbp, 'createaddition:copper_wire']),
             create.deploying(rbp, [rbp, 'refinedstorage:processor_binding']),
-            create.deploying(rbp, [rbp, 'create:polished_rose_quartz'])
+            create.deploying(rbp, [rbp, 'create:electron_tube'])
         ]
     ).transitionalItem(rbp).loops(1)
     create.sequenced_assembly(
@@ -128,7 +130,7 @@ ServerEvents.recipes(r => {
             create.deploying(rip, [rip, 'refinedstorage:silicon']),
             create.deploying(rip, [rip, 'createaddition:electrum_wire']),
             create.deploying(rip, [rip, 'refinedstorage:processor_binding']),
-            create.deploying(rip, [rip, 'create:electron_tube'])
+            create.deploying(rip, [rip, 'alexscaves:notor_gizmo'])
         ]
     ).transitionalItem(rip).loops(1)
     create.sequenced_assembly(
@@ -159,4 +161,24 @@ ServerEvents.recipes(r => {
             create.deploying(ieb, [ieb, 'minecraft:tinted_glass'])
         ]
     ).transitionalItem(ieb).loops(1)
+    create.sequenced_assembly(
+        'alexscaves:notor_gizmo',
+        '#forge:plates/iron',
+        [
+            create.deploying(ing, [ing, 'createaddition:capacitor']),
+            create.deploying(ing, [ing, 'createaddition:gold_spool']),
+            create.deploying(ing, [ing, '#forge:glass_panes'])
+        ]
+    ).transitionalItem(ing).loops(1)
+    create.sequenced_assembly(
+        'alexscaves:fissile_core',
+        '#forge:plates/steel',
+        [
+            create.deploying(ifc,[ifc,'anvilcraft:lead_pressure_plate']),
+            create.deploying(ifc,[ifc,'createnuclear:enriched_yellowcake']),
+            create.deploying(ifc,[ifc,'createnuclear:enriched_yellowcake']),
+            create.pressing(ifc,ifc),
+            create.filling(ifc,[ifc,Fluid.of('tconstruct:molten_uranium',90)])
+        ]
+    ).transitionalItem(ifc).loops(2)
 })

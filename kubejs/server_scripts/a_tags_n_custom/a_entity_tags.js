@@ -1,0 +1,13 @@
+ServerEvents.tags("entity_type",r=>{
+    r.add(
+        "youkaishomecoming:flesh_source",
+        [
+            "illager_additions:new_samurai",
+            'illager_additions:spearman',
+            'illager_additions:beamloger',
+            'illager_additions:cowboy',
+            'illager_additions:shogun',
+            'illager_additions:royal_guard_spearman'
+        ]
+    )
+})

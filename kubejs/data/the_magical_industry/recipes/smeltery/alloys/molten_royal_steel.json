@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 100,
+      "tag": "tconstruct:molten_amethyst"
+    },
+    {
+      "amount": 100,
+      "tag": "tconstruct:molten_emerald"
+    },
+    {
+      "amount": 270,
+      "tag": "forge:molten_steel"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "fluid": "the_magical_industry:molten_royal_steel"
+  },
+  "temperature": 1500
+}

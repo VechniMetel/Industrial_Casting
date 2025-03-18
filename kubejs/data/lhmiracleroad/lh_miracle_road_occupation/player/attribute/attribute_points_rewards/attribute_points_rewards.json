@@ -28,7 +28,7 @@
             "ars_nouveau"
         ],
         "data": {
-            "max_level": 99,
+            "max_level": 60,
             "points_rewards": [
                 {
                     "attribute": "irons_spellbooks:max_mana",
@@ -40,8 +40,8 @@
                 {
                     "attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
                     "value": 10,
-                    "level_promote": 0,
-                    "level_promote_value": 0,
+                    "level_promote": -10,
+                    "level_promote_value": 10,
                     "operation": "addition"
                 },
                 {
@@ -115,9 +115,9 @@
                 },
                 {
                     "attribute": "parcool:parcool.max_stamina",
-                    "value": 200,
-                    "level_promote": 30,
-                    "level_promote_value": -100,
+                    "value":50,
+                    "level_promote": -10,
+                    "level_promote_value": 30,
                     "operation": "addition",
                     "min": 1000
                 },

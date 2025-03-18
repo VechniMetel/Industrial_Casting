@@ -1,26 +1,26 @@
 ServerEvents.recipes(r => {
     const handcraft = r.recipes.create.item_application
     handcraft(
-        "create_nouveau:magic_casing",
+        "the_magical_industry:magic_casing",
         [
-            "#create_nouveau:stripped_archwood",
+            "#the_magical_industry:stripped_archwood",
             "#forge:ingots/enchanted_gold"
         ]
     )
     handcraft(
-        'create_nouveau:smart_andesite_casing',
+        'the_magical_industry:smart_andesite_casing',
         ['create:andesite_casing',
             'create:electron_tube']
     )
     handcraft(
-        'create_nouveau:smart_andesite_casing',
+        'the_magical_industry:smart_andesite_casing',
         ['create:andesite_casing',
-            'create_nouveau:crude_electron_tube']
+            'the_magical_industry:crude_electron_tube']
     )
     handcraft(
         'ars_nouveau:source_jar',
         [
-            "create_nouveau:magic_casing",
+            "the_magical_industry:magic_casing",
             '#forge:glass_panes'
         ]
     )
@@ -28,21 +28,21 @@ ServerEvents.recipes(r => {
         'create:item_vault',
         [
             'create:andesite_casing',
-            'create_nouveau:storage_unit'
+            'the_magical_industry:storage_unit'
         ]
     )
     handcraft(
         'create:fluid_tank',
         [
             'create:copper_casing',
-            'create_nouveau:storage_unit'
+            'the_magical_industry:storage_unit'
         ]
     )
     handcraft(
         'railways:fuel_tank',
         [
             'create:railway_casing',
-            'create_nouveau:storage_unit'
+            'the_magical_industry:storage_unit'
         ]
     )
     handcraft(
@@ -102,17 +102,17 @@ ServerEvents.recipes(r => {
     )
     handcraft(
         'ars_nouveau:imbuement_chamber',
-        ['create_nouveau:magic_casing',
+        ['the_magical_industry:magic_casing',
             '#forge:plates/gold']
     )
     handcraft(
         'ars_nouveau:relay',
-        ['create_nouveau:magic_casing',
+        ['the_magical_industry:magic_casing',
             'ars_nouveau:source_gem_block']
     )
     handcraft(
         'ars_nouveau:spell_prism',
-        ['create_nouveau:magic_casing',
+        ['the_magical_industry:magic_casing',
             '#forge:storage_blocks/quartz']
     )
     handcraft(
@@ -121,7 +121,7 @@ ServerEvents.recipes(r => {
             'ars_nouveau:source_gem']
     )
     handcraft(
-        'create_nouveau:smart_casing',
+        'the_magical_industry:smart_casing',
         ['create:brass_casing',
             'create:electron_tube']
     )
@@ -134,17 +134,17 @@ ServerEvents.recipes(r => {
     )
     handcraft(
         'create:smart_chute',
-        ['create_nouveau:smart_casing',
+        ['the_magical_industry:smart_casing',
             'create:chute']
     )
     handcraft(
         'create:content_observer',
-        ['create_nouveau:smart_casing',
+        ['the_magical_industry:smart_casing',
             'minecraft:observer']
     )
     handcraft(
         'create:stockpile_switch',
-        ['create_nouveau:smart_casing',
+        ['the_magical_industry:smart_casing',
             'minecraft:comparator']
     )
     handcraft(
@@ -168,29 +168,29 @@ ServerEvents.recipes(r => {
             'minecraft:glowstone_dust']
     )
     handcraft(
-        'create_nouveau:source_casing',
-        ['create_nouveau:magic_casing',
-            'create_nouveau:enchantment_mechanism']
+        'the_magical_industry:source_casing',
+        ['the_magical_industry:magic_casing',
+            'the_magical_industry:enchantment_mechanism']
     )
     handcraft(
         'create:encased_chain_drive',
         ['create:andesite_casing',
-            'create_nouveau:chain_drive']
+            'the_magical_industry:chain_drive']
     )
     handcraft(
         'create:sequenced_gearshift',
-        ['create_nouveau:smart_casing',
+        ['the_magical_industry:smart_casing',
             'extendedgears:shaftless_cogwheel']
     )
     handcraft(
         'create:empty_blaze_burner',
         ['minecraft:netherrack',
-            'create_nouveau:cage']
+            'the_magical_industry:cage']
     )
     handcraft(
         'create_connected:empty_fan_catalyst',
         ['create:brass_casing',
-            'create_nouveau:cage']
+            'the_magical_industry:cage']
     )
     handcraft(
         'create:mechanical_press',
@@ -205,7 +205,7 @@ ServerEvents.recipes(r => {
     handcraft(
         'create:mechanical_saw',
         ['create:andesite_casing',
-            'create_nouveau:saw']
+            'the_magical_industry:saw']
     )
     handcraft(
         'create:encased_fan',
@@ -215,22 +215,22 @@ ServerEvents.recipes(r => {
     handcraft(
         'create:portable_storage_interface',
         ['create:andesite_casing',
-            'create_nouveau:storage_connector']
+            'the_magical_industry:storage_connector']
     )
     handcraft(
         'create:portable_fluid_interface',
         ['create:copper_casing',
-            'create_nouveau:storage_connector']
+            'the_magical_industry:storage_connector']
     )
     handcraft(
         'railways:portable_fuel_interface',
         ['create:railway_casing',
-            'create_nouveau:storage_connector']
+            'the_magical_industry:storage_connector']
     )
     handcraft(
         'create_connected:inventory_access_port',
-        ['create_nouveau:smart_casing',
-            'create_nouveau:storage_connector']
+        ['the_magical_industry:smart_casing',
+            'the_magical_industry:storage_connector']
     )
     handcraft(
         'create:turntable',
@@ -249,7 +249,7 @@ ServerEvents.recipes(r => {
     )
     handcraft(
         'create:clockwork_bearing',
-        ['create_nouveau:smart_casing',
+        ['the_magical_industry:smart_casing',
             'create:turntable']
     )
     handcraft(
@@ -259,22 +259,22 @@ ServerEvents.recipes(r => {
     )
     handcraft(
         'ars_nouveau:enchanting_apparatus',
-        ['create_nouveau:source_casing',
+        ['the_magical_industry:source_casing',
             'minecraft:diamond']
     )
     handcraft(
         'ars_nouveau:arcane_pedestal',
-        ['create_nouveau:source_casing',
+        ['the_magical_industry:source_casing',
             'ars_nouveau:sourcestone']
     )
     handcraft(
         'ars_nouveau:arcane_core',
         ['ars_nouveau:sourcestone',
-            'create_nouveau:enchantment_mechanism']
+            'the_magical_industry:enchantment_mechanism']
     )
     handcraft(
         'ars_nouveau:ritual_brazier',
-        ['create_nouveau:source_casing',
+        ['the_magical_industry:source_casing',
             'ars_nouveau:source_gem_block']
     )
     handcraft(
@@ -319,22 +319,22 @@ ServerEvents.recipes(r => {
     )
     handcraft(
         'create:adjustable_chain_gearshift',
-        ['create_nouveau:smart_andesite_casing',
-            'create_nouveau:chain_drive']
+        ['the_magical_industry:smart_andesite_casing',
+            'the_magical_industry:chain_drive']
     )
     handcraft(
         'create:deployer',
-        ['create_nouveau:smart_andesite_casing',
+        ['the_magical_industry:smart_andesite_casing',
             'create:brass_hand']
     )
     handcraft(
         'starbunclemania:fluid_jar',
-        ['create_nouveau:magic_casing',
-            'create_nouveau:storage_unit']
+        ['the_magical_industry:magic_casing',
+            'the_magical_industry:storage_unit']
     )
     handcraft(
         'ars_nouveau:mob_jar',
-        ['create_nouveau:magic_casing',
+        ['the_magical_industry:magic_casing',
             '#forge:glass']
     )
     handcraft(
@@ -344,7 +344,7 @@ ServerEvents.recipes(r => {
     )
     handcraft(
         'create:mechanical_roller',
-        ['create_nouveau:smart_andesite_casing',
+        ['the_magical_industry:smart_andesite_casing',
             'create:crushing_wheel']
     )
     handcraft(
@@ -358,19 +358,19 @@ ServerEvents.recipes(r => {
             '#create:sandpaper']
     )
     handcraft(
-        'create_nouveau:electric_casing',
+        'the_magical_industry:electric_casing',
         ['create:brass_casing',
             'createaddition:capacitor']
     )
     handcraft(
         'createaddition:portable_energy_interface',
-        ['create_nouveau:electric_casing',
-            'create_nouveau:storage_connector']
+        ['the_magical_industry:electric_casing',
+            'the_magical_industry:storage_connector']
     )
     handcraft(
         'createaddition:modular_accumulator',
-        ['create_nouveau:electric_casing',
-            'create_nouveau:storage_unit']
+        ['the_magical_industry:electric_casing',
+            'the_magical_industry:storage_unit']
     )
     handcraft(
         'create:speedometer',
@@ -385,7 +385,7 @@ ServerEvents.recipes(r => {
     handcraft(
         'create:mechanical_drill',
         ['create:andesite_casing',
-            'create_nouveau:drill']
+            'the_magical_industry:drill']
     )
     handcraft(
         'create_basic_additions:basic_copper_gearshift',
@@ -528,7 +528,7 @@ ServerEvents.recipes(r => {
     )
     handcraft(
         'anvilcraft:magnetoelectric_core',
-        ['create_nouveau:copper_wire',
+        ['the_magical_industry:copper_wire',
             'anvilcraft:hollow_magnet_block']
     )
     handcraft(

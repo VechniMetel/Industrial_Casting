@@ -2,8 +2,8 @@ PlayerEvents.tick(event => {
     const player = event.player;
     const AttackIntervalAndBurningTime = 20//伤害间隔和燃烧时间统一设置，不然画面会不同步
     const free =
-        player.getOffHandItem() == "create_nouveau:pineapple_peel_gloves" ||
-        player.getMainHandItem() == "create_nouveau:pineapple_peel_gloves";
+        player.getOffHandItem() == "the_magical_industry:pineapple_peel_gloves" ||
+        player.getMainHandItem() == "the_magical_industry:pineapple_peel_gloves";
     const HandItem =
         player.getMainHandItem() == 'anvilcraft:ember_anvil_hammer' ||
         player.getMainHandItem() == 'anvilcraft:ember_metal_pickaxe' ||
@@ -42,10 +42,10 @@ PlayerEvents.tick(event => {
         player.getOffHandItem() == 'anvilcraft:ember_anvil_hammer' ||
         player.getOffHandItem() == 'anvilcraft:ember_metal_block';
     const isHoldingSword =
-        player.getLegsArmorItem().nbt?.tic_materials ? player.getLegsArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false ||
-            player.getHeadArmorItem().nbt?.tic_materials ? player.getHeadArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false ||
-                player.getFeetArmorItem().nbt?.tic_materials ? player.getFeetArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false ||
-                    player.getChestArmorItem().nbt?.tic_materials ? player.getChestArmorItem().nbt?.tic_materials.some(e => e == 'create_nouveau:ember_metal') : false;
+        player.getLegsArmorItem().nbt?.tic_materials ? player.getLegsArmorItem().nbt?.tic_materials.some(e => e == 'the_magical_industry:ember_metal') : false ||
+            player.getHeadArmorItem().nbt?.tic_materials ? player.getHeadArmorItem().nbt?.tic_materials.some(e => e == 'the_magical_industry:ember_metal') : false ||
+                player.getFeetArmorItem().nbt?.tic_materials ? player.getFeetArmorItem().nbt?.tic_materials.some(e => e == 'the_magical_industry:ember_metal') : false ||
+                    player.getChestArmorItem().nbt?.tic_materials ? player.getChestArmorItem().nbt?.tic_materials.some(e => e == 'the_magical_industry:ember_metal') : false;
     const effects = player.hasEffect('minecraft:fire_resistance');
     if (!effects) {
         if (free) {

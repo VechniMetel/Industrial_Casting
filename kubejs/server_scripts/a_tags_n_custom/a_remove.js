@@ -168,7 +168,9 @@ ServerEvents.recipes(r => {
         'moreburners:electric_burner',
         'moreburners:resistance_coil',
         'create:pressing/sugar_cane',
-        'create:milling/sugar_cane'
+        'create:milling/sugar_cane',
+        'alexscaves:magnetic_quarry',
+        'alexscaves:magnetic_light'
     ]
     remove.forEach(deleterecipes => {
         r.remove({ id: deleterecipes })

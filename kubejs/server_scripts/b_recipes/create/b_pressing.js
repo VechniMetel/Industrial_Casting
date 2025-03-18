@@ -1,8 +1,8 @@
 ServerEvents.recipes(r => {
     const create = r.recipes.create
     create.pressing(
-        'create_nouveau:steel_pressure_plate',
-        'create_nouveau:steel_ingot'
+        'the_magical_industry:steel_pressure_plate',
+        'createnuclear:steel_ingot'
     )
     const metals = [
         "tungsten",

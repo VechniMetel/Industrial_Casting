@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "anvilcraft:ember_metal_block"
+  },
+  "leftover": {
+    "count": 1,
+    "item": "anvilcraft:ember_metal_ingot"
+  },
+  "material": "the_magical_industry:ember_metal",
+  "needed": 1,
+  "value": 9
+}

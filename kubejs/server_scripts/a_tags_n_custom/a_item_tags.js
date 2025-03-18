@@ -1,6 +1,6 @@
 ServerEvents.tags("item", r => {
     r.add(
-        'create_nouveau:stripped_archwood',
+        'the_magical_industry:stripped_archwood',
         [
             'ars_nouveau:stripped_blue_archwood_log',
             'ars_nouveau:stripped_blue_archwood_wood',
@@ -14,12 +14,12 @@ ServerEvents.tags("item", r => {
             'ars_elemental:stripped_yellow_archwood'
         ])
     r.add('create:casing', [
-        'create_nouveau:magic_casing',
-        'create_nouveau:source_casing',
-        'create_nouveau:smartcasing'
+        'the_magical_industry:magic_casing',
+        'the_magical_industry:source_casing',
+        'the_magical_industry:smartcasing'
     ])
     r.add(
-        'create_nouveau:rope_materials',
+        'the_magical_industry:rope_materials',
         [
             'supplementaries:flax',
             'farmersdelight:straw'
@@ -50,7 +50,7 @@ ServerEvents.tags("item", r => {
     r.add(
         'forge:storage_blocks/steel',
         [
-            'create_nouveau:steel_block'
+            'the_magical_industry:steel_block'
         ]
     )
     r.add(
@@ -95,6 +95,41 @@ ServerEvents.tags("item", r => {
             'cbc_at:vert_twin_autocannon_muzzle_brake_mould',
             'cbc_at:autocannon_silencer_mould',
             'cbc_at:autocannon_muzzle_brake_mould'
+        ]
+    )
+    r.add(
+        'alexscaves:ferromagnetic_items',
+        [
+            'anvilcraft:magnet_ingot',
+            'anvilcraft:magnet_block',
+            'anvilcraft:hollow_magnet_block',
+            'anvilcraft:royal_anvil',
+            'anvilcraft:ember_anvil',
+            'anvilcraft:royal_smithing_table',
+            'anvilcraft:royal_grindstone',
+            'anvilcraft:stamping_platform',
+            'anvilcraft:ember_grindstone',
+            'anvilcraft:ember_smithing_table',
+            'anvilcraft:chute'
+        ]
+    )
+    r.add(
+        'alexscaves:nuclear_furnace_rods',
+        [
+            'createnuclear:uranium_rod'
+        ]
+    )
+    r.add(
+        'createnuclear:fuel',
+        [
+            'alexscaves:uranium_rod'
+        ]
+    )
+    r.add(
+        'farmersdelight:tools/knives',
+        [
+            'illager_additions:master_katana',
+            'illager_additions:katana'
         ]
     )
 })

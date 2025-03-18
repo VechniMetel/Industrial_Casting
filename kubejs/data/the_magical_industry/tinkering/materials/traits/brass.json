@@ -1,0 +1,22 @@
+{
+  "perStat": {
+    "tconstruct:melee_harvest": [
+      {
+        "level": 1,
+        "name": "tconstruct:experienced"
+      }
+    ],
+    "tconstruct:ranged": [
+      {
+        "level": 1,
+        "name": "the_magical_industry:smart"
+      }
+    ],
+    "tconstruct:armor": [
+      {
+        "level": 2,
+        "name": "the_magical_industry:magical_shield"
+      }
+    ]
+  }
+}

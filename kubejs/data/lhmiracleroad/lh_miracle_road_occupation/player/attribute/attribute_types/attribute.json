@@ -73,12 +73,12 @@
       {
         "attribute": "parcool:parcool.max_stamina",
         "condition": "parcool",
-        "describe": "sturdy:max_stamina"
+        "describe": "sturdy_max_stamina"
       },
       {
         "attribute": "parcool:parcool.stamina_recovery",
         "condition": "parcool",
-        "describe": "sturdy:stamina_recovery"
+        "describe": "sturdy_stamina_recovery"
       }
     ]
   },

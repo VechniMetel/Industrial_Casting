@@ -16,16 +16,16 @@ ServerEvents.tags("block", r => {
         r.add(tag, block)
     })
     r.add('create:casing', [
-        'create_nouveau:magic_casing',
-        'create_nouveau:source_casing',
-        'create_nouveau:smart_casing',
-        'create_nouveau:smart_andesite_casing'
+        'the_magical_industry:magic_casing',
+        'the_magical_industry:source_casing',
+        'the_magical_industry:smart_casing',
+        'the_magical_industry:smart_andesite_casing'
     ])
     r.add('create:wrench_pickup', [
-        'create_nouveau:magic_casing',
-        'create_nouveau:source_casing',
-        'create_nouveau:smart_casing',
-        'create_nouveau:smart_andesite_casing'
+        'the_magical_industry:magic_casing',
+        'the_magical_industry:source_casing',
+        'the_magical_industry:smart_casing',
+        'the_magical_industry:smart_andesite_casing'
     ])
     r.add(
         'create:safe_nbt',
@@ -39,7 +39,7 @@ ServerEvents.tags("block", r => {
             "ducky-periphs:focal_link_block"
         ]
     )
-    r.add('create_nouveau:special_pickup',
+    r.add('the_magical_industry:special_pickup',
         [
             'ars_additions:ender_source_jar',
             'ars_nouveau:source_jar',
@@ -51,7 +51,7 @@ ServerEvents.tags("block", r => {
             'ars_nouveau:alteration_table'
         ]
     )
-    r.add('create_nouveau:key_pickup',
+    r.add('the_magical_industry:key_pickup',
         [
             'hexcasting:impetus/empty',
             'hexcasting:directrix/boolean',
@@ -98,7 +98,7 @@ ServerEvents.tags("block", r => {
             'hexcasting:akashic_connector'
         ]
     )
-    r.add("create_nouveau:key_rotate",
+    r.add("the_magical_industry:key_rotate",
         [
             'hexcasting:impetus/empty',
             'hexcasting:directrix/boolean',
@@ -114,6 +114,26 @@ ServerEvents.tags("block", r => {
             'ars_nouveau:spell_prism',
             'ars_nouveau:scryers_crystal',
             'ars_nouveau:arcane_platform'
+        ]
+    )
+    r.add(
+        'alexscaves:ferromagnetic_blocks',
+        [
+            'anvilcraft:magnet_block',
+            'anvilcraft:hollow_magnet_block',
+            'anvilcraft:royal_anvil',
+            'anvilcraft:ember_anvil',
+            'anvilcraft:royal_smithing_table',
+            'anvilcraft:royal_grindstone',
+            'anvilcraft:stamping_platform',
+            'anvilcraft:ember_grindstone',
+            'anvilcraft:ember_smithing_table',
+            'anvilcraft:chute',
+            'create:chute',
+            'create:smart_chute',
+            'create:netherite_backtank',
+            'create:mechanical_saw',
+            'create_jetpack:netherite_jetpack'
         ]
     )
 })

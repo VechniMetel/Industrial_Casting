@@ -1,0 +1,18 @@
+{
+    "type": "tconstruct:alloy",
+    "inputs": [
+        {
+            "amount": 180,
+            "tag": "tconstruct:molten_tin"
+        },
+        {
+            "amount": 90,
+            "tag": "tconstruct:molten_lead"
+        }
+    ],
+    "result": {
+        "amount": 270,
+        "fluid": "the_magical_industry:solder"
+    },
+    "temperature": 154
+}

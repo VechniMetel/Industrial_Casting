@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "the_magical_industry:raw_silver_block",
+  "step": "underground_ores"
+}

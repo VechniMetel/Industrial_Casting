@@ -43,11 +43,11 @@ ServerEvents.recipes(r => {
         ]
     )
     r.shapeless(
-        "9x create_nouveau:enchanted_gold_ingot",
-        "create_nouveau:enchanted_gold_block"
+        "9x the_magical_industry:enchanted_gold_ingot",
+        "the_magical_industry:enchanted_gold_block"
     )
     r.shapeless(
-        "9x create_nouveau:enchanted_gold_nugget",
-        "create_nouveau:enchanted_gold_ingot"
+        "9x the_magical_industry:enchanted_gold_nugget",
+        "the_magical_industry:enchanted_gold_ingot"
     )
 })

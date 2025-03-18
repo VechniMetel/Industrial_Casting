@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-      "layer0": "create_nouveau:item/pressure_plates/gold"
+      "layer0": "the_magical_industry:item/pressure_plates/gold"
     }
   }

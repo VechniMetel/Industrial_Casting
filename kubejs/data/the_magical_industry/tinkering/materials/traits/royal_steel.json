@@ -1,0 +1,16 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "the_magical_industry:royal_smithing"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "the_magical_industry:royal_smithing"
+      }
+    ]
+  }
+}

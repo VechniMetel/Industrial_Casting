@@ -1,14 +1,14 @@
 ServerEvents.recipes(r => {
     r.stonecutting(
-        '4x create_nouveau:chain_drive',
+        '4x the_magical_industry:chain_drive',
         'minecraft:chain'
     )
     r.stonecutting(
-        '2x create_nouveau:storage_connector',
+        '2x the_magical_industry:storage_connector',
         'create:chute'
     )
     r.stonecutting(
-        '2x create_nouveau:storage_unit',
+        '2x the_magical_industry:storage_unit',
         'minecraft:barrel'
     )
 })

@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "create:andesite_alloy"
-  },
-  "material": "create_nouveau:andesite_alloy",
-  "needed": 1,
-  "value": 1
-}

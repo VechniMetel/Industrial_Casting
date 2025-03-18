@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cooling_time": 180,
+  "fluid": {
+    "amount": 810,
+    "fluid": "the_magical_industry:molten_royal_steel"
+  },
+  "result": "anvilcraft:royal_steel_block"
+}

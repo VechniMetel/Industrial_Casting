@@ -9,13 +9,13 @@ ServerEvents.recipes(r => {
         {
             input: 'farmersdelight:straw'
         },
-        'farmersdelight:straw', '#create_nouveau:rope_materials'
+        'farmersdelight:straw', '#the_magical_industry:rope_materials'
     )
     r.replaceInput(
         {
             input: 'supplementaries:flax'
         },
-        'supplementaries:flax', '#create_nouveau:rope_materials'
+        'supplementaries:flax', '#the_magical_industry:rope_materials'
     )
     r.replaceInput(
         {
@@ -96,17 +96,35 @@ ServerEvents.recipes(r => {
     }
     fullyReplace(
         'createnuclear:steel_block',
-        'create_nouveau:steel_block'
+        'the_magical_industry:steel_block'
     )
     fullyReplace(
         'createnuclear:lead_block',
         'anvilcraft:lead_block'
+    )
+    fullyReplace(
+        'createnuclear:lead_ingot',
+        'anvilcraft:lead_ingot'
     )
     r.replaceInput(
         {
             input:'createnuclear:uranium_bucket'
         },
         'createnuclear:uranium_bucket',
-        'tconstruct:molten_uranium_bucket'
+        'alexscaves:fissile_core'
+    )
+    r.replaceInput(
+        {
+            id:'alexscaves:quarry_smasher'
+        },
+        'alexscaves:scarlet_neodymium_ingot',
+        'anvilcraft:magnet_ingot'
+    )
+    r.replaceInput(
+        {
+            id:'alexscaves:quarry_smasher'
+        },
+        'alexscaves:azure_neodymium_ingot',
+        'anvilcraft:magnet_ingot'
     )
 })

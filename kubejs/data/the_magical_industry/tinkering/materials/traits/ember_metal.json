@@ -1,0 +1,20 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "the_magical_industry:ember_attack"
+    },
+    {
+      "level": 1,
+      "name": "tconstruct:autosmelt"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "the_magical_industry:ember_protect"
+      }
+    ]
+  }
+}

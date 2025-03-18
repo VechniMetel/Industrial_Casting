@@ -1,5 +1,5 @@
 BlockEvents.rightClicked(r => {
-    if (r.getBlock().hasTag("create_nouveau:key_pickup")) {
+    if (r.getBlock().hasTag("the_magical_industry:key_pickup")) {
         if (r.hand == "OFF_HAND") return
         let player = r.getPlayer()
         if (player == null) return
@@ -16,7 +16,7 @@ BlockEvents.rightClicked(r => {
             }
         }
     }
-    else if (r.getBlock().hasTag("create_nouveau:special_pickup")) {
+    else if (r.getBlock().hasTag("the_magical_industry:special_pickup")) {
         if (r.hand == "OFF_HAND") return
         let player = r.getPlayer()
         if (player == null) return
@@ -40,8 +40,8 @@ const direction = {
 BlockEvents.rightClicked((e) => {
     const { item, hand, facing, block, player } = e
     if (hand !== 'main_hand' || player.crouching) return
-    if (item.id !== 'create_nouveau:key_of_dissociation') return
-    const insidelist = e.getBlock().hasTag("create_nouveau:key_rotate")
+    if (item.id !== 'the_magical_industry:key_of_dissociation') return
+    const insidelist = e.getBlock().hasTag("the_magical_industry:key_rotate")
     if ( !insidelist ) return
     if (block.properties === undefined) return
     const blockFacing = block.properties.facing

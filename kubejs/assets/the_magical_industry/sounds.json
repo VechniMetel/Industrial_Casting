@@ -1,0 +1,34 @@
+{
+    "music.cfrb": {
+        "sounds": [
+            {
+                "name": "the_magical_industry:cfrb",
+                "stream": true
+            }
+        ]
+    },
+    "music.life": {
+        "sounds": [
+            {
+                "name": "the_magical_industry:life",
+                "stream": true
+            }
+        ]
+    },
+    "music.evilris": {
+        "sounds": [
+            {
+                "name": "the_magical_industry:evilris",
+                "stream": true
+            }
+        ]
+    },
+    "music.muisiki_rekuiemu": {
+        "sounds": [
+            {
+                "name": "the_magical_industry:muisiki_rekuiemu",
+                "stream": true
+            }
+        ]
+    }
+}

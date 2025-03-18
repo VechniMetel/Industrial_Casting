@@ -1,7 +1,7 @@
 //余烬符咒
 NetworkEvents.dataReceived("openBackpack", event => {
     const player = event.player;
-    if (player.nbt.ForgeCaps['curios:inventory'].Curios.toString().match('create_nouveau:embers_charm')) {
+    if (player.nbt.ForgeCaps['curios:inventory'].Curios.toString().match('the_magical_industry:embers_charm')) {
         if (!player.data.embers_charm_cooldown) {
             player.data.embers_charm_cooldown = 0;
         };
@@ -84,7 +84,7 @@ EntityEvents.hurt(event => {
     }
 
     //佩戴皇家钢符咒时伤害来源为铁砧时取消伤害判定
-    if (isEquippedCurio(entity, "create_nouveau:royal_steel_charm")) {
+    if (isEquippedCurio(entity, "the_magical_industry:royal_steel_charm")) {
         if (source.toString().contains("anvil")) {
             event.cancel()
         }
