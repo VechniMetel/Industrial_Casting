@@ -4,5 +4,6 @@ global.developerUserName = [
     "qicaijie",
     "INV_PLA",
     "NetherK",
-    "Dropper_QWQ"
+    "Dropper_QWQ",
+    "multitouches"
 ]

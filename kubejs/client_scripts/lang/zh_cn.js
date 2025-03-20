@@ -1,5 +1,8 @@
 ClientEvents.lang("zh_cn", (event) => {
 
+    event.add(`message.${global.namespace}.debug.getHardness`, "位于x=%s,y=%s,z=%s的方块硬度为%s")
+    event.add(`item.${global.namespace}.geological_hammer`, "地质锤")
+
     BlockLang("magic_casing", "魔法机壳")
     BlockLang("source_casing", "附魔魔法机壳")
     BlockLang("smart_casing", "智能机壳")

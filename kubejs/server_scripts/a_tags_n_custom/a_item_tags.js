@@ -132,4 +132,11 @@ ServerEvents.tags("item", r => {
             'illager_additions:katana'
         ]
     )
+    r.add(
+        "curios:embers_charm",
+        [
+        "the_magical_industry:embers_charm",
+        "the_magical_industry:royal_steel_charm"
+        ]
+    )
 })
