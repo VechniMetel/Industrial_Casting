@@ -3,12 +3,14 @@ ClientEvents.lang("zh_cn", (event) => {
     event.add(`message.${global.namespace}.debug.getHardness`, "位于x=%s,y=%s,z=%s的方块硬度为%s")
     event.add(`item.${global.namespace}.geological_hammer`, "地质锤")
 
+    BlockLang("redstone_casing", "红石机壳")
     BlockLang("magic_casing", "魔法机壳")
     BlockLang("source_casing", "附魔魔法机壳")
     BlockLang("smart_casing", "智能机壳")
     BlockLang("smart_andesite_casing", "智能安山机壳")
     BlockLang("electric_casing", "电力机壳")
     BlockLang("copper_wire", "铜线圈")
+    BlockLang("steel_casing", "钢机壳")
     BlockLang("steel_block", "钢块")
     BlockLang("silver_ore", "银矿")
     BlockLang("steel_pressure_plate", "钢压力板")
@@ -155,8 +157,8 @@ ClientEvents.lang("zh_cn", (event) => {
     }
 
     function MusicDiscLang(name, desc) {
-        event.add(`item.${global.namespace}.music_disc.${name}`, "音乐唱片")
-        event.add(`item.${global.namespace}.music_disc.${name}.desc`, desc)
+        event.add(`item.${global.namespace}.music_disc_${name}`, "音乐唱片")
+        event.add(`item.${global.namespace}.music_disc_${name}.desc`, desc)
     }
 
     function FluidLang(key, value) {

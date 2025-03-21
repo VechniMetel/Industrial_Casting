@@ -166,11 +166,11 @@ ServerEvents.recipes(r => {
          ' a ',
          ' b ',
          ' c '
-      ],{
-         'a':'minecraft:chain',
-         'b':'minecraft:iron_ingot',
-         'c':'minecraft:heavy_weighted_pressure_plate'
-      }
+      ], {
+      'a': 'minecraft:chain',
+      'b': 'minecraft:iron_ingot',
+      'c': 'minecraft:heavy_weighted_pressure_plate'
+   }
    )
    r.shaped(
       'alexscaves:quarry',
@@ -178,11 +178,11 @@ ServerEvents.recipes(r => {
          ' b ',
          'bcb',
          ' d '
-      ],{
-         'b':'#forge:nuggets/iron',
-         'c':'#forge:ingots/iron',
-         'd':'anvilcraft:chute'
-      }
+      ], {
+      'b': '#forge:nuggets/iron',
+      'c': '#forge:ingots/iron',
+      'd': 'anvilcraft:chute'
+   }
    )
    r.shaped(
       '4x alexscaves:magnetic_light',
@@ -190,10 +190,22 @@ ServerEvents.recipes(r => {
          ' a ',
          ' b ',
          ' c '
-      ],{
-         'a':'#forge:glass',
-         'b':'anvilcraft:magnet_ingot',
-         'c':'minecraft:iron_ingot'
-      }
+      ], {
+      'a': '#forge:glass',
+      'b': 'anvilcraft:magnet_ingot',
+      'c': 'minecraft:iron_ingot'
+   }
+   )
+   r.shaped(
+      'the_magical_industry:redstone_casing',
+      [
+         'aba',
+         ' c ',
+         'aba'
+      ], {
+      'a': '#forge:cobblestone',
+      'b': '#forge:dusts/redstone',
+      'c': '#forge:ingots/iron'
+   }
    )
 })

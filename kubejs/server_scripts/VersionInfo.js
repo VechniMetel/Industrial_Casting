@@ -32,17 +32,17 @@ PlayerEvents.loggedIn((event) => {
                 scale: 1.0,
             }
         })
-    } else if (!global.isDeveloper) {
-        player.paint({
-            versionTip: {
-                type: "text",
-                x: 10,
-                y: "$screenH - 20",
-                alignX: "left",
-                text: "The Magical Industry alpha 1.0.4",
-                scale: 1.0
-            }
-        })
     }
+    player.paint({
+        versionTip: {
+            type: "text",
+            x: 10,
+            y: "$screenH - 20",
+            alignX: "left",
+            text: "alpha 1.0.4",
+            scale: 1.0
+        }
+    })
+
 
 })

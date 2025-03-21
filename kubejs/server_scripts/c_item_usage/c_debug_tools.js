@@ -16,7 +16,8 @@ ItemEvents.rightClicked('the_magical_industry:debug_tool', (event) => {
         }
     }
 })
-// 查看方块硬度(潜行+右键方块)
+
+// 查看方块硬度(右键方块)
 BlockEvents.rightClicked((event) => {
     let { player } = event
     let getItem = 'the_magical_industry:geological_hammer'
@@ -40,3 +41,13 @@ BlockEvents.rightClicked((event) => {
         event.cancel()
     }
 })
+
+// 秒杀生物
+ItemEvents.rightClicked(
+    'the_magical_industry:geological_hammer',
+    (event) => {
+        if (global.isDeveloper) {
+            event.player.swing()
+            event.player.rayTrace(5, false).entity.kill()
+        }
+    })
