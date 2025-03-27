@@ -151,4 +151,173 @@ ServerEvents.recipes(r => {
       }
     ]
   })
+  r.custom({
+    "type": "anvilcraft:anvil_processing",
+    "anvil_recipe_type": "stamping",
+    "icon": {
+      "item": 'tconstruct:blaze_head'
+    },
+    "outcomes": [
+      {
+        "type": "spawn_item",
+        "chance": 1.0,
+        "offset": [
+          0.0,
+          -0.75,
+          0.0
+        ],
+        "result": {
+          "item": 'tconstruct:blaze_head'
+        }
+      }
+    ],
+    "predicates": [
+      {
+        "type": "has_block",
+        "match_block": {
+          "blocks": [
+            "anvilcraft:stamping_platform"
+          ]
+        },
+        "offset": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "type": "has_item_ingredient",
+        "match_item": {
+          "count": {
+            "min": 1
+          },
+          "items": [
+            'minecraft:skeleton_skull'
+          ]
+        },
+        "offset": [
+          0.0,
+          -0.75,
+          0.0
+        ]
+      },
+      
+      {
+        "type": "has_item_ingredient",
+        "match_item": {
+          "count": {
+            "min": 8
+          },
+          "items": [
+            'minecraft:blaze_powder'
+          ]
+        },
+        "offset": [
+          0.0,
+          -0.75,
+          0.0
+        ]
+      }
+    ]
+  })
+  r.custom({
+    "type": "anvilcraft:anvil_processing",
+    "anvil_recipe_type": "stamping",
+    "icon": {
+      "item": 'minecraft:wither_skeleton_skull'
+    },
+    "outcomes": [
+      {
+        "type": "spawn_item",
+        "chance": 1.0,
+        "offset": [
+          0.0,
+          -0.75,
+          0.0
+        ],
+        "result": {
+          "item": 'minecraft:wither_skeleton_skull'
+        }
+      }
+    ],
+    "predicates": [
+      {
+        "type": "has_block",
+        "match_block": {
+          "blocks": [
+            "anvilcraft:stamping_platform"
+          ]
+        },
+        "offset": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "type": "has_item_ingredient",
+        "match_item": {
+          "count": {
+            "min": 1
+          },
+          "items": [
+            'minecraft:skeleton_skull'
+          ]
+        },
+        "offset": [
+          0.0,
+          -0.75,
+          0.0
+        ]
+      },
+      {
+        "type": "has_item_ingredient",
+        "match_item": {
+          "count": {
+            "min": 4
+          },
+          "items": [
+            'minecraft:coal'
+          ]
+        },
+        "offset": [
+          0.0,
+          -0.75,
+          0.0
+        ]
+      },
+      {
+        "type": "has_item_ingredient",
+        "match_item": {
+          "count": {
+            "min": 4
+          },
+          "items": [
+            'minecraft:nether_brick'
+          ]
+        },
+        "offset": [
+          0.0,
+          -0.75,
+          0.0
+        ]
+      },
+      {
+        "type": "has_item_ingredient",
+        "match_item": {
+          "count": {
+            "min": 1
+          },
+          "items": [
+            'minecraft:wither_rose'
+          ]
+        },
+        "offset": [
+          0.0,
+          -0.75,
+          0.0
+        ]
+      }
+    ]
+  })
 })

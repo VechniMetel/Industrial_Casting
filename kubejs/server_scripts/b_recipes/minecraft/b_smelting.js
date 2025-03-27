@@ -1,3 +1,3 @@
-ServerEvents.recipes(r => {
-    
+ServerEvents.recipes((event) => {
+
 })

@@ -7,6 +7,7 @@ StartupEvents.registry("block", (event) => {
         "source_casing",
         "electric_casing",
         "steel_casing",
+        "royal_steel_casing",
         "copper_wire"
     ]
     casing.forEach((type) => {

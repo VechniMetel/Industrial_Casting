@@ -1,25 +1,25 @@
-ServerEvents.recipes(r => {
-    r.shapeless('extendedgears:shaftless_cogwheel',
+ServerEvents.recipes((event) => {
+    event.shapeless('extendedgears:shaftless_cogwheel',
         [
             '#minecraft:axes',
             '#minecraft:planks'
         ]
     ).damageIngredient('#minecraft:axes', 1)
-    r.shapeless('extendedgears:large_shaftless_cogwheel',
+    event.shapeless('extendedgears:large_shaftless_cogwheel',
         [
             '#minecraft:axes',
             '#minecraft:planks',
             '#minecraft:planks'
         ]
     ).damageIngredient('#minecraft:axes', 1)
-    r.shapeless(
+    event.shapeless(
         'create:shaft',
         [
             'create:cogwheel',
             'create:cogwheel'
         ]
     ).replaceIngredient('create:cogwheel', 'extendedgears:half_shaft_cogwheel')
-    r.shapeless(
+    event.shapeless(
         '2x create:cogwheel',
         [
             'extendedgears:half_shaft_cogwheel',
@@ -27,14 +27,14 @@ ServerEvents.recipes(r => {
             'create:shaft'
         ]
     )
-    r.shapeless(
+    event.shapeless(
         'create:shaft',
         [
             'create:large_cogwheel',
             'create:large_cogwheel'
         ]
     ).replaceIngredient('create:large_cogwheel', 'extendedgears:large_half_shaft_cogwheel')
-    r.shapeless(
+    event.shapeless(
         '2x create:large_cogwheel',
         [
             'extendedgears:large_half_shaft_cogwheel',
@@ -42,11 +42,11 @@ ServerEvents.recipes(r => {
             'create:shaft'
         ]
     )
-    r.shapeless(
+    event.shapeless(
         "9x the_magical_industry:enchanted_gold_ingot",
         "the_magical_industry:enchanted_gold_block"
     )
-    r.shapeless(
+    event.shapeless(
         "9x the_magical_industry:enchanted_gold_nugget",
         "the_magical_industry:enchanted_gold_ingot"
     )

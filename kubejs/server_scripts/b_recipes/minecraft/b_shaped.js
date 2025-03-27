@@ -1,23 +1,5 @@
-ServerEvents.recipes(r => {
-   r.shaped(
-      'the_magical_industry:saw',
-      [
-         ' a ',
-         'a a',
-         ' a '
-      ], {
-      'a': '#forge:plates/iron'
-   })
-   r.shaped(
-      'the_magical_industry:cage',
-      [
-         ' a ',
-         'a a',
-         ' a '
-      ], {
-      'a': 'minecraft:iron_bars'
-   })
-   r.shaped(
+ServerEvents.recipes((event) => {
+   event.shaped(
       'minecraft:cauldron',
       [
          '   ',
@@ -25,8 +7,8 @@ ServerEvents.recipes(r => {
          ' a '
       ], {
       'a': '#forge:plates/iron'
-   })
-   r.shaped(
+   }).id('minecraft:cauldron')
+   event.shaped(
       'minecraft:cauldron',
       [
          '   ',
@@ -35,7 +17,7 @@ ServerEvents.recipes(r => {
       ], {
       'a': '#forge:plates/tin'
    })
-   r.shaped(
+   event.shaped(
       'the_magical_industry:drill',
       [
          ' 1 ',
@@ -46,7 +28,7 @@ ServerEvents.recipes(r => {
       '2': "minecraft:iron_ingot"
    }
    )
-   r.shaped(
+   event.shaped(
       'the_magical_industry:copper_wire',
       [
          'aaa',
@@ -60,7 +42,7 @@ ServerEvents.recipes(r => {
       'createaddition:copper_spool',
       'createaddition:spool'
    )
-   r.shaped(
+   event.shaped(
       '8x createaddition:copper_spool',
       [
          'aaa',
@@ -74,7 +56,7 @@ ServerEvents.recipes(r => {
       'the_magical_industry:copper_wire',
       'minecraft:iron_ingot'
    )
-   r.shaped(
+   event.shaped(
       'moreburners:copper_coil',
       [
          ' a ',
@@ -88,7 +70,7 @@ ServerEvents.recipes(r => {
       'createaddition:copper_spool',
       'createaddition:spool'
    )
-   r.shaped(
+   event.shaped(
       'moreburners:nickel_coil',
       [
          ' a ',
@@ -103,7 +85,7 @@ ServerEvents.recipes(r => {
       'createaddition:electrum_spool',
       'createaddition:spool'
    )
-   r.shaped(
+   event.shaped(
       'moreburners:nickel_coil',
       [
          ' a ',
@@ -118,7 +100,7 @@ ServerEvents.recipes(r => {
       'createaddition:gold_spool',
       'createaddition:spool'
    )
-   r.shaped(
+   event.shaped(
       'the_magical_industry:solder_coil',
       [
          ' a ',
@@ -129,7 +111,7 @@ ServerEvents.recipes(r => {
       'b': 'createaddition:spool'
    }
    )
-   r.shaped(
+   event.shaped(
       'the_magical_industry:iron_coil',
       [
          ' a ',
@@ -140,7 +122,7 @@ ServerEvents.recipes(r => {
       'b': 'createaddition:spool'
    }
    )
-   r.shaped(
+   event.shaped(
       "the_magical_industry:enchanted_gold_ingot",
       [
          'aaa',
@@ -150,7 +132,7 @@ ServerEvents.recipes(r => {
       'a': "the_magical_industry:enchanted_gold_nugget"
    }
    )
-   r.shaped(
+   event.shaped(
       "the_magical_industry:enchanted_gold_block",
       [
          'aaa',
@@ -160,7 +142,7 @@ ServerEvents.recipes(r => {
       'a': "the_magical_industry:enchanted_gold_ingot"
    }
    )
-   r.shaped(
+   event.shaped(
       'alexscaves:heavyweight',
       [
          ' a ',
@@ -172,7 +154,7 @@ ServerEvents.recipes(r => {
       'c': 'minecraft:heavy_weighted_pressure_plate'
    }
    )
-   r.shaped(
+   event.shaped(
       'alexscaves:quarry',
       [
          ' b ',
@@ -184,7 +166,7 @@ ServerEvents.recipes(r => {
       'd': 'anvilcraft:chute'
    }
    )
-   r.shaped(
+   event.shaped(
       '4x alexscaves:magnetic_light',
       [
          ' a ',
@@ -196,7 +178,7 @@ ServerEvents.recipes(r => {
       'c': 'minecraft:iron_ingot'
    }
    )
-   r.shaped(
+   event.shaped(
       'the_magical_industry:redstone_casing',
       [
          'aba',

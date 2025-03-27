@@ -7,7 +7,7 @@ createconnecttexture(global.namespace, "electric_casing")
 createconnecttexture(global.namespace, "copper_wire")
 createconnecttexture(global.namespace, "steel_casing")
 createconnecttexture(global.namespace, "steel_block")
-
+createconnecttexture(global.namespace, "royal_steel_casing")
 function createconnecttexture(namespace, block) {
     JsonIO.write(`kubejs/assets/${namespace}/models/block/${block}.json`, {
         "loader": "fusion:model",

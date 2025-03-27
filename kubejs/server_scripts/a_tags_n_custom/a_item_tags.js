@@ -135,8 +135,26 @@ ServerEvents.tags("item", r => {
     r.add(
         "curios:embers_charm",
         [
-        "the_magical_industry:embers_charm",
-        "the_magical_industry:royal_steel_charm"
+            "the_magical_industry:embers_charm",
+            "the_magical_industry:royal_steel_charm"
+        ]
+    )
+    r.add(
+        'tconstruct:casts/sand',
+        [
+            'the_magical_industry:brass_hand_sand_cast'
+        ]
+    )
+    r.add(
+        'tconstruct:casts/red_sand',
+        [
+            'the_magical_industry:brass_hand_redsand_cast'
+        ]
+    )
+    r.add(
+        'tconstruct:casts/gold',
+        [
+            'the_magical_industry:brass_hand_gold_cast'
         ]
     )
 })
