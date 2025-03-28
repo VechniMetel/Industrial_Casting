@@ -57,6 +57,7 @@ ServerEvents.recipes((event) => {
         true,
         100
     )
+    
 
     function castingtable(output, fluid, amount, cast, consume, time) {
         event.custom({

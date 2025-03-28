@@ -15,18 +15,6 @@ ServerEvents.tags("block", r => {
         let tag = `forge:storage_blocks/${metal}`
         r.add(tag, block)
     })
-    r.add('create:casing', [
-        'the_magical_industry:magic_casing',
-        'the_magical_industry:source_casing',
-        'the_magical_industry:smart_casing',
-        'the_magical_industry:smart_andesite_casing'
-    ])
-    r.add('create:wrench_pickup', [
-        'the_magical_industry:magic_casing',
-        'the_magical_industry:source_casing',
-        'the_magical_industry:smart_casing',
-        'the_magical_industry:smart_andesite_casing'
-    ])
     r.add(
         'create:safe_nbt',
         [

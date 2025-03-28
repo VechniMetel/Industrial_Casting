@@ -14,4 +14,25 @@ ServerEvents.recipes((event) => {
             '#forge:plates/lead'
         ]
     ).id('createnuclear:item_application/reactor_casing_from_steel_and_brass_casing')
+    create.item_application(
+        'the_magical_industry:smart_andesite_casing',
+        [
+            'create:andesite_casing',
+            'create:electron_tube'
+        ]
+    )
+    create.item_application(
+        'the_magical_industry:smart_andesite_casing',
+        [
+            'create:andesite_casing',
+            'the_magical_industry:crude_electron_tube'
+        ]
+    )
+    create.item_application(
+        'the_magical_industry:magic_casing',
+        [
+            '#the_magical_industry:stripped_archwood',
+            '#forge:ingots/enchanted_gold'
+        ]
+    )
 })

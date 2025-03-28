@@ -1,4 +1,4 @@
-ServerEvents.recipes(r=>{
+ServerEvents.recipes(r => {
     const ars_nouveau = r.recipes.ars_nouveau
     ars_nouveau.imbuement(
         '#hexcasting:staves',
@@ -8,5 +8,17 @@ ServerEvents.recipes(r=>{
             'minecraft:grindstone',
             '#hexcasting:brainswept_circle_components',
         ]
+    )
+    ars_nouveau.imbuement(
+        '#forge:ingots/gold',
+        'the_magical_industry:enchanted_gold_ingot',
+        900,
+        []
+    )
+    ars_nouveau.imbuement(
+        '#forge:storage_blocks/gold',
+        'the_magical_industry:enchanted_gold_block',
+        8100,
+        []
     )
 })
