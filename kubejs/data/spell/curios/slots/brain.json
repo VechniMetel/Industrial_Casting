@@ -1,0 +1,10 @@
+{
+    "add_cosmetic": false,
+    "icon": "the_magical_industry:slot/brain",
+    "operation": "SET",
+    "order": 1,
+    "render_toggle": true,
+    "replace": false,
+    "size": 1,
+    "use_native_gui": true
+}
