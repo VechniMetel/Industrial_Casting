@@ -201,7 +201,7 @@ ServerEvents.recipes(r => {
           0.0
         ]
       },
-      
+
       {
         "type": "has_item_ingredient",
         "match_item": {
