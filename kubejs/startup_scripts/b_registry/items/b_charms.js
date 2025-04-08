@@ -1,11 +1,15 @@
 StartupEvents.registry('item', r => {
     r.create('the_magical_industry:embers_charm')
         .unstackable()
-        .tag('the_magical_industry:embers_charm')
         .tag('spell')
     r.create('the_magical_industry:royal_steel_charm')
         .unstackable()
-        .tag('the_magical_industry:embers_charm')
+        .tag('spell')
+    r.create("the_magical_industry:Cogito_ergo_sum")
+        .unstackable()
+        .tag("brain")
+    r.create('the_magical_industry:embers_charm_plus')
+        .unstackable()
         .tag('spell')
 });
 

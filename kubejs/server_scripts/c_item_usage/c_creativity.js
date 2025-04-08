@@ -1,36 +1,64 @@
 //余烬符咒
-NetworkEvents.dataReceived("openBackpack", event => {
+NetworkEvents.dataReceived("openBackpack",event => {
     const player = event.player;
     if (player.nbt.ForgeCaps['curios:inventory'].Curios.toString().match('the_magical_industry:embers_charm')) {
-        if (!player.data.embers_charm_cooldown) {
-            player.data.embers_charm_cooldown = 0;
+        if (!player.data.embers_charm_cooldowncommon) {
+            player.data.embers_charm_cooldowncommon = 0;
         };
-        if (player.data.embers_charm_cooldown <= 0) {
-            player.data.embers_charm_cooldown = 20;
-            player.data.embers_charm_charging = true;
-        }
+        if (player.data.embers_charm_cooldowncommon <= 0) {
+            player.data.embers_charm_cooldowncommon = 20;
+            player.data.embers_charm_chargingcommon = true;
+        }//设置时间
+    };
+    if (player.nbt.ForgeCaps['curios:inventory'].Curios.toString().match('the_magical_industry:embers_charm_plus')) {
+        if (!player.data.embers_charm_cooldownplus) {
+            player.data.embers_charm_cooldownplus = 0;
+        };
+        if (player.data.embers_charm_cooldownplus <= 0) {
+            player.data.embers_charm_cooldownplus = 20;
+            player.data.embers_charm_chargingplus = true;
+        }//设置时间
     }
 });
 
 PlayerEvents.tick(event => {
     const player = event.player;
-    if (!player.data.embers_charm_charging) return;
-    if (player.data.embers_charm_cooldown > 0) {
-        player.data.embers_charm_cooldown--;
+    if (!player.data.embers_charm_chargingcommon) return;
+    if (player.data.embers_charm_cooldowncommon > 0) {
+        player.data.embers_charm_cooldowncommon--;
     } else {
-        player.data.embers_charm_charging = false;
-        var playerHealth = player.getHealth();
-        var damage = playerHealth * 0.5;
-        player.attack(damage);
-        var qwq = player.level.getEntitiesWithin(AABB.of(player.x - 5, player.y - 2, player.z - 5, player.x + 5, player.y + 2, player.z + 5));
-        qwq.forEach(entity => {
+        player.data.embers_charm_chargingcommon = false;
+        var playerHealthcommon = player.getHealth();//获取玩家当前生命值
+        var damagecommon = playerHealthcommon * 0.5;
+        player.attack(damagecommon);//造成伤害无法用抗性提升抵消
+        var qwqcommon = player.level.getEntitiesWithin(AABB.of(player.x-10,player.y-4,player.z-10,player.x+10,player.y+4,player.z+10));//范围选定
+        qwqcommon.forEach(entity => {
             if (entity !== player) {
-                var fireDamage = damage * 3;
-                entity.attack(fireDamage);
-                entity.setRemainingFireTicks(1000);
-            }
+                var fireDamagecommon = damagecommon * 3;
+                entity.attack(fireDamagecommon);//给周围造成伤害
+                entity.setRemainingFireTicks(1000);//燃烧时间，这玩意伤害不高，纯装饰
+            };
         });
-        player.server.runCommandSilent(`title ${player.name.getString()} actionbar {"text":"消耗了${damage}滴血"}`);
+        player.server.runCommandSilent(`title ${player.name.getString()} actionbar {"text":"消耗了${damagecommon}滴血"}`);//播报
+    };
+
+    if (!player.data.embers_charm_chargingplus) return;
+    if (player.data.embers_charm_cooldownplus > 0) {
+        player.data.embers_charm_cooldownplus--;
+    } else {
+        player.data.embers_charm_chargingplus = false;
+        var playerHealthplus = player.getHealth();//获取玩家当前生命值
+        var damageplus = playerHealthplus * 0.5;
+        player.attack(damageplus);//造成伤害无法用抗性提升抵消
+        var qwqplus = player.level.getEntitiesWithin(AABB.of(player.x-5,player.y-2,player.z-5,player.x+5,player.y+2,player.z+5));//范围选定
+        qwqplus.forEach(entity => {
+            if (entity !== player) {
+                var fireDamageplus = damageplus * 5;
+                entity.attack(fireDamageplus);//给周围造成伤害
+                entity.setRemainingFireTicks(1000);//燃烧时间，这玩意伤害不高，纯装饰
+            };
+        });
+        player.server.runCommandSilent(`title ${player.name.getString()} actionbar {"text":"消耗了${damage}滴血"}`);//播报
     }
 });
 
@@ -39,8 +67,12 @@ ItemEvents.foodEaten('minecraft:golden_apple', r => {
     r.player.tell(randommath);
     const { entity, target, hand, server, level } = r;
     if (randommath <= 0.5 && randommath >= 0.3) {
-        entity.potionEffects.add('minecraft:night_vision', 200, 0, false, true);//我先传上去效果之后改
-        r.player.data.awa = 60;
+        entity.potionEffects.add('minecraft:regeneration', 2400, 30, false, true);
+        entity.potionEffects.add('minecraft:wither', 2400, 10, false, true); 
+        entity.potionEffects.add('minecraft:nausea', 2400, 30, false, true); 
+        entity.potionEffects.add('minecraft:slowness', 2400, 1, false, true);
+        entity.potionEffects.add('minecraft:blindness', 2400, 30, false, true);
+        r.player.data.awa = 2400;
     }
 })
 PlayerEvents.tick(r => {
