@@ -166,3 +166,36 @@ config/yes_steve_model-common.toml
 config/youkaishomecoming-client.toml
 config/youkaishomecoming-common.toml
 
+#mod
+# eclipse
+mod/bin
+mod/*.launch
+mod/.settings
+mod/.metadata
+mod/.classpath
+mod/.project
+
+# idea
+mod/out
+mod/*.ipr
+mod/*.iws
+mod/*.iml
+mod/.idea/
+
+# gradle
+mod/build
+mod/.gradle
+mod/settings.gradle
+
+# other
+mod/eclipse
+mod/run/
+
+# Files from Forge MDK
+mod/forge*changelog.txt
+
+#useless files
+changelog.txt
+CREDITS.txt
+LICENSE.txt
+README.txt
