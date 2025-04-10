@@ -1,3 +1,5 @@
+<p align="center"><img src="./title/title.png" alt="Logo" width="1000"></p>
+
 This is a Minecraft 1.20.1 Forge Modpack with KubeJS adjustments
 
 这是一个使用KubeJS魔改的1.20.1Forge整合包
