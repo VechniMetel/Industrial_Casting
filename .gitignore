@@ -7,7 +7,7 @@
 /lhInitItem/
 /local/
 /logs/
-/mods/
+/coremods/
 /options.txt
 /patchouli_books/
 /patchouli_data.json
@@ -25,6 +25,7 @@
 /tlm_custom_pack/
 /usercache.json
 /usernamecache.json
+/.idea/
 
 # config
 config/Advancedperipherals/
@@ -166,33 +167,33 @@ config/yes_steve_model-common.toml
 config/youkaishomecoming-client.toml
 config/youkaishomecoming-common.toml
 
-#mod
+#coremod
 # eclipse
-mod/bin
-mod/*.launch
-mod/.settings
-mod/.metadata
-mod/.classpath
-mod/.project
+coremod/bin
+coremod/*.launch
+coremod/.settings
+coremod/.metadata
+coremod/.classpath
+coremod/.project
 
 # idea
-mod/out
-mod/*.ipr
-mod/*.iws
-mod/*.iml
-mod/.idea/
+coremod/out
+coremod/*.ipr
+coremod/*.iws
+coremod/*.iml
+coremod/.idea/
 
 # gradle
-mod/build
-mod/.gradle
-mod/settings.gradle
+coremod/build
+coremod/.gradle/
+coremod/settings.gradle
 
 # other
-mod/eclipse
-mod/run/
+coremod/eclipse
+coremod/run/
 
 # Files from Forge MDK
-mod/forge*changelog.txt
+coremod/forge*changelog.txt
 
 #useless files
 changelog.txt
