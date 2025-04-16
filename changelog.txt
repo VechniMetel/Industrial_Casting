@@ -10,3 +10,7 @@ mod分出为独立repo-`中微子`
 
 删除mod<车万女仆、女仆厨房、妖怪们的归家>-`中微子`
 添加mod<诡厄巫法、诡厄巫法：启示录>-`中微子`
+
+删除mod<Illager Additions、untitled、windowtitlemodification> - `中微子`
+// 后两者为3527的mod
+添加核心mod<industrial_casting_core> - `中微子`
