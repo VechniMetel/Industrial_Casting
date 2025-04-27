@@ -1,0 +1,6 @@
+{
+    "fluid": "tconstruct:blazing_blood",
+    "burnTime": 24,
+    "superHeat": true,
+    "amountConsumedPerTick": 1
+}

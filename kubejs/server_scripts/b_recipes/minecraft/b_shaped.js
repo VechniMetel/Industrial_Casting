@@ -9,15 +9,6 @@ ServerEvents.recipes((event) => {
       'a': '#forge:plates/iron'
    }).id('minecraft:cauldron')
    event.shaped(
-      'minecraft:cauldron',
-      [
-         '   ',
-         'a a',
-         ' a '
-      ], {
-      'a': '#forge:plates/tin'
-   })
-   event.shaped(
       'the_magical_industry:drill',
       [
          ' 1 ',
@@ -26,100 +17,6 @@ ServerEvents.recipes((event) => {
       ], {
       '1': 'create:andesite_alloy',
       '2': "minecraft:iron_ingot"
-   }
-   )
-   event.shaped(
-      'the_magical_industry:copper_wire',
-      [
-         'aaa',
-         'aba',
-         'aaa'
-      ], {
-      'a': 'createaddition:copper_spool',
-      'b': 'minecraft:iron_ingot'
-   }
-   ).replaceIngredient(
-      'createaddition:copper_spool',
-      'createaddition:spool'
-   )
-   event.shaped(
-      '8x createaddition:copper_spool',
-      [
-         'aaa',
-         'aba',
-         'aaa'
-      ], {
-      'a': 'createaddition:spool',
-      'b': 'the_magical_industry:copper_wire'
-   }
-   ).replaceIngredient(
-      'the_magical_industry:copper_wire',
-      'minecraft:iron_ingot'
-   )
-   event.shaped(
-      'moreburners:copper_coil',
-      [
-         ' a ',
-         'a a',
-         ' a '
-      ],
-      {
-         'a': 'createaddition:copper_spool'
-      }
-   ).replaceIngredient(
-      'createaddition:copper_spool',
-      'createaddition:spool'
-   )
-   event.shaped(
-      'moreburners:nickel_coil',
-      [
-         ' a ',
-         'aba',
-         ' a '
-      ],
-      {
-         'a': 'createaddition:electrum_spool',
-         'b': 'moreburners:copper_coil'
-      }
-   ).replaceIngredient(
-      'createaddition:electrum_spool',
-      'createaddition:spool'
-   )
-   event.shaped(
-      'moreburners:nickel_coil',
-      [
-         ' a ',
-         'aba',
-         ' a '
-      ],
-      {
-         'a': 'createaddition:gold_spool',
-         'b': 'moreburners:copper_coil'
-      }
-   ).replaceIngredient(
-      'createaddition:gold_spool',
-      'createaddition:spool'
-   )
-   event.shaped(
-      'the_magical_industry:solder_coil',
-      [
-         ' a ',
-         'aba',
-         ' a '
-      ], {
-      'a': 'the_magical_industry:solder_wire',
-      'b': 'createaddition:spool'
-   }
-   )
-   event.shaped(
-      'the_magical_industry:iron_coil',
-      [
-         ' a ',
-         'aba',
-         ' a '
-      ], {
-      'a': 'createaddition:iron_wire',
-      'b': 'createaddition:spool'
    }
    )
    event.shaped(

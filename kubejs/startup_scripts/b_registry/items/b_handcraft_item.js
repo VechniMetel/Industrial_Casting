@@ -5,7 +5,7 @@ let registerItem = [
     "drill",
     "ejector_mechanism",
     "enchantment_mechanism",
-    "iron_coil",
+    "capacitor",
     "magic_capacitor",
     "rgb_led_set",
     "solder_coil",
