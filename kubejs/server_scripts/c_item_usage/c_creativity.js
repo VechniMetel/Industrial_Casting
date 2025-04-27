@@ -122,3 +122,18 @@ EntityEvents.hurt(event => {
         }
     }
 })
+
+//我思故我在
+PlayerEvents.tick(r => {
+    const {player} = r
+    let maxHealth = player.getMaxHealth();
+    if (player.nbt.ForgeCaps['curios:inventory'].Curios.toString().match('the_magical_industry:cogito_ergo_sum')&& player.age % 20 === 0) {
+        player.setHealth(maxHealth)
+         const Hunger = player.saturation;
+        if (Hunger <= 0) {
+            player.foodLevel = Math.max(player.foodLevel - 2, 0);
+        } else {
+            player.saturation = Math.max(player.saturation - 1, 0);
+        }
+    }
+})
