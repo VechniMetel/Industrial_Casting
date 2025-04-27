@@ -1,5 +1,7 @@
 <p align="center"><img src="./title/title.png" alt="Logo" width="1000"></p>
 
+[CoreModPosition(https://github.com/VechniMetel/IndustrialCastingCore)]
+
 This is a Minecraft 1.20.1 Forge Modpack with KubeJS adjustments and a core mod.
 
 这是一个使用KubeJS魔改并包含一个核心mod的1.20.1Forge整合包
