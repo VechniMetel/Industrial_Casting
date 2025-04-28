@@ -12,6 +12,17 @@
         "melee_attack": 1.25,
         "mining_speed": 3.5,
         "mining_tier": "minecraft:stone"
+      },
+      "tconstruct:limb": {
+        "accuracy": 0.1,
+        "draw_speed": -0.12,
+        "durability": 230,
+        "velocity": -0.02
+      },
+      "tconstruct:maille": {},
+      "tconstruct:plating_boots": {
+        "armor": 2.0,
+        "durability": 195
       }
     }
   }

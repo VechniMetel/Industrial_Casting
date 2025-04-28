@@ -11,7 +11,7 @@ StartupEvents.registry("block", (event) => {
             .tagBlock("minecraft:mineable/pickaxe")
             .tagBlock(global.miningLevel[level])
             .tagBlock(`forge:storage_blocks/${key}`)
-            .tagBlock('minecraft:beacon_base_blocks')
-            .tagBlock('tconstruct:mineable/pickadze')
+            .tagBlock("minecraft:beacon_base_blocks")
+            .tagBlock("tconstruct:mineable/pickadze")
     }
 })

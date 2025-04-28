@@ -3,25 +3,25 @@ ServerEvents.tags("entity_type", r => {
         "youkaishomecoming:flesh_source",
         [
             "illager_additions:new_samurai",
-            'illager_additions:spearman',
-            'illager_additions:beamloger',
-            'illager_additions:cowboy',
-            'illager_additions:shogun',
-            'illager_additions:royal_guard_spearman'
+            "illager_additions:spearman",
+            "illager_additions:beamloger",
+            "illager_additions:cowboy",
+            "illager_additions:shogun",
+            "illager_additions:royal_guard_spearman"
         ]
     )
     r.add(
         `${global.namespace}:debug_tool_filter`,
         [
-            'minecraft:player',
-            'minecraft:minecart',
-            'alexcaves:quarry_smasher',
-            'createbigcannons:pitch_contraption',
-            'create:carriage_contraption',
-            'create:contraption',
-            'create:gantry_contraption',
-            'create:stationary_contraption',
-            'create:super_glue',
+            "minecraft:player",
+            "minecraft:minecart",
+            "alexcaves:quarry_smasher",
+            "createbigcannons:pitch_contraption",
+            "create:carriage_contraption",
+            "create:contraption",
+            "create:gantry_contraption",
+            "create:stationary_contraption",
+            "create:super_glue",
             "create:seat"
         ]
     )

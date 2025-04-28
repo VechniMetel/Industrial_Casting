@@ -1,56 +1,45 @@
 ServerEvents.tags("item", r => {
     r.add(
-        'the_magical_industry:stripped_archwood',
+        "the_magical_industry:stripped_archwood",
         [
-            'ars_nouveau:stripped_blue_archwood_log',
-            'ars_nouveau:stripped_blue_archwood_wood',
-            'ars_nouveau:stripped_green_archwood_log',
-            'ars_nouveau:stripped_green_archwood_wood',
-            'ars_nouveau:stripped_red_archwood_log',
-            'ars_nouveau:stripped_red_archwood_wood',
-            'ars_nouveau:stripped_purple_archwood_log',
-            'ars_nouveau:stripped_purple_archwood_wood',
-            'ars_elemental:stripped_yellow_archwood_log',
-            'ars_elemental:stripped_yellow_archwood'
+            "ars_nouveau:stripped_blue_archwood_log",
+            "ars_nouveau:stripped_blue_archwood_wood",
+            "ars_nouveau:stripped_green_archwood_log",
+            "ars_nouveau:stripped_green_archwood_wood",
+            "ars_nouveau:stripped_red_archwood_log",
+            "ars_nouveau:stripped_red_archwood_wood",
+            "ars_nouveau:stripped_purple_archwood_log",
+            "ars_nouveau:stripped_purple_archwood_wood",
+            "ars_elemental:stripped_yellow_archwood_log",
+            "ars_elemental:stripped_yellow_archwood"
         ])
-    r.add('create:casing', [
-        'the_magical_industry:magic_casing',
-        'the_magical_industry:source_casing',
-        'the_magical_industry:smartcasing'
-    ])
     r.add(
-        'the_magical_industry:rope_materials',
+        "the_magical_industry:rope_materials",
         [
-            'supplementaries:flax',
-            'farmersdelight:straw'
+            "supplementaries:flax",
+            "farmersdelight:straw"
         ]
     )
     r.add(
-        'hexcasting:dusts/amethyst',
+        "hexcasting:dusts/amethyst",
         [
-            'ars_technica:amethyst_dust'
+            "ars_technica:amethyst_dust"
         ]
     )
     r.add(
-        'hexcasting:grants_root_advancement',
+        "hexcasting:grants_root_advancement",
         [
-            'ars_technica:amethyst_dust'
+            "ars_technica:amethyst_dust"
         ]
     )
     r.add(
-        'tconstruct:anvil_metal',
+        "tconstruct:anvil_metal",
         [
             "anvilcraft:royal_steel_block",
             "anvilcraft:ember_metal_block",
             "anvilcraft:polished_heavy_iron_block",
             "anvilcraft:cursed_gold_block",
             "anvilcraft:earth_core_shard_block"
-        ]
-    )
-    r.add(
-        'forge:storage_blocks/steel',
-        [
-            'the_magical_industry:steel_block'
         ]
     )
     r.add(
@@ -66,70 +55,38 @@ ServerEvents.tags("item", r => {
         ]
     )
     r.add(
-        "createbigcannons:moulds",
+        "alexscaves:ferromagnetic_items",
         [
-            'createbigcannons:very_small_cast_mould',
-            'createbigcannons:small_cast_mould',
-            'createbigcannons:medium_cast_mould',
-            'createbigcannons:large_cast_mould',
-            'createbigcannons:very_large_cast_mould',
-            'createbigcannons:cannon_end_cast_mould',
-            'createbigcannons:sliding_breech_cast_mould',
-            'createbigcannons:screw_breech_cast_mould',
-            'createbigcannons:autocannon_breech_cast_mould',
-            'createbigcannons:autocannon_recoil_spring_cast_mould',
-            'createbigcannons:autocannon_barrel_cast_mould',
-            'cbc_at:muzzle_brake_cast_mould',
-            'cbc_at:fume_extractor_cast_mould',
-            'cbc_at:silencer_cast_mould',
-            'cbc_at:rifled_barrel_cast_mould',
-            'cbc_at:twin_autocannon_barrel_mould',
-            'cbc_at:twin_autocannon_recoil_spring_mould',
-            'cbc_at:twin_autocannon_breech_mould',
-            'cbc_at:twin_autocannon_silencer_mould',
-            'cbc_at:twin_autocannon_muzzle_brake_mould',
-            'cbc_at:vert_twin_autocannon_barrel_mould',
-            'cbc_at:vert_twin_autocannon_recoil_spring_mould',
-            'cbc_at:vert_twin_autocannon_breech_mould',
-            'cbc_at:vert_twin_autocannon_silencer_mould',
-            'cbc_at:vert_twin_autocannon_muzzle_brake_mould',
-            'cbc_at:autocannon_silencer_mould',
-            'cbc_at:autocannon_muzzle_brake_mould'
+            "anvilcraft:magnet_ingot",
+            "anvilcraft:magnet_block",
+            "anvilcraft:hollow_magnet_block",
+            "anvilcraft:royal_anvil",
+            "anvilcraft:ember_anvil",
+            "anvilcraft:royal_smithing_table",
+            "anvilcraft:royal_grindstone",
+            "anvilcraft:stamping_platform",
+            "anvilcraft:ember_grindstone",
+            "anvilcraft:ember_smithing_table",
+            "anvilcraft:chute"
         ]
     )
     r.add(
-        'alexscaves:ferromagnetic_items',
+        "alexscaves:nuclear_furnace_rods",
         [
-            'anvilcraft:magnet_ingot',
-            'anvilcraft:magnet_block',
-            'anvilcraft:hollow_magnet_block',
-            'anvilcraft:royal_anvil',
-            'anvilcraft:ember_anvil',
-            'anvilcraft:royal_smithing_table',
-            'anvilcraft:royal_grindstone',
-            'anvilcraft:stamping_platform',
-            'anvilcraft:ember_grindstone',
-            'anvilcraft:ember_smithing_table',
-            'anvilcraft:chute'
+            "createnuclear:uranium_rod"
         ]
     )
     r.add(
-        'alexscaves:nuclear_furnace_rods',
+        "createnuclear:fuel",
         [
-            'createnuclear:uranium_rod'
+            "alexscaves:uranium_rod"
         ]
     )
     r.add(
-        'createnuclear:fuel',
+        "farmersdelight:tools/knives",
         [
-            'alexscaves:uranium_rod'
-        ]
-    )
-    r.add(
-        'farmersdelight:tools/knives',
-        [
-            'illager_additions:master_katana',
-            'illager_additions:katana'
+            "illager_additions:master_katana",
+            "illager_additions:katana"
         ]
     )
     r.add(
@@ -140,21 +97,33 @@ ServerEvents.tags("item", r => {
         ]
     )
     r.add(
-        'tconstruct:casts/sand',
+        "tconstruct:casts/sand",
         [
-            'the_magical_industry:brass_hand_sand_cast'
+            "the_magical_industry:brass_hand_sand_cast"
         ]
     )
     r.add(
-        'tconstruct:casts/red_sand',
+        "tconstruct:casts/red_sand",
         [
-            'the_magical_industry:brass_hand_redsand_cast'
+            "the_magical_industry:brass_hand_redsand_cast"
         ]
     )
     r.add(
-        'tconstruct:casts/gold',
+        "tconstruct:casts/gold",
         [
-            'the_magical_industry:brass_hand_gold_cast'
+            "the_magical_industry:brass_hand_gold_cast"
+        ]
+    )
+    r.add(
+        "farmersdelight:tools/knives",
+        [
+            "tconstruct:dagger"
+        ]
+    )
+    r.add(
+        "forge:tools/knives",
+        [
+            "tconstruct:dagger"
         ]
     )
 })

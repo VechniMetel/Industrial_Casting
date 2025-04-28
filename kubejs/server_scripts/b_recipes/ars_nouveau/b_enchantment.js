@@ -3,7 +3,7 @@ ServerEvents.recipes(r => {
     ars_nouveau.enchanting_apparatus(
         [
             "minecraft:stick",
-            'minecraft:oak_planks',
+            "minecraft:oak_planks",
         ], // input items
         "hexcasting:charged_amethyst", // reagent
         "hexcasting:staff/oak", // output
@@ -12,8 +12,8 @@ ServerEvents.recipes(r => {
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:spruce_planks',
-            'minecraft:stick',
+            "minecraft:spruce_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
         "hexcasting:staff/spruce",
@@ -21,25 +21,25 @@ ServerEvents.recipes(r => {
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:birch_planks',
-            'minecraft:stick',
+            "minecraft:birch_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
-        'hexcasting:staff/birch',
+        "hexcasting:staff/birch",
         1000
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:acacia_planks',
-            'minecraft:stick',
+            "minecraft:acacia_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
-        'hexcasting:staff/acacia',
+        "hexcasting:staff/acacia",
         1000
     ); ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:spruce_planks',
-            'minecraft:stick',
+            "minecraft:spruce_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
         "hexcasting:staff/spruce",
@@ -47,85 +47,85 @@ ServerEvents.recipes(r => {
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:dark_oak_planks',
-            'minecraft:stick',
+            "minecraft:dark_oak_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
-        'hexcasting:staff/dark_oak',
+        "hexcasting:staff/dark_oak",
         1000
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:crimson_planks',
-            'minecraft:stick',
+            "minecraft:crimson_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
-        'hexcasting:staff/crimson',
+        "hexcasting:staff/crimson",
         1000
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:warped_planks',
-            'minecraft:stick',
+            "minecraft:warped_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
-        'hexcasting:staff/warped',
+        "hexcasting:staff/warped",
         1000
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:mangrove_planks',
-            'minecraft:stick',
+            "minecraft:mangrove_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
-        'hexcasting:staff/mangrove',
+        "hexcasting:staff/mangrove",
         1000
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:jungle_planks',
-            'minecraft:stick',
+            "minecraft:jungle_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
-        'hexcasting:staff/jungle',
+        "hexcasting:staff/jungle",
         1000
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:cherry_planks',
-            'minecraft:stick',
+            "minecraft:cherry_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
-        'hexcasting:staff/cherry',
+        "hexcasting:staff/cherry",
         1000
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'minecraft:bamboo_planks',
-            'minecraft:stick',
+            "minecraft:bamboo_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
-        'hexcasting:staff/bamboo',
+        "hexcasting:staff/bamboo",
         1000
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'hexcasting:edified_planks',
-            'minecraft:stick',
+            "hexcasting:edified_planks",
+            "minecraft:stick",
         ],
         "hexcasting:charged_amethyst",
-        'hexcasting:staff/edified',
+        "hexcasting:staff/edified",
         1000
     );
     ars_nouveau.enchanting_apparatus(
         [
-            'hexcasting:quenched_allay_shard',
-            'hexcasting:quenched_allay_shard',
-            'hexcasting:quenched_allay_shard',
-            'minecraft:grindstone'
+            "hexcasting:quenched_allay_shard",
+            "hexcasting:quenched_allay_shard",
+            "hexcasting:quenched_allay_shard",
+            "minecraft:grindstone"
         ],
-        '#hexcasting:staves',
-        'hexcasting:staff/quenched',
+        "#hexcasting:staves",
+        "hexcasting:staff/quenched",
         2000,
     );
 })

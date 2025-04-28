@@ -1,9 +1,9 @@
-StartupEvents.registry('block', (event) => {
+StartupEvents.registry("block", (event) => {
 
     plateRegister("steel")
 
     function plateRegister(type) {
-        event.create(`${global.namespace}:${type}_pressure_plate`, 'pressure_plate')
+        event.create(`${global.namespace}:${type}_pressure_plate`, "pressure_plate")
             .item(item => {
                 item
                     .tag(`forge:plates/${type}`)

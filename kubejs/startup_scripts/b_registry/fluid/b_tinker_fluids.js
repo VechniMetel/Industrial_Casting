@@ -10,7 +10,7 @@ StartupEvents.registry("fluid", (event) => {
     function fluidRegister(name, colour) {
         event.create(`${global.namespace}:${name}`)
             .tag(`${global.namespace}:${name}`)
-            .tag('lava')
+            .tag("lava")
             .thickTexture(colour)
             .bucketColor(colour)
             .noBlock()

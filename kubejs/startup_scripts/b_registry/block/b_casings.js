@@ -20,8 +20,8 @@ StartupEvents.registry("block", (event) => {
             .hardness(1.5)
             .requiresTool(true)
             .tagBlock("minecraft:mineable/pickaxe")
-            .tagBlock('create:wrench_pickup')
-            .tagBlock('create:casing')
+            .tagBlock("create:wrench_pickup")
+            .tagBlock("create:casing")
     })
 
     netheriteCasing.forEach((type) => {
@@ -30,7 +30,7 @@ StartupEvents.registry("block", (event) => {
             .hardness(4)
             .requiresTool(true)
             .tagBlock("minecraft:mineable/pickaxe")
-            .tagBlock('create:wrench_pickup')
-            .tagBlock('create:casing')
+            .tagBlock("create:wrench_pickup")
+            .tagBlock("create:casing")
     })
 })

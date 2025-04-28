@@ -29,11 +29,11 @@ ServerEvents.recipes((event) => {
             plateTag, name
         )
     }
-    plateReplace("copper", 'anvilcraft:copper_pressure_plate')
-    plateReplace("brass", 'anvilcraft:brass_pressure_plate')
+    plateReplace("copper", "anvilcraft:copper_pressure_plate")
+    plateReplace("brass", "anvilcraft:brass_pressure_plate")
     plateReplace("iron", "minecraft:heavy_weighted_pressure_plate")
     plateReplace("gold", "minecraft:light_weighted_pressure_plate")
-    plateReplace("zinc", 'anvilcraft:zinc_pressure_plate')
+    plateReplace("zinc", "anvilcraft:zinc_pressure_plate")
 
     function fullyReplace(item1, item2) {
         event.replaceInput(
@@ -46,15 +46,15 @@ ServerEvents.recipes((event) => {
         )
     }
     fullyReplace(
-        'createnuclear:steel_block',
-        'the_magical_industry:steel_block'
+        "createnuclear:steel_block",
+        "the_magical_industry:steel_block"
     )
     fullyReplace(
-        'createnuclear:lead_block',
-        'anvilcraft:lead_block'
+        "createnuclear:lead_block",
+        "anvilcraft:lead_block"
     )
     fullyReplace(
-        'createnuclear:lead_ingot',
-        'anvilcraft:lead_ingot'
+        "createnuclear:lead_ingot",
+        "anvilcraft:lead_ingot"
     )
 })

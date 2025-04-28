@@ -123,7 +123,7 @@ ClientEvents.lang("zh_cn", (event) => {
         "不管怎么说，先把肚子填饱要紧……"
     )
     OccupationLang(
-        'sorcerer',
+        "sorcerer",
         "魔法使",
         "魔法方面的天才，沉心各种法术研究多年，但是性格孤僻，似乎不太容易接近……"
     )

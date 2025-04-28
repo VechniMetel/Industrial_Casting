@@ -21,15 +21,15 @@ let registerItem = [
 ]
 
 let incompleteregistry = [
-    'enchantment_mechanism',
-    'electron_tube',
-    'capacitor',
-    'magic_capacitor',
-    'circuit_board',
-    'advanced_circuit_board',
-    'electric_burner',
-    'notor_gizmo',
-    'fissile_core',
+    "enchantment_mechanism",
+    "electron_tube",
+    "capacitor",
+    "magic_capacitor",
+    "circuit_board",
+    "advanced_circuit_board",
+    "electric_burner",
+    "notor_gizmo",
+    "fissile_core",
     "brass_hand",
     "blaze_rod"
 ]

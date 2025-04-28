@@ -7,7 +7,7 @@ StartupEvents.registry("item", r => {
         .rarity("epic")
     r.create("the_magical_industry:soldering_gun")
         .unstackable()
-    r.create('the_magical_industry:pineapple_peel_gloves')
+    r.create("the_magical_industry:pineapple_peel_gloves")
         .unstackable()
         .maxDamage(100)
     r.create("the_magical_industry:key_of_dissociation")

@@ -39,8 +39,8 @@ const direction = {
 }
 BlockEvents.rightClicked((e) => {
     const { item, hand, facing, block, player } = e
-    if (hand !== 'main_hand' || player.crouching) return
-    if (item.id !== 'the_magical_industry:key_of_dissociation') return
+    if (hand !== "main_hand" || player.crouching) return
+    if (item.id !== "the_magical_industry:key_of_dissociation") return
     const insidelist = e.getBlock().hasTag("the_magical_industry:key_rotate")
     if ( !insidelist ) return
     if (block.properties === undefined) return
@@ -67,7 +67,7 @@ BlockEvents.rightClicked((e) => {
     block.set(block.id, newProperties)
     player.swing()
     if (newDirection !== blockFacingDirection) {
-        player.playNotifySound('create:wrench_rotate', 'players', 2, 1)
+        player.playNotifySound("create:wrench_rotate", "players", 2, 1)
     }
     e.cancel()
 })

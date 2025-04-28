@@ -3,7 +3,7 @@ ServerEvents.recipes(r => {
     "type": "anvilcraft:anvil_processing",
     "anvil_recipe_type": "stamping",
     "icon": {
-      "item": 'the_magical_industry:crude_electron_tube'
+      "item": "the_magical_industry:crude_electron_tube"
     },
     "outcomes": [
       {
@@ -15,7 +15,7 @@ ServerEvents.recipes(r => {
           0.0
         ],
         "result": {
-          "item": 'the_magical_industry:crude_electron_tube'
+          "item": "the_magical_industry:crude_electron_tube"
         }
       }
     ],
@@ -40,7 +40,7 @@ ServerEvents.recipes(r => {
             "min": 1
           },
           "items": [
-            'minecraft:heavy_weighted_pressure_plate'
+            "minecraft:heavy_weighted_pressure_plate"
           ]
         },
         "offset": [
@@ -56,7 +56,7 @@ ServerEvents.recipes(r => {
             "min": 1
           },
           "items": [
-            'anvilcraft:copper_pressure_plate'
+            "anvilcraft:copper_pressure_plate"
           ]
         },
         "offset": [
@@ -72,7 +72,7 @@ ServerEvents.recipes(r => {
             "min": 1
           },
           "items": [
-            'minecraft:redstone'
+            "minecraft:redstone"
           ]
         },
         "offset": [
@@ -88,7 +88,7 @@ ServerEvents.recipes(r => {
             "min": 1
           },
           "items": [
-            'create:polished_rose_quartz'
+            "create:polished_rose_quartz"
           ]
         },
         "offset": [
@@ -103,7 +103,7 @@ ServerEvents.recipes(r => {
     "type": "anvilcraft:anvil_processing",
     "anvil_recipe_type": "stamping",
     "icon": {
-      "item": 'the_magical_industry:steel_pressure_plate'
+      "item": "the_magical_industry:steel_pressure_plate"
     },
     "outcomes": [
       {
@@ -115,7 +115,7 @@ ServerEvents.recipes(r => {
           0.0
         ],
         "result": {
-          "item": 'the_magical_industry:steel_pressure_plate'
+          "item": "the_magical_industry:steel_pressure_plate"
         }
       }
     ],
@@ -140,7 +140,7 @@ ServerEvents.recipes(r => {
             "min": 1
           },
           "items": [
-            'createnuclear:steel_ingot'
+            "createnuclear:steel_ingot"
           ]
         },
         "offset": [
@@ -155,7 +155,7 @@ ServerEvents.recipes(r => {
     "type": "anvilcraft:anvil_processing",
     "anvil_recipe_type": "stamping",
     "icon": {
-      "item": 'tconstruct:blaze_head'
+      "item": "tconstruct:blaze_head"
     },
     "outcomes": [
       {
@@ -167,7 +167,7 @@ ServerEvents.recipes(r => {
           0.0
         ],
         "result": {
-          "item": 'tconstruct:blaze_head'
+          "item": "tconstruct:blaze_head"
         }
       }
     ],
@@ -192,7 +192,7 @@ ServerEvents.recipes(r => {
             "min": 1
           },
           "items": [
-            'minecraft:skeleton_skull'
+            "minecraft:skeleton_skull"
           ]
         },
         "offset": [
@@ -209,7 +209,7 @@ ServerEvents.recipes(r => {
             "min": 8
           },
           "items": [
-            'minecraft:blaze_powder'
+            "minecraft:blaze_powder"
           ]
         },
         "offset": [
@@ -224,7 +224,7 @@ ServerEvents.recipes(r => {
     "type": "anvilcraft:anvil_processing",
     "anvil_recipe_type": "stamping",
     "icon": {
-      "item": 'minecraft:wither_skeleton_skull'
+      "item": "minecraft:wither_skeleton_skull"
     },
     "outcomes": [
       {
@@ -236,7 +236,7 @@ ServerEvents.recipes(r => {
           0.0
         ],
         "result": {
-          "item": 'minecraft:wither_skeleton_skull'
+          "item": "minecraft:wither_skeleton_skull"
         }
       }
     ],
@@ -261,7 +261,7 @@ ServerEvents.recipes(r => {
             "min": 1
           },
           "items": [
-            'minecraft:skeleton_skull'
+            "minecraft:skeleton_skull"
           ]
         },
         "offset": [
@@ -277,7 +277,7 @@ ServerEvents.recipes(r => {
             "min": 4
           },
           "items": [
-            'minecraft:coal'
+            "minecraft:coal"
           ]
         },
         "offset": [
@@ -293,7 +293,7 @@ ServerEvents.recipes(r => {
             "min": 4
           },
           "items": [
-            'minecraft:nether_brick'
+            "minecraft:nether_brick"
           ]
         },
         "offset": [
@@ -309,7 +309,7 @@ ServerEvents.recipes(r => {
             "min": 1
           },
           "items": [
-            'minecraft:wither_rose'
+            "minecraft:wither_rose"
           ]
         },
         "offset": [

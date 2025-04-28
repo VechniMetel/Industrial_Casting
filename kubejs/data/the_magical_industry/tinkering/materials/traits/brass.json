@@ -9,7 +9,7 @@
     "tconstruct:ranged": [
       {
         "level": 1,
-        "name": "the_magical_industry:smart"
+        "name": "tconstruct:multishot"
       }
     ],
     "tconstruct:armor": [

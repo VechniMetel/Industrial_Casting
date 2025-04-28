@@ -1,7 +1,7 @@
 //余烬符咒
 NetworkEvents.dataReceived("openBackpack",event => {
     const player = event.player;
-    if (player.nbt.ForgeCaps['curios:inventory'].Curios.toString().match('the_magical_industry:embers_charm')) {
+    if (player.nbt.ForgeCaps["curios:inventory"].Curios.toString().match("the_magical_industry:embers_charm")) {
         if (!player.data.embers_charm_cooldowncommon) {
             player.data.embers_charm_cooldowncommon = 0;
         };
@@ -10,7 +10,7 @@ NetworkEvents.dataReceived("openBackpack",event => {
             player.data.embers_charm_chargingcommon = true;
         }//设置时间
     };
-    if (player.nbt.ForgeCaps['curios:inventory'].Curios.toString().match('the_magical_industry:embers_charm_plus')) {
+    if (player.nbt.ForgeCaps["curios:inventory"].Curios.toString().match("the_magical_industry:embers_charm_plus")) {
         if (!player.data.embers_charm_cooldownplus) {
             player.data.embers_charm_cooldownplus = 0;
         };
@@ -62,16 +62,16 @@ PlayerEvents.tick(event => {
     }
 });
 
-ItemEvents.foodEaten('minecraft:golden_apple', r => {
+ItemEvents.foodEaten("minecraft:golden_apple", r => {
     let randommath = Math.random();
     r.player.tell(randommath);
     const { entity, target, hand, server, level } = r;
     if (randommath <= 0.5 && randommath >= 0.3) {
-        entity.potionEffects.add('minecraft:regeneration', 2400, 30, false, true);
-        entity.potionEffects.add('minecraft:wither', 2400, 10, false, true); 
-        entity.potionEffects.add('minecraft:nausea', 2400, 30, false, true); 
-        entity.potionEffects.add('minecraft:slowness', 2400, 1, false, true);
-        entity.potionEffects.add('minecraft:blindness', 2400, 30, false, true);
+        entity.potionEffects.add("minecraft:regeneration", 2400, 30, false, true);
+        entity.potionEffects.add("minecraft:wither", 2400, 10, false, true); 
+        entity.potionEffects.add("minecraft:nausea", 2400, 30, false, true); 
+        entity.potionEffects.add("minecraft:slowness", 2400, 1, false, true);
+        entity.potionEffects.add("minecraft:blindness", 2400, 30, false, true);
         r.player.data.awa = 2400;
     }
 })
@@ -127,7 +127,7 @@ EntityEvents.hurt(event => {
 PlayerEvents.tick(r => {
     const {player} = r
     let maxHealth = player.getMaxHealth();
-    if (player.nbt.ForgeCaps['curios:inventory'].Curios.toString().match('the_magical_industry:cogito_ergo_sum')&& player.age % 20 === 0) {
+    if (player.nbt.ForgeCaps["curios:inventory"].Curios.toString().match("the_magical_industry:cogito_ergo_sum")&& player.age % 20 === 0) {
         player.setHealth(maxHealth)
          const Hunger = player.saturation;
         if (Hunger <= 0) {

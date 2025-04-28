@@ -1,16 +1,16 @@
-StartupEvents.registry('item', r => {
-    r.create('the_magical_industry:embers_charm')
+StartupEvents.registry("item", r => {
+    r.create("the_magical_industry:embers_charm")
         .unstackable()
-        .tag('spell')
-    r.create('the_magical_industry:royal_steel_charm')
+        .tag("spell")
+    r.create("the_magical_industry:royal_steel_charm")
         .unstackable()
-        .tag('spell')
+        .tag("spell")
     r.create("the_magical_industry:cogito_ergo_sum")
         .unstackable()
         .tag("brain")
-    r.create('the_magical_industry:embers_charm_plus')
+    r.create("the_magical_industry:embers_charm_plus")
         .unstackable()
-        .tag('spell')
+        .tag("spell")
 });
 
 const $KeyMappingRegistry = Java.loadClass("dev.architectury.registry.client.keymappings.KeyMappingRegistry");
