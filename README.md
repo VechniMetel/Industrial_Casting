@@ -18,9 +18,9 @@ While Applied Energistics 2 is the main storage modification
 
 同时以应用能源作为主要仓储mod
 
-Multiple occupations provides different routes of development
+We are doing our best to make more world interaction join in the main line
 
-多种职业提供各有特色的发展线路
+我们致力于让更多世界交互内容加入整合包之中
 
 Wish you a good time with our modpack!
 
