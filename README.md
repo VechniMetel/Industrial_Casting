@@ -2,7 +2,7 @@
 
 This is a Minecraft 1.20.1 Forge Modpack with KubeJS adjustments and a [core mod](https://github.com/VechniMetel/IndustrialCastingCore).
 
-这是一个使用KubeJS魔改并包含一个核心mod的1.20.1Forge整合包
+这是一个使用KubeJS魔改并包含一个[核心mod](https://github.com/VechniMetel/IndustrialCastingCore)的1.20.1Forge整合包
 
 Mainly features an industrial theme without GUI
 
