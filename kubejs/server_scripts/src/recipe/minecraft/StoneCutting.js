@@ -11,4 +11,10 @@ ServerEvents.recipes((event) => {
         "2x the_magical_industry:storage_unit",
         "minecraft:barrel"
     )
+    //pin
+    event.stonecutting(
+        "the_magical_industry:saw",
+        Item.of("tconstruct:large_plate", "{Material:'tconstruct:iron'}").strongNBT()
+    )
+
 })
