@@ -64,7 +64,6 @@ PlayerEvents.tick(event => {
 
 ItemEvents.foodEaten("minecraft:golden_apple", r => {
     let randommath = Math.random();
-    r.player.tell(randommath);
     const { entity, target, hand, server, level } = r;
     if (randommath <= 0.5 && randommath >= 0.3) {
         entity.potionEffects.add("minecraft:regeneration", 2400, 30, false, true);
@@ -127,13 +126,36 @@ EntityEvents.hurt(event => {
 PlayerEvents.tick(r => {
     const {player} = r
     let maxHealth = player.getMaxHealth();
-    if (player.nbt.ForgeCaps["curios:inventory"].Curios.toString().match("the_magical_industry:cogito_ergo_sum")&& player.age % 20 === 0) {
-        player.setHealth(maxHealth)
-         const Hunger = player.saturation;
-        if (Hunger <= 0) {
-            player.foodLevel = Math.max(player.foodLevel - 2, 0);
+    const end = player.foodLevel;
+    const Hunger = player.saturation;
+    if (player.nbt.ForgeCaps["curios:inventory"].Curios.toString().match("the_magical_industry:cogito_ergo_sum")) {
+        if (end <= 0) {
+            return;
         } else {
-            player.saturation = Math.max(player.saturation - 1, 0);
+            player.setHealth(maxHealth);
+        };
+    };
+    if (player.nbt.ForgeCaps["curios:inventory"].Curios.toString().match("the_magical_industry:cogito_ergo_sum")&& player.age % 60 === 0) {
+        if (Hunger <= 0) {
+            player.foodLevel = player.foodLevel - 2;//饱食度
+        } else {
+            player.saturation = player.saturation - 1;//饱和度
         }
     }
 })
+//开颅器
+ItemEvents.rightClicked(`${global.namespace}:cranial_instrument`,r => {
+    const {player} = r
+    let maxHealth = player.getMaxHealth();
+    player.attack(maxHealth);
+    player.server.runCommandSilent(`/give ${player.name.getString()} ${global.namespace}:brain`)
+    player.damageHeldItem("main_hand", 5);
+    player.damageHeldItem("off_hand", 5);
+})
+
+let $Capabilities = Java.loadClass("com.alrex.parcool.common.capability.capabilities.Capabilities");
+ItemEvents.foodEaten(`${global.namespace}:stamina_potion`,event => {
+    const {player} = event;
+    let stamina = player.getCapability($Capabilities.STAMINA_CAPABILITY).resolve().get();
+    stamina.set(stamina.getActualMaxStamina());
+});

@@ -31,6 +31,9 @@ ClientEvents.lang("zh_cn", (event) => {
     event.add(`text.${global.namespace}.ember_charm.desc1`, "§6蕴含了余烬些许力量的符咒")
     event.add(`text.${global.namespace}.ember_charm.desc2`, "§6虽不多，但够用")
     event.add(`text.${global.namespace}.royal_steel_charm.desc1`, "§2皇家钢打造的超级护身符\n可以使佩戴者免于铁砧坠落造成的血光之灾")
+    event.add(`item.${global.namespace}.cranial_instrument`,"开颅器")
+    event.add(`item.${global.namespace}.brain`,"脑子")
+    event.add(`text.${global.namespace}.cogito_ergo_sum.desc1`,"我需要大量的食物，这样我才能不断思考！")
 
     event.add(`curios.identifier.spell`, "符咒")
     event.add(`curios.modifiers.spell`, "佩戴符咒时, ")
