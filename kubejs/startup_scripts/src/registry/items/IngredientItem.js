@@ -17,7 +17,9 @@ let registerItem = [
     "brass_hand_sand_cast",
     "brass_hand_gold_cast",
     "coal_rod",
-    "sugar_cane_juice"
+    "sugar_cane_juice",
+    'saw',
+    'silicon'
 ]
 
 let incompleteregistry = [
