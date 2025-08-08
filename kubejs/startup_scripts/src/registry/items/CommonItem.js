@@ -8,4 +8,7 @@ StartupEvents.registry("item", (event) => {
 
     event.create(`${global.namespace}:shaftless_cogwheel`)
     event.create(`${global.namespace}:shaftless_large_cogwheel`)
+    event.create(`${global.namespace}:cranial_instrument`)
+        .maxDamage(20)
+    event.create(`${global.namespace}:brain`)
 })

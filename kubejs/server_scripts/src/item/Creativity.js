@@ -152,10 +152,3 @@ ItemEvents.rightClicked(`${global.namespace}:cranial_instrument`,r => {
     player.damageHeldItem("main_hand", 5);
     player.damageHeldItem("off_hand", 5);
 })
-
-let $Capabilities = Java.loadClass("com.alrex.parcool.common.capability.capabilities.Capabilities");
-ItemEvents.foodEaten(`${global.namespace}:stamina_potion`,event => {
-    const {player} = event;
-    let stamina = player.getCapability($Capabilities.STAMINA_CAPABILITY).resolve().get();
-    stamina.set(stamina.getActualMaxStamina());
-});
