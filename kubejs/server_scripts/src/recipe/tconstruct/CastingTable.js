@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    const { tconstruct } = event.recipes;
+    const  {tconstruct}  = event.recipes;
 
     tconstruct.casting_table(
         "the_magical_industry:incomplete_brass_hand",

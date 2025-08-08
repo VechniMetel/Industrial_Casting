@@ -5,7 +5,14 @@ ServerEvents.recipes((event) => {
     let iet = "the_magical_industry:incomplete_electron_tube"
     let ic = "the_magical_industry:incomplete_capacitor"
     let iem = "the_magical_industry:incomplete_magic_capacitor"
+    //底物占位，之后加未完成中间产物 
+    let iw = "create:andesite_alloy"
+    let iejm = 'minecraft:light_weighted_pressure_plate'
 
+    let deploy = create.deploying
+    let fill = create.filling
+    let cutt = create.cutting
+    let press = create.pressing
     create.sequenced_assembly(
         "create:brass_hand",
         "#forge:plates/brass",
@@ -68,4 +75,22 @@ ServerEvents.recipes((event) => {
     )
         .transitionalItem(iem)
         .loops(1)
+    
+    create.sequenced_assembly(
+        'create:whisk',
+        'create:andesite_alloy',
+        [
+            create.deploying(iw, [iw, 'minecraft:heavy_weighted_pressure_plate']),
+            create.deploying(iw, [iw, 'minecraft:heavy_weighted_pressure_plate'])
+        ]
+    ).transitionalItem(iw).loops(1)
+    create.sequenced_assembly(
+        'the_magical_industry:ejector_mechanism',
+        'minecraft:light_weighted_pressure_plate',
+        [
+            create.deploying(iejm, [iejm, 'minecraft:gold_nugget']),
+            create.deploying(iejm, [iejm, 'minecraft:gold_nugget']),
+            create.pressing(iejm, iejm)
+        ]
+    ).transitionalItem(iejm).loops(1)
 })
