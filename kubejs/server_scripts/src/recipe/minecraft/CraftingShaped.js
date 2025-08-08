@@ -102,4 +102,15 @@ ServerEvents.recipes((event) => {
       }
    )
       .id("tinkers_things:chisel/crafting")
+   kubejs.shaped(
+      'the_magical_industry:pineapple_peel_gloves',
+      [
+         "AA ",
+         "AA ",
+         "   "
+      ],
+      {
+         A: 'pineapple_delight:pineapple_side'
+      }
+   )
 })
