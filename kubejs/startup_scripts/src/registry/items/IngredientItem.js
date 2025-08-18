@@ -19,7 +19,19 @@ let registerItem = [
     "coal_rod",
     "sugar_cane_juice",
     'saw',
-    'silicon'
+    'andesite_pearl',
+    'andesite_pearl_rare',
+    'smart_pearl',
+    'smart_pearl_rare',
+    'royal_pearl',
+    'royal_pearl_rare',
+    'source_pearl',
+    'source_pearl_rare',
+    'hex_pearl',
+    'hexxy_pearl',
+    'steel_pearl',
+    'pearl_seed',
+    'faded_pearl'
 ]
 
 let incompleteregistry = [
